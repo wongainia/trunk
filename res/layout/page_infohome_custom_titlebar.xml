@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/page_infohome_segment_group"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/len_H_titlebar"
+    android:minHeight="@dimen/len_H_titlebar"
+    android:orientation="horizontal" >
+
+    <RadioButton
+        android:id="@+id/page_infohome_tab_headline"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:button="@null"
+        android:ellipsize="none"
+        android:gravity="center"
+        android:singleLine="true"
+        android:checked="true"
+        android:text="头条"
+        android:textColor="@drawable/selector_color_titlebar_txt"
+        android:textSize="@dimen/txt_s7" />
+
+    <RadioButton
+        android:id="@+id/page_infohome_tab_live"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:button="@null"
+        android:ellipsize="none"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="直播"
+        android:textColor="@drawable/selector_color_titlebar_txt"
+        android:textSize="@dimen/txt_s7" />
+
+    <RadioButton
+        android:id="@+id/page_infohome_tab_optionalnews"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:button="@null"
+        android:ellipsize="none"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="自选"
+        android:textColor="@drawable/selector_color_titlebar_txt"
+        android:textSize="@dimen/txt_s7" />
+
+</RadioGroup>

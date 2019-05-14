@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_list_item"
+    android:gravity="center"
+    android:minHeight="@dimen/len_H_listitem_stocklist"
+    android:orientation="horizontal" >
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        android:layout_width="18dp"
+        android:layout_height="18dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/len_M_horizontal"
+        android:text="数据加载中..."
+        android:textColor="@color/t2"
+        android:textSize="@dimen/txt_s3" />
+
+</LinearLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:emojicon="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/commentreply_rl_homecontent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal" 
+    android:background="@color/b4">
+
+    <RelativeLayout
+        android:id="@+id/commentreply_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/len_H_titlebar" >
+
+        <include
+            android:id="@+id/commentreply_layout_backbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            layout="@layout/include_layout_titlebar_item_back" />
+
+        <TextView
+            android:id="@+id/commentreply_tv_groupname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="评论"
+            android:textColor="@color/t8"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/commentreply_lv_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/commentreply_title_bar"
+        android:background="@null"
+        android:cacheColorHint="@null"
+        android:divider="@null"
+        android:fadingEdgeLength="0.0sp"
+        android:fastScrollEnabled="false"
+        android:headerDividersEnabled="true"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none" >
+    </ListView>
+
+    <View
+        android:id="@+id/commentreply_mask"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_transparent"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/commentreply_keyboard_input_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/ll_input_tool_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/layout_keyboard_input_tool" />
+
+        <GridView
+            android:id="@+id/emoji_keyboard_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/t8"
+            android:cacheColorHint="@android:color/transparent"
+            android:columnWidth="45dip"
+            android:horizontalSpacing="4dip"
+            android:numColumns="auto_fit"
+            android:paddingBottom="@dimen/len_M_vertical"
+            android:scrollbars="vertical"
+            android:verticalSpacing="5dip"
+            android:visibility="gone" />
+    </LinearLayout>
+</RelativeLayout>

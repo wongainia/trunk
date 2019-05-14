@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/b4" >
+    
+    <cn.emoney.sky.libs.bar.TitleBar
+        android:id="@+id/page_close_motifposition_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/len_H_titlebar"
+        android:background="@color/c9" >
+    </cn.emoney.sky.libs.bar.TitleBar>
+    
+    <LinearLayout 
+        android:id="@+id/layout_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_below="@id/page_close_motifposition_titlebar"
+        android:background="@color/b2"
+        android:orientation="horizontal"
+        android:gravity="bottom"
+        android:paddingBottom="4dp"
+        android:paddingLeft="16dp">
+        
+        <TextView 
+            android:id="@+id/page_close_motifposition_tv_goods_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/c4"
+            android:textSize="@dimen/txt_s6"/>
+        
+        <TextView 
+            android:id="@+id/page_close_motifposition_tv_goods_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:textColor="@color/c4"
+            android:textSize="@dimen/txt_s6"/>
+        
+        <TextView 
+            android:id="@+id/page_close_motifposition_tv_goods_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:textStyle="bold"
+            android:textColor="@color/t1"
+            android:textSize="@dimen/txt_s6"/>
+        
+        <TextView 
+            android:id="@+id/page_close_motifposition_tv_goods_zdf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:textColor="@color/t1"
+            android:textSize="@dimen/txt_s6"/>
+    </LinearLayout>
+    
+    <View 
+        android:id="@+id/headline"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/layout_title_bar"
+        android:background="@color/b7"/>
+    
+    <TextView 
+        android:id="@+id/page_close_motifposition_tv_notice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/headline"
+        android:layout_marginTop="143dp"
+        android:layout_centerHorizontal="true"
+        android:text="网络错误"
+        android:textSize="@dimen/txt_s3"
+        android:textColor="@color/t3"/>
+    
+    <LinearLayout
+        android:id="@+id/page_close_motifposition_layout_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/b4"
+        android:layout_below="@id/headline"
+        android:layout_marginTop="142dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:orientation="horizontal" >
+       <include layout="@layout/loading_layout_red" />
+    </LinearLayout>
+    
+    <ScrollView 
+        android:id="@+id/page_close_motifposition_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/headline"
+        android:background="@color/b4"
+        android:scrollbars="none"
+        android:overScrollMode="never"
+        android:visibility="invisible">
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            
+            <View 
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+            
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+                
+                <TextView 
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="171"
+                    android:gravity="center"
+                    android:text="当前仓位"
+                    android:textSize="@dimen/txt_s6"
+                    android:textColor="@color/t1"/>
+                
+                <View 
+                    android:layout_width="0dp"
+                    android:layout_height="8dp"
+                    android:layout_weight="56"/>
+                
+                <TextView 
+                    android:id="@+id/page_close_motifposition_tv_current_position"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="414"
+                    android:gravity="left"
+                    android:textSize="@dimen/txt_s6"
+                    android:textColor="@color/t1"/>
+            </LinearLayout>
+            
+            <View 
+                android:layout_width="match_parent"
+                android:layout_height="26dp"/>
+            
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+                
+                <TextView 
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="171"
+                    android:gravity="center"
+                    android:text="平仓价格"
+                    android:textSize="@dimen/txt_s6"
+                    android:textColor="@color/t1"/>
+                
+                <View 
+                    android:layout_width="0dp"
+                    android:layout_height="8dp"
+                    android:layout_weight="51"/>
+                
+                <EditText 
+                    android:id="@+id/page_close_motifposition_et_price"
+                    android:layout_width="0dp"
+                    android:layout_height="27dp"
+                    android:layout_weight="113"
+                    android:background="@drawable/shape_et_bg_normal"
+                    android:gravity="center_vertical|left"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:inputType="numberDecimal"
+                    android:text="0"
+                    android:textSize="@dimen/txt_s6"
+                    android:textColor="@color/t1"
+                    android:textCursorDrawable="@drawable/shape_et_cursor_index"/>
+                
+                <View 
+                    android:layout_width="0dp"
+                    android:layout_height="8dp"
+                    android:layout_weight="66"/>
+                
+                <TextView 
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="242"
+                    android:gravity="left"
+                    android:text="0表示市价平仓"
+                    android:textSize="@dimen/txt_s4"
+                    android:textColor="@color/t3"/>
+            </LinearLayout>
+            
+            <View 
+                android:layout_width="match_parent"
+                android:layout_height="25dp"/>
+            
+            <EditText 
+                android:id="@+id/page_close_motifposition_et_reason"
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/shape_et_bg_b5_radius"
+                android:padding="8dp"
+                android:gravity="top|left"
+                android:textSize="@dimen/txt_s5"
+                android:textColor="@color/t1"
+                android:textCursorDrawable="@drawable/shape_et_cursor_index"
+                android:hint="描述下调仓的理由吧"/>
+            
+            <View 
+                android:layout_width="match_parent"
+                android:layout_height="400dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

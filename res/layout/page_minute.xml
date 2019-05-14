@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <cn.emoney.sky.libs.chart.ChartView
+        android:id="@+id/page_minute_cv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="1px" >
+    </cn.emoney.sky.libs.chart.ChartView>
+
+</RelativeLayout>

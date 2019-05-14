@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/b4" >
+    
+    <!-- 标题区 -->
+    <TextView
+        android:id="@+id/page_quotefinalcial_tv_report_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="16dp"
+        android:text="—"
+        android:textColor="@color/t3"
+        android:textSize="@dimen/txt_s4" />
+    
+    <LinearLayout 
+        android:id="@+id/page_quotefinalcial_layout_more"
+        android:layout_width="wrap_content"
+        android:layout_height="39dp"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp"
+        android:layout_alignParentRight="true"
+        android:gravity="center_horizontal|bottom"
+        android:paddingBottom="6dp">
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="21dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:gravity="center"
+            android:text="查看报表 >>"
+            android:textSize="@dimen/txt_s4"
+            android:textColor="@color/c3"/>
+    </LinearLayout>
+    
+    <View 
+        android:id="@+id/divider_1"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@drawable/img_light_divider_line"
+        android:layout_below="@id/page_quotefinalcial_layout_more"/>
+    
+    <!-- 内容区1： 总股本、流通A股、市盈率、市净率 -->
+    <TextView 
+        android:id="@+id/tv_zongguben"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/divider_1"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="16dp"
+        android:text="总股本："
+        android:textSize="@dimen/txt_s4"
+        android:textColor="@color/t1"/>
+    
+    <TextView 
+        android:id="@+id/page_quotefinancial_tv_zgb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="22dp"
+        android:layout_alignBaseline="@id/tv_zongguben"
+        android:text="—"
+        android:textSize="@dimen/txt_s4"
+        android:textColor="@color/t1"/>
+    
+    <TextView 
+        android:id="@+id/tv_liutongagu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_zongguben"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="10dp"
+        android:text="流通A股："
+        android:textSize="@dimen/txt_s4"
+        android:textColor="@color/t1"/>
+    
+    <TextView 
+        android:id="@+id/page_quotefinancial_tv_ltag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="22dp"
+        android:layout_alignBaseline="@id/tv_liutongagu"
+        android:text="—"
+        android:textSize="@dimen/txt_s4"
+        android:textColor="@color/t1"/>
+    
+    <TextView 
+        android:id="@+id/tv_shiyinglv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_liutongagu"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="10dp"
+        android:text="市盈率："
+        android:textSize="@dimen/txt_s4"
+        android:textColor="@color/t1"/>
+    
+    <TextView 
+        android:id="@+id/page_quotefinancial_tv_syl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="22dp"
+        android:layout_alignBaseline="@id/tv_shiyinglv"
+        android:text="—"
+        android:textSize="@dimen/txt_s4"
+        android:textColor="@color/t1"/>
+    
+    <TextView 
+        android:id="@+id/tv_shijinglv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_shiyinglv"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="10dp"
+        android:text="市净率："
+        android:textSize="@dimen/txt_s4"
+        android:textColor="@color/t1"/>
+    
+    <TextView 
+        android:id="@+id/page_quotefinancial_tv_sjl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="22dp"
+        android:layout_alignBaseline="@id/tv_shijinglv"
+        android:text="—"
+        android:textSize="@dimen/txt_s4"
+        android:textColor="@color/t1"/>
+    
+    <View 
+        android:id="@+id/divider_2"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/img_light_divider_line"
+        android:layout_below="@id/tv_shijinglv"/>
+    
+    <!-- 内容区2： 损益表 -->
+    <TextView 
+        android:id="@+id/tv_mgsy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/divider_2"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="16dp"
+        android:text="每股收益："
+        android:textSize="@dimen/txt_s4"
+        android:textColor="@color/t1"/>
+    
+    <TextView 
+        android:id="@+id/page_quotefinancial_tv_mgsy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="22dp"
+        android:layout_alignBaseline="@id/tv_mgsy"
+        android:text="—"
+        android:textSize="@dimen/txt_s4"
+        android:textColor="@color/t1"/>
+    
+    <TextView 
+        android:id="@+id/tv_mgjyxjl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_mgsy"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="10dp"
+        android:text="每股经营现金流："
+        android:textSize="@dimen/txt_s4"
+        android:textColor="@color/t1"/>
+    
+    <TextView 
+        android:id="@+id/page_quotefinancial_tv_mgjyxjl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="22dp"
+        android:layout_alignBaseline="@id/tv_mgjyxjl"
+        android:text="—"
+        android:textSize="@dimen/txt_s4"
+        android:textColor="@color/t1"/>
+    
+    <TextView 
+        android:id="@+id/tv_mggjj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_mgjyxjl"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="10dp"
+        android:text="每股公积金："
+        android:textSize="@dimen/txt_s4"
+        android:textColor="@color/t1"/>
+    
+    <TextView 
+        android:id="@+id/page_quotefinancial_tv_mggjj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="22dp"
+        android:layout_alignBaseline="@id/tv_mggjj"
+        android:text="—"
+        android:textSize="@dimen/txt_s4"
+        android:textColor="@color/t1"/>
+    
+    <TextView 
+        android:id="@+id/tv_mgwfplr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_mggjj"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="10dp"
+        android:text="每股未分配利润："
+        android:textSize="@dimen/txt_s4"
+        android:textColor="@color/t1"/>
+    
+    <TextView 
+        android:id="@+id/page_quotefinancial_tv_mgwfplr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="22dp"
+        android:layout_alignBaseline="@id/tv_mgwfplr"
+        android:text="—"
+        android:textSize="@dimen/txt_s4"
+        android:textColor="@color/t1"/>
+    
+    <TextView 
+        android:id="@+id/tv_mgjzc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_mgwfplr"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="10dp"
+        android:text="每股净资产："
+        android:textSize="@dimen/txt_s4"
+        android:textColor="@color/t1"/>
+    
+    <TextView 
+        android:id="@+id/page_quotefinancial_tv_mgjzc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="22dp"
+        android:layout_alignBaseline="@id/tv_mgjzc"
+        android:text="—"
+        android:textSize="@dimen/txt_s4"
+        android:textColor="@color/t1"/>
+    
+    <TextView 
+        android:id="@+id/tv_jjcsyl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_mgjzc"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="10dp"
+        android:text="净资产收益率："
+        android:textSize="@dimen/txt_s4"
+        android:textColor="@color/t1"/>
+    
+    <TextView 
+        android:id="@+id/page_quotefinancial_tv_jjcsyl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="22dp"
+        android:layout_alignBaseline="@id/tv_jjcsyl"
+        android:text="—"
+        android:textSize="@dimen/txt_s4"
+        android:textColor="@color/t1"/>
+    
+    <View 
+        android:id="@+id/divider_3"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/tv_jjcsyl"
+        android:background="@drawable/img_light_divider_line"/>
+    
+    <!-- 内容区3： 利润表 -->
+    <TextView 
+        android:id="@+id/tv_zysr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/divider_3"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="16dp"
+        android:text="主营收入："
+        android:textSize="@dimen/txt_s4"
+        android:textColor="@color/t1"/>
+    
+    <TextView 
+        android:id="@+id/page_quotefinancial_tv_zysr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="22dp"
+        android:layout_alignBaseline="@id/tv_zysr"
+        android:text="—"
+        android:textSize="@dimen/txt_s4"
+        android:textColor="@color/t1"/>
+    
+    <TextView 
+        android:id="@+id/tv_zylr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_zysr"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="10dp"
+        android:text="主营利润："
+        android:textSize="@dimen/txt_s4"
+        android:textColor="@color/t1"/>
+    
+    <TextView 
+        android:id="@+id/page_quotefinancial_tv_zylr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="22dp"
+        android:layout_alignBaseline="@id/tv_zylr"
+        android:text="—"
+        android:textSize="@dimen/txt_s4"
+        android:textColor="@color/t1"/>
+    
+    <TextView 
+        android:id="@+id/tv_zysrtb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_zylr"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="10dp"
+        android:text="主营收入同比："
+        android:textSize="@dimen/txt_s4"
+        android:textColor="@color/t1"/>
+    
+    <TextView 
+        android:id="@+id/page_quotefinancial_tv_zysrtb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="22dp"
+        android:layout_alignBaseline="@id/tv_zysrtb"
+        android:text="—"
+        android:textSize="@dimen/txt_s4"
+        android:textColor="@color/t1"/>
+    
+    <TextView 
+        android:id="@+id/tv_zylrtb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_zysrtb"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="10dp"
+        android:text="主营利润同比："
+        android:textSize="@dimen/txt_s4"
+        android:textColor="@color/t1"/>
+    
+    <TextView 
+        android:id="@+id/page_quotefinancial_tv_zylrtb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="22dp"
+        android:layout_alignBaseline="@id/tv_zylrtb"
+        android:text="—"
+        android:textSize="@dimen/txt_s4"
+        android:textColor="@color/t1"/>
+    
+    <View 
+        android:id="@+id/divider_4"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/tv_zylrtb"
+        android:background="@drawable/img_light_divider_line"/>
+    
+    <!-- 内容区4： 资产负债表 -->
+    <TextView 
+        android:id="@+id/tv_jlrtb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/divider_4"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="16dp"
+        android:text="净利润同比："
+        android:textSize="@dimen/txt_s4"
+        android:textColor="@color/t1"/>
+    
+    <TextView 
+        android:id="@+id/page_quotefinancial_tv_jlrtb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="22dp"
+        android:layout_alignBaseline="@id/tv_jlrtb"
+        android:text="—"
+        android:textSize="@dimen/txt_s4"
+        android:textColor="@color/t1"/>
+    
+    <TextView 
+        android:id="@+id/tv_xsmll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_jlrtb"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="10dp"
+        android:text="销售毛利率："
+        android:textSize="@dimen/txt_s4"
+        android:textColor="@color/t1"/>
+    
+    <TextView 
+        android:id="@+id/page_quotefinancial_tv_xsmll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="22dp"
+        android:layout_alignBaseline="@id/tv_xsmll"
+        android:text="—"
+        android:textSize="@dimen/txt_s4"
+        android:textColor="@color/t1"/>
+    
+    <TextView 
+        android:id="@+id/tv_gdqyb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_xsmll"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="10dp"
+        android:text="股东权益比："
+        android:textSize="@dimen/txt_s4"
+        android:textColor="@color/t1"/>
+    
+    <TextView 
+        android:id="@+id/page_quotefinancial_tv_gdqyb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="22dp"
+        android:layout_alignBaseline="@id/tv_gdqyb"
+        android:text="—"
+        android:textSize="@dimen/txt_s4"
+        android:textColor="@color/t1"/>
+    
+    <TextView 
+        android:id="@+id/tv_zcfzb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_gdqyb"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="10dp"
+        android:text="资产负债率："
+        android:textSize="@dimen/txt_s4"
+        android:textColor="@color/t1"/>
+    
+    <TextView 
+        android:id="@+id/page_quotefinancial_tv_zcfzb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="22dp"
+        android:layout_alignBaseline="@id/tv_zcfzb"
+        android:text="—"
+        android:textSize="@dimen/txt_s4"
+        android:textColor="@color/t1"/>
+    
+    <TextView 
+        android:id="@+id/tv_yfzk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_zcfzb"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="10dp"
+        android:text="预付账款："
+        android:textSize="@dimen/txt_s4"
+        android:textColor="@color/t1"/>
+    
+    <TextView 
+        android:id="@+id/page_quotefinancial_tv_yfzk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="22dp"
+        android:layout_alignBaseline="@id/tv_yfzk"
+        android:text="—"
+        android:textSize="@dimen/txt_s4"
+        android:textColor="@color/t1"/>
+    
+    <TextView 
+        android:id="@+id/tv_ysk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_yfzk"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="10dp"
+        android:text="应收款："
+        android:textSize="@dimen/txt_s4"
+        android:textColor="@color/t1"/>
+    
+    <TextView 
+        android:id="@+id/page_quotefinancial_tv_ysk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="22dp"
+        android:layout_alignBaseline="@id/tv_ysk"
+        android:text="—"
+        android:textSize="@dimen/txt_s4"
+        android:textColor="@color/t1"/>
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/tv_ysk"/>
+
+</RelativeLayout>

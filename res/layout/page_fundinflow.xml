@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/b4" >
+
+    <RelativeLayout
+        android:id="@+id/rl_day_fundinflow_content"
+        android:layout_width="match_parent"
+        android:layout_height="202dp"
+        android:paddingBottom="20dp"
+        android:paddingLeft="51dp"
+        android:paddingRight="51dp"
+        android:paddingTop="31dp" >
+
+        <cn.emoney.acg.view.PieChartView
+            android:id="@+id/day_fundinflow_pie"
+            android:layout_width="123dp"
+            android:layout_height="123dp"
+            android:layout_centerInParent="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="当日\n资金"
+            android:textColor="@color/t1"
+            android:textSize="@dimen/txt_s5" />
+
+        <LinearLayout
+            android:id="@+id/ll_day_fundinflow_tag_content_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_day_fundinflow_tag_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/img_main_inflow"
+                android:gravity="center"
+                android:text="--%"
+                android:textColor="@color/t8"
+                android:textSize="@dimen/txt_s3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="主力流入"
+                android:textColor="@color/t1"
+                android:textSize="@dimen/txt_s2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_day_fundinflow_tag_content_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_day_fundinflow_tag_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/img_retail_inflow"
+                android:gravity="center"
+                android:text="--%"
+                android:textColor="@color/t8"
+                android:textSize="@dimen/txt_s3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="散户流入"
+                android:textColor="@color/t1"
+                android:textSize="@dimen/txt_s2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_day_fundinflow_tag_content_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_day_fundinflow_tag_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/img_main_outflow"
+                android:gravity="center"
+                android:text="--%"
+                android:textColor="@color/t8"
+                android:textSize="@dimen/txt_s3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="主力流出"
+                android:textColor="@color/t1"
+                android:textSize="@dimen/txt_s2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_day_fundinflow_tag_content_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <TextView
+                
+                android:id="@+id/tv_day_fundinflow_tag_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/img_retail_outflow"
+                android:gravity="center"
+                android:text="--%"
+                android:textColor="@color/t8"
+                android:textSize="@dimen/txt_s3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="散户流出"
+                android:textColor="@color/t1"
+                android:textSize="@dimen/txt_s2" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/v_divide_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/rl_day_fundinflow_content"
+        android:background="@drawable/img_light_divider_line"
+        android:padding="1px" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="171dp"
+        android:layout_below="@id/v_divide_line"
+        android:paddingBottom="22dp"
+        android:paddingLeft="13dp"
+        android:paddingRight="13dp"
+        android:paddingTop="19dp" >
+
+        <cn.emoney.sky.libs.chart.ChartView
+            android:id="@+id/fundinflow_page_cv"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:padding="1px" >
+        </cn.emoney.sky.libs.chart.ChartView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="1dp"
+            android:text="近十日主力净流"
+            android:textColor="@color/t1"
+            android:textSize="@dimen/txt_s1" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="1dp"
+            android:background="@drawable/img_fundinflow_flag" />
+
+        <TextView
+            android:id="@+id/fundinflow_page_tv_date_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="8dp"
+            android:gravity="center"
+            android:padding="1dp"
+            android:text="--"
+            android:textColor="@color/t3"
+            android:textSize="@dimen/txt_s1" />
+
+        <TextView
+            android:id="@+id/fundinflow_page_tv_date_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            android:gravity="center"
+            android:padding="1dp"
+            android:text="--"
+            android:textColor="@color/t3"
+            android:textSize="@dimen/txt_s1" />
+    </RelativeLayout>
+
+</RelativeLayout>

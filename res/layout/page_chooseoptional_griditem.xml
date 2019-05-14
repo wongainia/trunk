@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/choose_item_pading_top_bottom"
+        android:paddingLeft="7dp"
+        android:paddingRight="7dp"
+        android:paddingTop="@dimen/choose_item_pading_top_bottom" >
+
+        <View
+            android:id="@+id/item_v_bg"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/choose_item_h"
+            android:background="@drawable/shape_light_border_gray" />
+
+        <EditText
+            android:id="@+id/item_et_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/bg_transparent"
+            android:gravity="center"
+            android:imeOptions="actionDone"
+            android:singleLine="true"
+            android:textColor="@color/t1"
+            android:textCursorDrawable="@drawable/cursor_black"
+            android:textSize="@dimen/txt_s4" />
+
+        <TextView
+            android:id="@+id/item_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawablePadding="3dp"
+            android:gravity="center"
+            android:textColor="@color/t1"
+            android:textSize="@dimen/txt_s4" />
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/item_iv_del"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|top"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:src="@drawable/img_optional_type_del" />
+
+</FrameLayout>

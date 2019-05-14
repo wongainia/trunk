@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/quiz_teacher_viewpage_height"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <cn.emoney.acg.widget.CircleImageView
+        android:id="@+id/headIV"
+        android:layout_width="81dp"
+        android:layout_height="81dp"
+        android:layout_marginTop="64dp"
+        android:src="@drawable/img_head_icon_default"
+        app:border_color="@color/bg_transparent"
+        app:border_width="0dp" />
+
+    <TextView
+        android:id="@+id/jobNameView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="34dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="申银证券大客户部经理"
+        android:textColor="@color/t5"
+        android:textSize="@dimen/txt_s5" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/tag1View"
+            style="@style/quiz_teacher_tag_text_style"
+            android:text="金融" />
+
+        <TextView
+            android:id="@+id/tag2View"
+            android:layout_marginLeft="7dp"
+            style="@style/quiz_teacher_tag_text_style"
+            android:text="计算机信息" />
+
+        <TextView
+            android:id="@+id/tag3View"
+            android:layout_marginLeft="7dp"
+            style="@style/quiz_teacher_tag_text_style"
+            android:text="互联网" />
+
+        <TextView
+            android:id="@+id/tag4View"
+            android:layout_marginLeft="7dp"
+            style="@style/quiz_teacher_tag_text_style"
+            android:text="短线波段" />
+    </LinearLayout>
+
+</LinearLayout>

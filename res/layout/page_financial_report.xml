@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/b4" >
+    
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="暂无数据"
+        android:textSize="@dimen/txt_s3"
+        android:textColor="@color/t3"/>
+
+    <LinearLayout
+        android:id="@+id/page_financial_layout_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/b4"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="horizontal" >
+         <include layout="@layout/loading_layout_red" />
+    </LinearLayout>
+
+    <WebView
+        android:id="@+id/page_financial_webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/b4"
+        android:visibility="invisible" />
+    
+    <ImageButton
+        android:id="@+id/page_financial_btn_close"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentRight="true"
+        android:background="@null"
+        android:scaleType="centerInside"
+        android:src="@drawable/selector_btn_landscape_closebtn" />
+
+</RelativeLayout>

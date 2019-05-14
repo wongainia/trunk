@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/b2"
+    android:orientation="vertical" >
+
+    <cn.emoney.sky.libs.bar.TitleBar
+        android:id="@+id/pageTeacherReplyResultTitleBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/len_H_titlebar"
+        android:background="@color/c9" />
+
+    <TextView
+        android:id="@+id/stateView"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:ellipsize="end"
+        android:gravity="center_horizontal|bottom"
+        android:paddingBottom="5dp"
+        android:singleLine="true"
+        android:text="已解答完成，继续抢单吧"
+        android:textColor="@color/c3"
+        android:textSize="@dimen/txt_s5" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_h"
+        android:background="@color/b5" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/b4"
+            android:minHeight="273.5dp"
+            android:orientation="vertical" >
+
+            <!-- 问题 -->
+
+            <include layout="@layout/page_quizhome_list_ask_item" />
+            <!-- 回复 -->
+            <include layout="@layout/page_quizhome_list_reply_item" />
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_h"
+        android:background="@color/b5" />
+
+</LinearLayout>

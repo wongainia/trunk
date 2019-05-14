@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/securityhome_frame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/b4"
+    android:orientation="vertical" >
+
+    <cn.emoney.sky.libs.bar.TitleBar
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/len_H_titlebar"
+        android:background="@color/c9" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/setting_userguide_vp_guide"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:background="@color/c3" >
+        </android.support.v4.view.ViewPager>
+
+        <ImageView
+            android:id="@+id/iv_guide_pointer_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:scaleType="center" />
+    </FrameLayout>
+
+</LinearLayout>

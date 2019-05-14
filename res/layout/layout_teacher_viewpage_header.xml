@@ -1,0 +1,107 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/quiz_teacher_header_height"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/quiz_teacher_viewpage_height"
+        android:background="@drawable/img_teacher_header_bg" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/pointImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/img_viewpage_point_1" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="82dp"
+        android:gravity="center_vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/quiz_teacher_text_style"
+                android:drawableTop="@drawable/img_quiz_icon_fans"
+                android:text="TA的粉丝" />
+
+            <TextView
+                android:id="@+id/fansTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="36598"
+                android:textColor="@color/t2"
+                android:textSize="@dimen/txt_s5" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/line_h"
+            android:layout_height="43dp"
+            android:background="@color/b7" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/quiz_teacher_text_style"
+                android:drawableTop="@drawable/img_quiz_icon_reply"
+                android:text="回答过的问题" />
+
+            <TextView
+                android:id="@+id/questionTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="38"
+                android:textColor="@color/t2"
+                android:textSize="@dimen/txt_s5" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/line_h"
+            android:layout_height="43dp"
+            android:background="@color/b7" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/quiz_teacher_text_style"
+                android:drawableTop="@drawable/img_quiz_satisfaction"
+                android:text="用户满意度" />
+
+            <TextView
+                android:id="@+id/satisfactionTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="92%"
+                android:textColor="@color/t2"
+                android:textSize="@dimen/txt_s5" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

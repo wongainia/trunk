@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <cn.emoney.sky.libs.bar.TitleBar
+        android:id="@+id/page_infothome_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/len_H_titlebar"
+        android:background="@color/c9" >
+    </cn.emoney.sky.libs.bar.TitleBar>
+
+    <cn.emoney.sky.libs.widget.PageSwitcher
+        android:id="@+id/page_infohome_pageswitcher"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/page_infothome_titlebar" >
+    </cn.emoney.sky.libs.widget.PageSwitcher>
+
+</RelativeLayout>

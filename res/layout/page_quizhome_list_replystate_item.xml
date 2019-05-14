@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <!-- 等待回复或问题关闭 -->
+
+    <TextView
+        android:id="@+id/replyStateView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="43dp"
+        android:layout_marginTop="36dp"
+        android:gravity="center_horizontal"
+        android:text="等待回复,离关闭时间还剩26’30”"
+        android:textColor="@color/c3"
+        android:textSize="@dimen/txt_s6"
+        android:visibility="gone" />
+
+    <!-- 正在回复 -->
+
+    <LinearLayout
+        android:id="@+id/replyOnStateLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="31dp"
+        android:layout_marginLeft="@dimen/quiz_item_reply_margin_left_right"
+        android:layout_marginRight="@dimen/quiz_item_reply_margin_left_right"
+        android:layout_marginTop="23dp"
+        android:gravity="center_vertical"
+        android:visibility="gone" >
+
+        <cn.emoney.acg.widget.CircleImageView
+            android:id="@+id/rePlyingHeadIV"
+            android:layout_width="@dimen/quiz_icon_size"
+            android:layout_height="@dimen/quiz_icon_size"
+            android:src="@drawable/img_head_icon_default"
+            app:border_color="@color/bg_transparent"
+            app:border_width="0dp" />
+
+        <TextView
+            android:id="@+id/replyingNameView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="2dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="name"
+            android:textColor="@color/c3"
+            android:textSize="@dimen/txt_s5" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:text="正在答复 请稍候..."
+            android:textColor="@color/t3"
+            android:textSize="@dimen/txt_s5" />
+    </LinearLayout>
+
+    <!-- 评价 -->
+
+    <LinearLayout
+        android:id="@+id/commentStateLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="22dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请对老师的答复给个评价"
+            android:textColor="@color/t4"
+            android:textSize="@dimen/txt_s2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="12dp"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/goodView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/img_quiz_comment_good"
+                android:gravity="center"
+                android:text="非常满意"
+                android:textColor="@color/t3"
+                android:textSize="@dimen/txt_s3" />
+
+            <TextView
+                android:id="@+id/wellView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/img_quiz_comment_well"
+                android:gravity="center"
+                android:text="满意"
+                android:textColor="@color/t3"
+                android:textSize="@dimen/txt_s3" />
+
+            <TextView
+                android:id="@+id/normalView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/img_quiz_comment_noraml"
+                android:gravity="center"
+                android:text="一般"
+                android:textColor="@color/t3"
+                android:textSize="@dimen/txt_s3" />
+
+            <TextView
+                android:id="@+id/badView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/img_quiz_comment_bad"
+                android:gravity="center"
+                android:text="差评"
+                android:textColor="@color/t3"
+                android:textSize="@dimen/txt_s3" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/keyboard_bg"
+    android:orientation="vertical"
+    android:padding="3dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <LinearLayout style="@style/key_vol_englist" >
+
+            <TextView
+                android:id="@+id/tv11_english"
+                style="@style/key_text_english"
+                android:background="@drawable/keyboard_bg_black"
+                android:text="q" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/key_vol_englist" >
+
+            <TextView
+                android:id="@+id/tv12_english"
+                style="@style/key_text_english"
+                android:background="@drawable/keyboard_bg_black"
+                android:text="w" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/key_vol_englist" >
+
+            <TextView
+                android:id="@+id/tv13_english"
+                style="@style/key_text_english"
+                android:background="@drawable/keyboard_bg_black"
+                android:text="e" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/key_vol_englist" >
+
+            <TextView
+                android:id="@+id/tv14_english"
+                style="@style/key_text_english"
+                android:background="@drawable/keyboard_bg_black"
+                android:text="r" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/key_vol_englist" >
+
+            <TextView
+                android:id="@+id/tv15_english"
+                style="@style/key_text_english"
+                android:background="@drawable/keyboard_bg_black"
+                android:text="t" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/key_vol_englist" >
+
+            <TextView
+                android:id="@+id/tv16_english"
+                style="@style/key_text_english"
+                android:background="@drawable/keyboard_bg_black"
+                android:text="y" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/key_vol_englist" >
+
+            <TextView
+                android:id="@+id/tv17_english"
+                style="@style/key_text_english"
+                android:background="@drawable/keyboard_bg_black"
+                android:text="u" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/key_vol_englist" >
+
+            <TextView
+                android:id="@+id/tv18_english"
+                style="@style/key_text_english"
+                android:background="@drawable/keyboard_bg_black"
+                android:text="i" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/key_vol_englist" >
+
+            <TextView
+                android:id="@+id/tv19_english"
+                style="@style/key_text_english"
+                android:background="@drawable/keyboard_bg_black"
+                android:text="o" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/key_vol_englist" >
+
+            <TextView
+                android:id="@+id/tv110_english"
+                style="@style/key_text_english"
+                android:background="@drawable/keyboard_bg_black"
+                android:text="p" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="21dp"
+        android:layout_marginRight="21dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout style="@style/key_vol_englist" >
+
+            <TextView
+                android:id="@+id/tv21_english"
+                style="@style/key_text_english"
+                android:background="@drawable/keyboard_bg_black"
+                android:text="a" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/key_vol_englist" >
+
+            <TextView
+                android:id="@+id/tv22_english"
+                style="@style/key_text_english"
+                android:background="@drawable/keyboard_bg_black"
+                android:text="s" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/key_vol_englist" >
+
+            <TextView
+                android:id="@+id/tv23_english"
+                style="@style/key_text_english"
+                android:background="@drawable/keyboard_bg_black"
+                android:text="d" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/key_vol_englist" >
+
+            <TextView
+                android:id="@+id/tv24_english"
+                style="@style/key_text_english"
+                android:background="@drawable/keyboard_bg_black"
+                android:text="f" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/key_vol_englist" >
+
+            <TextView
+                android:id="@+id/tv25_english"
+                style="@style/key_text_english"
+                android:background="@drawable/keyboard_bg_black"
+                android:text="g" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/key_vol_englist" >
+
+            <TextView
+                android:id="@+id/tv26_english"
+                style="@style/key_text_english"
+                android:background="@drawable/keyboard_bg_black"
+                android:text="h" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/key_vol_englist" >
+
+            <TextView
+                android:id="@+id/tv27_english"
+                style="@style/key_text_english"
+                android:background="@drawable/keyboard_bg_black"
+                android:text="j" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/key_vol_englist" >
+
+            <TextView
+                android:id="@+id/tv28_english"
+                style="@style/key_text_english"
+                android:background="@drawable/keyboard_bg_black"
+                android:text="k" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/key_vol_englist" >
+
+            <TextView
+                android:id="@+id/tv29_english"
+                style="@style/key_text_english"
+                android:background="@drawable/keyboard_bg_black"
+                android:text="l" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            style="@style/key_vol_englist"
+            android:layout_marginLeft="2.5dp"
+            android:layout_weight="2" >
+
+            <TextView
+                android:id="@+id/tv31_english"
+                style="@style/key_text_fn"
+                android:background="@drawable/keyboard_bg_gray"
+                android:text="清空" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/key_vol_englist" >
+
+            <TextView
+                android:id="@+id/tv32_english"
+                style="@style/key_text_english"
+                android:background="@drawable/keyboard_bg_black"
+                android:text="z" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/key_vol_englist" >
+
+            <TextView
+                android:id="@+id/tv33_english"
+                style="@style/key_text_english"
+                android:background="@drawable/keyboard_bg_black"
+                android:text="x" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/key_vol_englist" >
+
+            <TextView
+                android:id="@+id/tv34_english"
+                style="@style/key_text_english"
+                android:background="@drawable/keyboard_bg_black"
+                android:text="c" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/key_vol_englist" >
+
+            <TextView
+                android:id="@+id/tv35_english"
+                style="@style/key_text_english"
+                android:background="@drawable/keyboard_bg_black"
+                android:text="v" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/key_vol_englist" >
+
+            <TextView
+                android:id="@+id/tv36_english"
+                style="@style/key_text_english"
+                android:background="@drawable/keyboard_bg_black"
+                android:text="b" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/key_vol_englist" >
+
+            <TextView
+                android:id="@+id/tv37_english"
+                style="@style/key_text_english"
+                android:background="@drawable/keyboard_bg_black"
+                android:text="n" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/key_vol_englist" >
+
+            <TextView
+                android:id="@+id/tv38_english"
+                style="@style/key_text_english"
+                android:background="@drawable/keyboard_bg_black"
+                android:text="m" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tv39_english"
+            style="@style/key_vol_englist"
+            android:layout_height="@dimen/key_item_h"
+            android:layout_marginRight="2.5dp"
+            android:layout_weight="2"
+            android:background="@drawable/keyboard_bg_gray"
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/img_key_del"
+                android:clickable="false" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            style="@style/key_vol_englist"
+            android:layout_marginLeft="2.5dp"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/tv41_english"
+                style="@style/key_text_fn"
+                android:background="@drawable/keyboard_bg_gray"
+                android:text="隐藏" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/key_vol_englist"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/tv42_english"
+                style="@style/key_text_number_600"
+                android:background="@drawable/keyboard_bg_gray"
+                android:text="123" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/key_vol_englist"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/tv43_english"
+                style="@style/key_text_fn"
+                android:background="@drawable/keyboard_bg_gray"
+                android:text="中文" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/key_vol_englist"
+            android:layout_weight="2.02" >
+
+            <TextView
+                android:id="@+id/tv44_english"
+                style="@style/key_text_fn"
+                android:background="@drawable/keyboard_bg_gray"
+                android:text="确定" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:emojicon="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/grouppage_rl_homecontent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal" >
+
+    <RelativeLayout
+        android:id="@+id/pagegroup_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/len_H_titlebar" >
+
+        <include
+            android:id="@+id/pagegroup_ll_backbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            layout="@layout/include_layout_titlebar_item_back" />
+
+        <TextView
+            android:id="@+id/pagegroup_tv_groupname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="6dp"
+            android:textColor="@color/t7"
+            android:textSize="@dimen/txt_s8" />
+
+        <TextView
+            android:id="@+id/pagegroup_tv_groupdetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pagegroup_tv_groupname"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/t6"
+            android:textSize="@dimen/txt_s1" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/pagegroup_rl_control_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/len_H_bottom_tool"
+        android:layout_alignParentBottom="true"
+        android:background="@color/b3" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/b5" />
+
+        <TextView
+            android:id="@+id/pagegroup_tv_bar_praise"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="1px"
+            android:drawableLeft="@drawable/selector_btn_group_praise"
+            android:drawablePadding="6dp"
+            android:gravity="center"
+            android:paddingLeft="@dimen/len_M_horizontal"
+            android:paddingRight="@dimen/len_M_horizontal"
+            android:text="点赞 (0)"
+            android:textColor="@drawable/selector_color_group_praise"
+            android:textSize="@dimen/txt_s3" />
+
+        <TextView
+            android:id="@+id/pagegroup_tv_bar_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="1px"
+            android:drawableLeft="@drawable/img_grouppage_comment"
+            android:drawablePadding="6dp"
+            android:gravity="center"
+            android:paddingLeft="@dimen/len_M_horizontal"
+            android:paddingRight="@dimen/len_M_horizontal"
+            android:text="评论"
+            android:textColor="@color/c3"
+            android:textSize="@dimen/txt_s3" />
+    </RelativeLayout>
+
+    <cn.emoney.sky.libs.widget.RefreshListView
+        android:id="@+id/pagegroup_lv_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/pagegroup_rl_control_bar"
+        android:layout_below="@id/pagegroup_title_bar"
+        android:background="@null"
+        android:cacheColorHint="@null"
+        android:divider="@null"
+        android:fadingEdgeLength="0.0sp"
+        android:fastScrollEnabled="false"
+        android:headerDividersEnabled="true"
+        android:listSelector="@android:color/transparent"
+        android:overScrollMode="never"
+        android:scrollbars="none" >
+    </cn.emoney.sky.libs.widget.RefreshListView>
+
+    <View
+        android:id="@+id/pagegroup_mask"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_transparent"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/pagepgroup_keyboard_input_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/ll_input_tool_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/layout_keyboard_input_tool" />
+
+        <GridView
+            android:id="@+id/emoji_keyboard_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/t8"
+            android:cacheColorHint="@android:color/transparent"
+            android:columnWidth="45dip"
+            android:horizontalSpacing="4dip"
+            android:numColumns="auto_fit"
+            android:paddingBottom="@dimen/len_M_vertical"
+            android:scrollbars="vertical"
+            android:verticalSpacing="5dip"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</RelativeLayout>

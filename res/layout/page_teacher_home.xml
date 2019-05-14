@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--   android:background="@drawable/bitmap_quiz_question_bg" -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bitmap_quiz_question_bg"
+    android:orientation="vertical" >
+
+    <cn.emoney.sky.libs.bar.TitleBar
+        android:id="@+id/pageTeacherHomeTitleBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/len_H_titlebar"
+        android:background="@color/c9" />
+
+    <RelativeLayout
+        android:id="@+id/contentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="294dp"
+        android:layout_below="@+id/pageTeacherHomeTitleBar"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"
+        android:layout_marginTop="23dp"
+        android:background="@drawable/img_quiz_new_question_bg" >
+
+        <ImageView
+            android:id="@+id/closeView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="12dp"
+            android:src="@drawable/img_landscape_closebtn" />
+
+        <cn.emoney.acg.widget.CircleImageView
+            android:id="@+id/headIV"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="@dimen/quiz_question_content_margin"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/img_head_icon_default"
+            app:border_color="@color/bg_transparent"
+            app:border_width="0dp" />
+
+        <TextView
+            android:id="@+id/nameView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6.5dp"
+            android:layout_marginTop="@dimen/quiz_teacher_question_content_top"
+            android:layout_toLeftOf="@+id/dateView"
+            android:layout_toRightOf="@+id/headIV"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="name"
+            android:textColor="@color/t3"
+            android:textSize="@dimen/txt_s3" />
+
+        <TextView
+            android:id="@+id/dateView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="@dimen/quiz_question_content_margin"
+            android:layout_marginTop="@dimen/quiz_teacher_question_content_top"
+            android:text="time"
+            android:textColor="@color/t3"
+            android:textSize="@dimen/txt_s3" />
+
+        <TextView
+            android:id="@+id/contentView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nameView"
+            android:layout_marginLeft="6.5dp"
+            android:layout_marginRight="@dimen/quiz_question_content_margin"
+            android:layout_marginTop="25dp"
+            android:lineSpacingExtra="3dp"
+            android:layout_toRightOf="@+id/headIV"
+            android:text="content"
+            android:textColor="@color/t1"
+            android:textSize="@dimen/txt_s6" />
+
+        <TextView
+            android:id="@+id/quizBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="38dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="@dimen/login_item_margin"
+            android:layout_marginRight="@dimen/login_item_margin"
+            android:background="@drawable/selector_btn_normal"
+            android:gravity="center"
+            android:text="立即抢答"
+            android:textColor="@color/t8"
+            android:textSize="@dimen/txt_s6" />
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/quizLoading"
+        layout="@layout/loading_layout_red"
+        android:visibility="gone" />
+
+    <include
+        layout="@layout/include_layout_quiz_no_data"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/setTipView"
+        android:layout_width="@dimen/quiz_set_bg_width"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/pageTeacherHomeTitleBar"
+        android:layout_marginRight="12dp"
+        android:background="@drawable/img_quiz_set_tip_bg"
+        android:gravity="center_vertical"
+        android:lineSpacingExtra="1.5dp"
+        android:text="您设置了在线状态为OFF，点击此处修改在线状态为ON才能收到问题"
+        android:textColor="@color/t3"
+        android:textSize="@dimen/txt_s4"
+        android:visibility="gone" />
+
+</RelativeLayout>

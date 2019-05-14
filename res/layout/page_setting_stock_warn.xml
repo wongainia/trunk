@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/b4"
+    android:orientation="vertical" >
+
+    <cn.emoney.sky.libs.bar.TitleBar
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/len_H_titlebar"
+        android:background="@color/c9" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/page_set_stockwarn_tv_sortid"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="168"
+            android:gravity="center_horizontal"
+            android:text="序号"
+            android:textSize="@dimen/txt_s4" />
+
+        <TextView
+            android:id="@+id/page_set_stockwarn_tv_stockname"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="224"
+            android:text="股票"
+            android:textSize="@dimen/txt_s4" />
+
+        <TextView
+            android:id="@+id/page_set_stockwarn_tv_latest_warntime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="248"
+            android:gravity="center_horizontal"
+            android:text="最近预警时间"
+            android:textSize="@dimen/txt_s4" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/page_set_stockwarn_bgline_1"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/b5" />
+
+    <cn.emoney.acg.widget.swipemenu.SwipeMenuListView
+        android:id="@+id/page_set_stockwarn_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dividerHeight="0.5dp"
+        android:listSelector="#00000000"
+        android:scrollbars="none" />
+
+</LinearLayout>

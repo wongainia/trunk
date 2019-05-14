@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pagelogin_ll_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/b4"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <cn.emoney.sky.libs.bar.TitleBar
+        android:id="@+id/pageLoginTitleBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/len_H_titlebar"
+        android:background="@color/c9" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/pageLoginTitleBar" >
+
+        <LinearLayout
+            android:id="@+id/contentLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/login_item_margin"
+                android:layout_marginRight="@dimen/login_item_margin"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/shape_light_round_border_gray"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <FrameLayout
+                    android:id="@+id/loginpage_fl_username_content"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <EditText
+                        android:id="@+id/loginpage_edt_username"
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/len_H_input"
+                        android:background="@null"
+                        android:drawableLeft="@drawable/img_login_account"
+                        android:drawablePadding="@dimen/login_item_drawable_padding"
+                        android:gravity="center_vertical"
+                        android:hint="输入手机号或邮箱"
+                        android:inputType="textEmailAddress"
+                        android:maxLength="35"
+                        android:paddingLeft="@dimen/login_item_drawable_padding"
+                        android:paddingRight="30dp"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/t1"
+                        android:textCursorDrawable="@drawable/cursor_black"
+                        android:textSize="@dimen/txt_s6" />
+
+                    <ImageButton
+                        android:id="@+id/loginpage_btn_username_clear"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|right"
+                        android:background="@null"
+                        android:padding="@dimen/len_M_8"
+                        android:src="@drawable/img_search_clear"
+                        android:visibility="invisible" />
+                </FrameLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/b5" />
+
+                <FrameLayout
+                    android:id="@+id/loginpage_fl_pwd_content"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <EditText
+                        android:id="@+id/loginpage_edt_password"
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/len_H_input"
+                        android:background="@null"
+                        android:drawableLeft="@drawable/img_login_pwd"
+                        android:drawablePadding="@dimen/login_item_drawable_padding"
+                        android:gravity="center_vertical"
+                        android:hint="输入密码"
+                        android:inputType="textPassword"
+                        android:maxLength="12"
+                        android:paddingLeft="@dimen/login_item_drawable_padding"
+                        android:paddingRight="30dp"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/t1"
+                        android:textCursorDrawable="@drawable/cursor_black"
+                        android:textSize="@dimen/txt_s6" />
+
+                    <ImageButton
+                        android:id="@+id/loginpage_btn_pwd_clear"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|right"
+                        android:background="@null"
+                        android:padding="@dimen/len_M_8"
+                        android:src="@drawable/img_search_clear"
+                        android:visibility="invisible" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/forgetPwdTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:layout_marginRight="@dimen/login_item_margin"
+                android:layout_marginTop="13dp"
+                android:text="忘记密码?"
+                android:textColor="@drawable/selector_blue_txt"
+                android:textSize="@dimen/txt_s3" />
+
+            <TextView
+                android:id="@+id/loginpage_tv_login"
+                android:layout_width="fill_parent"
+                android:layout_height="42dp"
+                android:layout_marginLeft="@dimen/login_item_margin"
+                android:layout_marginRight="@dimen/login_item_margin"
+                android:layout_marginTop="@dimen/login_item_margin"
+                android:background="@drawable/selector_btn_normal"
+                android:gravity="center"
+                android:text="登   录"
+                android:textColor="@color/t8"
+                android:textSize="@dimen/txt_s6" />
+
+            <LinearLayout
+                android:id="@+id/qqloginLayout"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_marginLeft="37dp"
+                android:layout_marginRight="37dp"
+                android:layout_marginTop="63dp"
+                android:background="@drawable/selector_blue_frame_btn"
+                android:gravity="center" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/img_qq_login" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tipView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:gravity="center"
+                android:text="如果你还没有爱炒股的账号，请点击快速注册"
+                android:textColor="@color/t2"
+                android:textSize="@dimen/txt_s3" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

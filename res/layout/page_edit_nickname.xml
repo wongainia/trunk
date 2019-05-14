@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/b4"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <cn.emoney.sky.libs.bar.TitleBar
+        android:id="@+id/editNickNameTitleBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/len_H_titlebar"
+        android:background="@color/c9" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/login_item_margin"
+        android:layout_marginRight="@dimen/login_item_margin"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/shape_light_round_border_gray" >
+
+        <EditText
+            android:id="@+id/nickNameView"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/len_H_input"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="输入昵称，最长15个字符"
+            android:inputType="text"
+            android:maxLength="15"
+            android:paddingLeft="15dp"
+            android:paddingRight="30dp"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/t1"
+            android:textCursorDrawable="@drawable/cursor_black"
+            android:textSize="@dimen/txt_s7" />
+
+        <ImageButton
+            android:id="@+id/clearView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:background="@null"
+            android:padding="@dimen/len_M_8"
+            android:src="@drawable/img_search_clear"
+            android:visibility="visible" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tipView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="29dp"
+        android:layout_marginRight="29dp"
+        android:layout_marginTop="7dp"
+        android:gravity="center_vertical"
+        android:text=""
+        android:textColor="@color/c1"
+        android:textSize="@dimen/txt_s2" />
+
+</LinearLayout>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_list_item" >
+    
+    <LinearLayout 
+        android:id="@+id/layout_left"
+        android:layout_width="97dp"
+        android:layout_height="97dp"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:gravity="center">
+        
+        <cn.emoney.acg.widget.CircleImageView
+            android:id="@+id/head_icon"
+            android:layout_width="@dimen/my_head_icon_size"
+            android:layout_height="@dimen/my_head_icon_size"
+            android:src="@drawable/img_head_icon_default"
+            app:border_color="@color/bg_transparent"
+            app:border_width="0dp"/>
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="赵子龙"
+            android:textSize="@dimen/txt_s5"
+            android:textColor="@color/t1"/>
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:id="@+id/layout_middle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:paddingBottom="12dp"
+        android:orientation="vertical"
+        android:layout_toRightOf="@id/layout_left">
+        
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            
+            <ImageView 
+	            android:id="@+id/img_v"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginRight="4dp"
+	            android:src="@drawable/img_v"/>
+	        
+	        <TextView 
+	            android:id="@+id/tv_title"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginRight="16dp"
+	            android:text="投资顾问"
+	            android:textSize="@dimen/txt_s2"
+	            android:textColor="@color/t1"/>
+	        
+	        <TextView 
+	            android:id="@+id/tv_level"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginRight="8dp"
+	            android:text="威望"
+	            android:textSize="@dimen/txt_s2"
+	            android:textColor="@color/t1"/>
+	        
+	        <ImageView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginRight="3dp"
+	            android:src="@drawable/img_diamond"/>
+	        <ImageView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginRight="3dp"
+	            android:src="@drawable/img_diamond"/>
+	        <ImageView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginRight="3dp"
+	            android:src="@drawable/img_diamond"/>
+	        <ImageView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginRight="3dp"
+	            android:src="@drawable/img_diamond"/>
+	        <ImageView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginRight="3dp"
+	            android:src="@drawable/img_diamond"/>
+        </LinearLayout>
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="20dp"
+            android:text="申银证券大客户部经理"
+            android:textSize="@dimen/txt_s6"
+            android:textColor="@color/t1"/>
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="Ta的粉丝"
+                android:textSize="@dimen/txt_s1"
+                android:textColor="@color/t4"/>
+            
+            <TextView 
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="36987"
+                android:textSize="@dimen/txt_s4"
+                android:textColor="@color/t2"/>
+            
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="用户满意度"
+                android:textSize="@dimen/txt_s1"
+                android:textColor="@color/t4"/>
+            
+            <TextView 
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="98%"
+                android:textSize="@dimen/txt_s4"
+                android:textColor="@color/t2"/>
+        </LinearLayout>
+    </LinearLayout>
+    
+    <ImageView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img_arrow_expandmore"
+        android:layout_marginRight="16dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"/>
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentTop="true"
+        android:background="@color/b7"/>
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/b7"/>
+
+</RelativeLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/img_bg_keyboard_input"
+    android:orientation="horizontal"
+    android:padding="6dp"
+    android:gravity="bottom" >
+
+    <LinearLayout 
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+        
+        <cn.emoney.sky.fixcmojitv.EmojiconEditText
+	        android:id="@+id/item_emojiet_input"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:background="@null"
+	        android:gravity="center_vertical"
+	        android:hint="请输入评论:"
+	        android:imeOptions="actionDone"
+	        android:maxLength="144"
+	        android:minHeight="36dp"
+	        android:textColor="@color/t3"
+	        android:textSize="@dimen/txt_s5"
+	        android:textCursorDrawable="@drawable/cursor_black"
+	        android:inputType="text" />
+        
+        <ImageView
+	        android:id="@+id/item_iv_switcher"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="5dp"
+	        android:scaleType="center"
+	        android:src="@drawable/img_switch_emoj_keyboard" />
+    </LinearLayout>
+    
+    <ImageView
+        android:id="@+id/item_iv_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:src="@drawable/selector_btn_input_send" />
+    
+</LinearLayout>

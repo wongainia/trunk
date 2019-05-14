@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 通用颜色表 背景 -->
+    <color name="b1">#EBEBEB</color>
+    <color name="b2">#F8F8F8</color>
+    <color name="b3">#FCFCFC</color>
+    <color name="b4">#FFFFFF</color>
+    <color name="b5">#DADADA</color>
+    <color name="b6">#828282</color>
+    <color name="b7">#E4E4E4</color>
+    <color name="b8">#00000000</color>
+
+    <!-- 通用颜色表 彩色 -->
+    <color name="c1">#F24957</color>
+    <color name="c2">#1DBF60</color>
+    <color name="c3">#4690EF</color>
+    <color name="c4">#0079FF</color>
+    <color name="c5">#00AAFF</color>
+    <color name="c6">#171C61</color>
+    <color name="c7">#E7F1FD</color>
+    <color name="c8">#F4F8FC</color>
+    <color name="c9">#2A323F</color>
+
+    <!-- 通用颜色表 文字颜色 -->
+    <color name="t1">#353535</color>
+    <color name="t2">#646464</color>
+    <color name="t3">#828282</color>
+    <color name="t4">#AAAAAA</color>
+    <color name="t5">#BBBBBB</color>
+    <color name="t6">#D2D2D2</color>
+    <color name="t7">#F8F8F8</color>
+    <color name="t8">#FFFFFF</color>
+
+    <!-- ******************************界面调整******************************* -->
+
+    <!-- msak -->
+    <color name="mask_part_transpanrent">#99000000</color>
+    <color name="sky_transparent_5">#50000000</color>
+    <color name="line_pressed">#10888888</color>
+    <color name="bg_transparent">#00000000</color>
+
+    <!-- 买吧儿饼状图 -->
+    <color name="group_bk_1">#ffe94b35</color>
+    <color name="group_bk_2">#ffff744e</color>
+    <color name="group_bk_3">#ffff981e</color>
+    <color name="group_bk_4">#ff4690ef</color>
+
+    <!-- k线英雄 -->
+    <color name="bg_khero_cpxarea">#4c9FAFC4</color>
+
+    <!-- 买吧 -->
+    <color name="light_bg_groupheader_fall">#ff17994d</color>
+
+    <!-- k线 ,分时, 量 -->
+    <color name="sky_line_ma5">#fffebe00</color>
+    <color name="sky_line_ma10">#ff4084d2</color>
+    <color name="sky_line_ma20">#ffe319a3</color>
+    <color name="sky_line_minute">#ff379be9</color>
+    <color name="sky_line_minute_shadow">#214690ef</color>
+    <color name="sky_line_average">#fffbb040</color>
+    <color name="sky_line_volume">#7f828282</color>
+    <color name="sky_line_min_ratio">#ff054fa2</color>
+
+    
+    <!-- 键盘背景 -->
+    <color name="keyboard_bg">#ff1c1c1c</color>
+    <!-- ******************白版界面调整2********************* -->
+    <color name="light_red">#e94b35</color>
+    <color name="txt_yellow">#ffba9e41</color>
+
+</resources>

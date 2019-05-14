@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal" >
+
+    <cn.emoney.sky.libs.bar.TitleBar
+        android:id="@+id/page_buyclubthome_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/len_H_titlebar"
+        android:background="@color/c9" >
+    </cn.emoney.sky.libs.bar.TitleBar>
+
+    <include
+        android:id="@+id/buyclub_home_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/page_buyclubthome_titlebar"
+        layout="@layout/include_layout_buyclub_header" />
+
+    <!-- loading -->
+
+    <cn.emoney.sky.libs.widget.RefreshListView
+        android:id="@+id/buyclub_home_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/buyclub_home_head"
+        android:cacheColorHint="@null"
+        android:divider="@drawable/img_light_divider_line"
+        android:dividerHeight="1px"
+        android:fadingEdgeLength="0.0sp"
+        android:headerDividersEnabled="false"
+        android:listSelector="@android:color/transparent"
+        android:overScrollMode="never"
+        android:scrollbars="none" >
+    </cn.emoney.sky.libs.widget.RefreshListView>
+
+    <LinearLayout
+        android:id="@+id/loadingLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <include layout="@layout/loading_layout_red" />
+    </LinearLayout>
+
+</RelativeLayout>

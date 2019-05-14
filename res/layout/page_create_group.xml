@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/b4"
+    android:orientation="vertical" >
+
+    <cn.emoney.sky.libs.bar.TitleBar
+        android:id="@+id/page_creategroup_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/len_H_titlebar"
+        android:background="@color/c9" >
+    </cn.emoney.sky.libs.bar.TitleBar>
+
+    <ScrollView
+        android:id="@+id/page_creategroup_layout_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="19dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:text="组合名称"
+                    android:textColor="@color/t1"
+                    android:textSize="@dimen/txt_s4" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="42dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_et_bg_with_radius"
+                    android:gravity="center_vertical|left"
+                    android:hint="不超过8个汉字"
+                    android:maxLength="8"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:textColor="@color/t1"
+                    android:textCursorDrawable="@drawable/shape_et_cursor_index"
+                    android:textSize="@dimen/txt_s4" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="29dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:text="组合图片"
+                    android:textColor="@color/t1"
+                    android:textSize="@dimen/txt_s4" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/img_upload_protrait" />
+            </LinearLayout>
+            
+            <View 
+                android:layout_width="match_parent"
+                android:layout_height="13dp"/>
+            
+            <ImageView 
+                android:layout_width="172dp"
+                android:layout_height="127dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_event_lstdefault"/>
+            
+            <View 
+                android:layout_width="match_parent"
+                android:layout_height="25dp"/>
+            
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="bottom">
+                
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:text="投资理念"
+                    android:textColor="@color/t1"
+                    android:textSize="@dimen/txt_s4" />
+                
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="（150字以内）"
+                    android:textSize="@dimen/txt_s2"
+                    android:textColor="@color/t4"/>
+            </LinearLayout>
+            
+            <EditText 
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:layout_margin="16dp"
+                android:background="@drawable/shape_et_bg_with_radius"
+                android:padding="12dp"
+                android:gravity="left|top"
+                android:hint="简要叙述投资理念，让关注者更懂你"
+                android:textCursorDrawable="@drawable/shape_et_cursor_index"
+                android:textColor="@color/t1"
+                android:textSize="@dimen/txt_s4"
+                android:maxLength="150"/>
+            
+            <View 
+                android:layout_width="match_parent"
+                android:layout_height="282dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

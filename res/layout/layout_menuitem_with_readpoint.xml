@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center" >
+
+    <TextView
+        android:id="@+id/item_tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="调仓记录"
+        android:textColor="@color/t1"
+        android:textSize="@dimen/txt_s4" />
+
+    <ImageView
+        android:padding="2dp"
+        android:id="@+id/item_iv_push_prompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img_read_point_up" 
+        android:visibility="gone"
+        />
+
+</LinearLayout>

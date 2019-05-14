@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/b4"
+    android:orientation="vertical" >
+    
+    <cn.emoney.sky.libs.bar.TitleBar
+        android:id="@+id/page_modify_motifidea_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/len_H_titlebar"
+        android:background="@color/c9" >
+    </cn.emoney.sky.libs.bar.TitleBar>
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="27dp"/>
+    
+    <EditText 
+        android:id="@+id/page_modify_motifidea_et_content"
+        android:layout_width="match_parent"
+        android:layout_height="112dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/shape_et_bg_b5_radius"
+        android:gravity="top|left"
+        android:padding="8dp"
+        android:textCursorDrawable="@drawable/shape_et_cursor_index"
+        android:textSize="@dimen/txt_s4"
+        android:textColor="@drawable/selector_et_color"/>
+    
+    <View 
+        android:id="@+id/page_modify_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

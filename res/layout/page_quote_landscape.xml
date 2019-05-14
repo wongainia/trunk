@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:em="http://schemas.android.com/apk/res/cn.emoney.acg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/b4"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/quotepage_landscape_tv_stockname"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="19dp"
+            android:text=""
+            android:textColor="@color/c4"
+            android:textSize="@dimen/txt_s6" />
+
+        <TextView
+            android:id="@+id/quotepage_landscape_tv_stockprice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left|center_vertical"
+            android:text=""
+            android:textColor="@color/c1"
+            android:textSize="@dimen/txt_s6"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/quotepage_landscape_tv_stockzdf"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left|center_vertical"
+            android:text=""
+            android:textColor="@color/c1"
+            android:textSize="@dimen/txt_s6" />
+
+        <TextView
+            android:id="@+id/quotepage_landscape_tv_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/t3"
+            android:textSize="@dimen/txt_s2" />
+
+        <ImageButton
+            android:id="@+id/quotepage_landscape_btn_close"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:src="@drawable/selector_btn_landscape_closebtn" />
+    </LinearLayout>
+
+    <ViewSwitcher
+        android:id="@+id/quotepage_landscape_vs_titleinfo_content"
+        android:layout_width="match_parent"
+        android:layout_height="26dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp" >
+
+        <cn.emoney.acg.widget.SegmentedGroup
+            android:id="@+id/page_landscape_kline_segment_periods"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            em:sc_border_color="@color/b5"
+            em:sc_border_radius="4dp"
+            em:sc_border_width="1px"
+            em:sc_checked_bg_color="@color/c3"
+            em:sc_checked_text_color="@color/t8"
+            em:sc_text_size="@dimen/txt_s3"
+            em:sc_unchecked_bg_color="@color/b2"
+            em:sc_unchecked_text_color="@color/t1" >
+
+            <RadioButton
+                android:id="@+id/page_landscape_kline_radiobtn_period_minute"
+                style="@style/RadioButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="分时" />
+
+            <RadioButton
+                android:id="@+id/page_landscape_kline_radiobtn_period_day"
+                style="@style/RadioButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="日线" />
+
+            <RadioButton
+                android:id="@+id/page_landscape_kline_radiobtn_period_week"
+                style="@style/RadioButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="周线" />
+
+            <RadioButton
+                android:id="@+id/page_landscape_kline_radiobtn_period_month"
+                style="@style/RadioButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="月线" />
+
+            <RadioButton
+                android:id="@+id/page_landscape_kline_radiobtn_period_60m"
+                style="@style/RadioButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="60分" />
+
+            <RadioButton
+                android:id="@+id/page_landscape_kline_radiobtn_period_30m"
+                style="@style/RadioButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="30分" />
+
+            <RadioButton
+                android:id="@+id/page_landscape_kline_radiobtn_period_15m"
+                style="@style/RadioButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="15分" />
+        </cn.emoney.acg.widget.SegmentedGroup>
+
+        <cn.emoney.sky.libs.chart.ChartView
+            android:id="@+id/quotepage_landscape_cv_infodetail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_border_b5_fill_b2"
+            android:padding="1px" >
+        </cn.emoney.sky.libs.chart.ChartView>
+    </ViewSwitcher>
+
+    <ViewFlipper
+        android:id="@+id/quotepage_landscape_viewflipper"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1" >
+    </ViewFlipper>
+
+</LinearLayout>

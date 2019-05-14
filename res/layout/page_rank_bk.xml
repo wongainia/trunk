@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/b4"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rankbkpage_ll_tableheader"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/len_H_listhead"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/len_M_horizontal"
+        android:paddingRight="@dimen/len_M_horizontal" >
+
+        <TextView
+            android:id="@+id/rankbk_tv_header_bkName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:text="板块名称"
+            android:textColor="@color/t1"
+            android:textSize="@dimen/txt_s4" />
+        
+        <TextView
+            android:id="@+id/rankbk_tv_header_ledstock_zdf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="领涨个股"
+            android:textColor="@color/t1"
+            android:textSize="@dimen/txt_s4" />
+
+        <TextView
+            android:id="@+id/rankbk_tv_header_bk_df"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:text="涨跌幅"
+            android:textColor="@color/t1"
+            android:textSize="@dimen/txt_s4" />
+        
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/rankbk_header_bottom_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/b7" />
+
+    <ListView
+        android:id="@+id/rankbk_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:cacheColorHint="@null"
+        android:divider="@drawable/img_line_divider"
+        android:dividerHeight="0.5dip"
+        android:listSelector="@android:color/transparent" >
+    </ListView>
+
+</LinearLayout>

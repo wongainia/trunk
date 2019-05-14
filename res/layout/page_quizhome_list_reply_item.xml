@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/replyLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="25dp"
+    android:layout_marginLeft="@dimen/quiz_item_reply_margin_left_right"
+    android:layout_marginRight="24dp"
+    android:layout_marginTop="5dp"
+    android:visibility="visible" >
+
+    <cn.emoney.acg.widget.CircleImageView
+        android:id="@+id/headIV"
+        android:layout_width="@dimen/quiz_icon_size"
+        android:layout_height="@dimen/quiz_icon_size"
+        android:src="@drawable/img_head_icon_default"
+        app:border_color="@color/bg_transparent"
+        app:border_width="0dp" />
+
+    <RelativeLayout
+        android:id="@+id/replyNameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="9dp"
+        android:layout_toRightOf="@+id/headIV" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/levLayout" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/replyNameView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="name"
+                    android:textColor="@color/c3"
+                    android:textSize="@dimen/txt_s3" />
+
+                <TextView
+                    android:id="@+id/tipView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="回复"
+                    android:textColor="@color/t3"
+                    android:textSize="@dimen/txt_s3" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/replyDateView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="2dp"
+            android:text="刚刚"
+            android:textColor="@color/t3"
+            android:textSize="@dimen/txt_s3" />
+
+        <LinearLayout
+            android:id="@+id/levLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+            android:layout_toLeftOf="@+id/replyDateView"
+            android:paddingLeft="2dp" >
+
+            <ImageView
+                android:id="@+id/levView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/selector_star_lev" />
+
+            <ImageView
+                android:id="@+id/levView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:src="@drawable/selector_star_lev" />
+
+            <ImageView
+                android:id="@+id/levView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:src="@drawable/selector_star_lev" />
+
+            <ImageView
+                android:id="@+id/levView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:src="@drawable/selector_star_lev" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/replycontentView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/replyNameLayout"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/headIV"
+        android:lineSpacingExtra="3dp"
+        android:text=""
+        android:textColor="@color/t1"
+        android:textSize="@dimen/txt_s5"
+        android:visibility="visible" />
+
+    <!-- 语音 -->
+    <LinearLayout
+        android:id="@+id/voiceLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/replyNameLayout"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/headIV"
+        android:gravity="center_vertical"
+        android:visibility="gone"
+         >
+
+        <LinearLayout
+            android:id="@+id/voiceBgLayout"
+            android:layout_width="140dp"
+            android:layout_height="35dp"
+            android:background="@drawable/selector_quiz_voice_bg"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:id="@+id/voiceView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/img_voice3" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/voidTimeView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text=""
+            android:textColor="@color/t3"
+            android:textSize="@dimen/txt_s4" />
+    </LinearLayout>
+
+</RelativeLayout>

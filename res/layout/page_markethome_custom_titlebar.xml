@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    
+    <RadioGroup
+	    android:layout_width="240dp"
+	    android:layout_height="@dimen/len_H_titlebar"
+	    android:orientation="horizontal" >
+	
+	    <RadioButton
+	        android:id="@+id/page_markethome_segment_optional"
+	        android:layout_width="0dp"
+	        android:layout_height="@dimen/len_H_titlebar"
+	        android:layout_weight="322"
+	        android:gravity="center_vertical|right"
+	        android:button="@null"
+	        android:checked="true"
+	        android:ellipsize="none"
+	        android:singleLine="true"
+	        android:drawableRight="@drawable/img_markethome_titlebar_arrow_normal"
+	        android:drawablePadding="2dp"
+	        android:text="自选"
+	        android:textColor="@drawable/selector_color_titlebar_txt"
+	        android:textSize="@dimen/txt_s7" />
+	    
+	    <View 
+	        android:layout_width="0dp"
+	        android:layout_height="@dimen/len_H_titlebar"
+	        android:layout_weight="76"/>
+	
+	    <RadioButton
+	        android:id="@+id/page_markethome_segment_quotation"
+	        android:layout_width="0dp"
+	        android:layout_height="@dimen/len_H_titlebar"
+	        android:layout_weight="322"
+	        android:gravity="center_vertical|left"
+	        android:button="@null"
+	        android:ellipsize="none"
+	        android:singleLine="true"
+	        android:text="大市"
+	        android:textColor="@drawable/selector_color_titlebar_txt"
+	        android:textSize="@dimen/txt_s7" />
+	
+	</RadioGroup>
+    
+</RelativeLayout>

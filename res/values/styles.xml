@@ -1,0 +1,248 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light.NoTitleBar">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="key_vol">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">@dimen/key_item_h</item>
+        <item name="android:layout_margin">2dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="key_vol_englist">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">@dimen/key_item_h</item>
+        <item name="android:layout_margin">2dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="key_text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/key_item_h</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/txt_s10</item>
+        <item name="android:textColor">@color/t8</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="key_text_english">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/key_item_h</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/txt_s10</item>
+        <item name="android:textColor">@color/t8</item>
+    </style>
+
+    <style name="key_text_fn">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/key_item_h</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/txt_s7</item>
+        <item name="android:textColor">@color/t8</item>
+    </style>
+
+    <style name="key_text_number_600">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/key_item_h</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/txt_s9</item>
+        <item name="android:textColor">@color/t8</item>
+    </style>
+
+    <style name="del_optional_goods_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!-- Dialog的windowFrame框为无 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否漂现在activity上 -->
+        <item name="android:windowIsTranslucent">false</item>
+        <!-- 是否半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <!-- 下层模糊 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 背景透明 -->
+
+    </style>
+
+    <style name="quote_question_choose_popwin_anim_style">
+        <item name="android:windowEnterAnimation">@anim/slide_in_bottom</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_bottom</item>
+    </style>
+
+    <!-- segment中使用 -->
+    <style name="RadioButton">
+        <item name="android:minHeight">33dp</item>
+        <item name="android:minWidth">70dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:button">@null</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:ellipsize">none</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <!-- 我的问答等相关 -->
+    <style name="my_funtion_text_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">@dimen/txt_s3</item>
+        <item name="android:textColor">@color/t2</item>
+        <item name="android:drawablePadding">5dp</item>
+    </style>
+
+    <!-- 我的界面列表项 style -->
+    <style name="my_listitem_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/my_list_item_h</item>
+        <item name="android:paddingLeft">@dimen/my_list_item_left_sp</item>
+        <item name="android:paddingRight">@dimen/my_list_item_right_sp</item>
+        <item name="android:background">@drawable/selector_list_item</item>
+    </style>
+
+    <style name="my_listitem_text_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textSize">@dimen/txt_s6</item>
+        <item name="android:textColor">@color/t1</item>
+        <item name="android:layout_marginLeft">@dimen/my_listitem_img_txt_sp</item>
+        <item name="android:layout_marginRight">@dimen/my_listitem_img_txt_sp</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <!-- 我的界面分隔线的style -->
+    <style name="my_line_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/line_h</item>
+        <item name="android:background">@color/b7</item>
+    </style>
+
+    <!-- 用户编辑 -->
+    <style name="userinfo_edit_liste_item_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">49dp</item>
+        <item name="android:paddingLeft">@dimen/my_userinfo_edit_pading_left</item>
+        <item name="android:paddingRight">@dimen/my_userinfo_edit_pading_right</item>
+        <item name="android:background">@drawable/selector_list_item</item>
+    </style>
+
+    <style name="userinfo_edit_listitem_text_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textSize">@dimen/txt_s6</item>
+        <item name="android:textColor">@color/t1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <!-- 自定义仿ListDialogIOS底部Dialog的样式 ，有模糊效果 -->
+    <style name="ListDialogIOSStyle" parent="@android:style/Theme.Dialog">
+
+        <!-- 背景透明 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 浮于Activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- Dialog以外的区域模糊效果 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- Dialog进入及退出动画 -->
+        <item name="android:windowAnimationStyle">@style/ListDialogAnimation</item>
+    </style>
+
+    <!-- ListDialogIOS进出动画 -->
+    <style name="ListDialogAnimation" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/list_dialog_in</item>
+        <item name="android:windowExitAnimation">@anim/list_dialog_out</item>
+    </style>
+
+    <!-- 自定义仿IOS的AlertDialog的样式 -->
+    <style name="AlertDialogIOSStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <!-- 自定义仿IOS的AlertDialog的样式,无阴影背景 -->
+    <style name="AlertDialogIOSStyle_noshadow" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <!-- 问股 -->
+    <style name="quiz_qustion_text_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/txt_s2</item>
+        <item name="android:textColor">@color/t7</item>
+    </style>
+
+    <style name="quiz_qustion_bold_text_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginTop">0.5dp</item>
+        <item name="android:textSize">@dimen/txt_s5</item>
+        <item name="android:textColor">@color/t7</item>
+    </style>
+
+    <style name="quiz_teacher_tag_text_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">18dp</item>
+        <item name="android:background">@drawable/shape_teacher_bg_blue_frame</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:textSize">@dimen/txt_s2</item>
+        <item name="android:textColor">@color/c5</item>
+    </style>
+
+    <style name="quiz_teacher_text_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/txt_s1</item>
+        <item name="android:textColor">@color/t4</item>
+        <item name="android:drawablePadding">0dp</item>
+    </style>
+    
+    <style name="MyCheckBox" parent="@android:style/Widget.CompoundButton.CheckBox">
+  	 <item name="android:button">@drawable/selector_checkbox</item>
+  	</style>
+
+</resources>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RadioGroup
+        android:id="@+id/rg_buyclub_home_head_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:minHeight="106dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp" >
+
+        <RadioButton
+            android:id="@+id/buyclub_header_type1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/bg_transparent"
+            android:button="@null"
+            android:checked="true"
+            android:drawablePadding="8dp"
+            android:drawableTop="@drawable/img_buyclub_head_1"
+            android:gravity="center_horizontal"
+            android:singleLine="true"
+            android:text="大师组合"
+            android:textColor="@drawable/selector_color_buyclub_header_text"
+            android:textSize="@dimen/txt_s4" >
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/buyclub_header_type2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/bg_transparent"
+            android:button="@null"
+            android:drawablePadding="8dp"
+            android:drawableTop="@drawable/img_buyclub_head_2"
+            android:gravity="center_horizontal"
+            android:singleLine="true"
+            android:text="最高收益"
+            android:textColor="@drawable/selector_color_buyclub_header_text"
+            android:textSize="@dimen/txt_s4" >
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/buyclub_header_type3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/bg_transparent"
+            android:button="@null"
+            android:drawablePadding="8dp"
+            android:drawableTop="@drawable/img_buyclub_head_3"
+            android:gravity="center_horizontal"
+            android:singleLine="true"
+            android:text="今日之星"
+            android:textColor="@drawable/selector_color_buyclub_header_text"
+            android:textSize="@dimen/txt_s4" >
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/buyclub_header_type4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/bg_transparent"
+            android:button="@null"
+            android:drawablePadding="8dp"
+            android:drawableTop="@drawable/img_buyclub_head_4"
+            android:gravity="center_horizontal"
+            android:singleLine="true"
+            android:text="我的组合"
+            android:textColor="@drawable/selector_color_buyclub_header_text"
+            android:textSize="@dimen/txt_s4" >
+        </RadioButton>
+    </RadioGroup>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/b5" />
+
+    <TextView
+        android:id="@+id/tv_head_tag"
+        android:layout_width="match_parent"
+        android:layout_height="29dp"
+        android:background="@color/b2"
+        android:gravity="bottom"
+        android:paddingBottom="4dp"
+        android:paddingLeft="@dimen/len_M_horizontal"
+        android:text="以下是大师创建的组合"
+        android:textColor="@color/t3"
+        android:textSize="@dimen/txt_s3" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/b5" />
+
+</LinearLayout>

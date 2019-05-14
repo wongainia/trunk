@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:emojicon="http://schemas.android.com/apk/cn.emoney.sky.fixemojtv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_list_item"
+    android:descendantFocusability="beforeDescendants"
+    android:minHeight="110dp"
+    android:paddingTop="@dimen/len_M_vertical" >
+
+    <cn.emoney.acg.widget.CircleImageView
+        android:id="@+id/item_head_pic"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="@dimen/len_M_horizontal"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/img_head_icon_default"
+        app:border_color="@color/t4"
+        app:border_width="0.5dp" />
+
+    <TextView
+        android:id="@+id/item_author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/len_M_horizontal"
+        android:layout_toRightOf="@id/item_head_pic"
+        android:text="- -"
+        android:textColor="@color/t3"
+        android:textSize="@dimen/txt_s2" />
+
+    <TextView
+        android:id="@+id/item_publish_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/len_M_horizontal"
+        android:text="- -"
+        android:textColor="@color/t3"
+        android:textSize="@dimen/txt_s2" />
+
+    <cn.emoney.sky.fixcmojitv.EmojiconTextView
+        android:id="@+id/item_emojtv_comment_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_author"
+        android:layout_marginLeft="@dimen/len_M_horizontal"
+        android:layout_marginRight="@dimen/len_M_horizontal"
+        android:layout_marginTop="@dimen/len_M_vertical"
+        android:layout_toRightOf="@id/item_head_pic"
+        android:textColor="@color/t1"
+        android:textSize="@dimen/txt_s5"
+        emojicon:emojiconSize="20dp" />
+
+    <View
+        android:id="@+id/item_divide_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/item_emojtv_comment_content"
+        android:layout_marginTop="22dp"
+        android:background="@color/b5" />
+
+</RelativeLayout>

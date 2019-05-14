@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/b4" >
+    
+    <cn.emoney.sky.libs.widget.RefreshListView
+        android:id="@+id/page_optionalnews_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/b4"
+        android:overScrollMode="never"
+        android:divider="@drawable/img_line_divider"
+        android:dividerHeight="1px"
+        android:headerDividersEnabled="false"
+        android:footerDividersEnabled="false"
+        android:listSelector="@color/bg_transparent" >
+    </cn.emoney.sky.libs.widget.RefreshListView>
+    
+    <TextView 
+        android:id="@+id/page_optionalnews_tv_empty"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:text="暂无数据"
+        android:textSize="@dimen/txt_s4"
+        android:textColor="@color/t3"
+        android:visibility="gone"/>
+    
+    <LinearLayout
+        android:id="@+id/page_optionalnews_layout_loading"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:layout_centerInParent="true"
+        android:background="@color/b4"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <include layout="@layout/loading_layout_red" />
+    </LinearLayout>
+    
+</RelativeLayout>

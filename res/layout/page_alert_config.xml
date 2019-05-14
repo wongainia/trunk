@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/b2"
+    android:orientation="vertical" >
+
+    <cn.emoney.sky.libs.bar.TitleBar
+        android:id="@+id/page_alertconfig_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/len_H_titlebar"
+        android:background="@color/c9" >
+    </cn.emoney.sky.libs.bar.TitleBar>
+
+    <ScrollView
+        android:id="@+id/page_setwarn_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!-- 股票名称、代码、价格、涨跌幅 -->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <!-- 名称 -->
+
+                <TextView
+                    android:id="@+id/page_setwarn_tv_stock_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="27dp"
+                    android:layout_marginLeft="23dp"
+                    android:layout_marginTop="24dp"
+                    android:text="浦发银行"
+                    android:textColor="@color/c4"
+                    android:textSize="@dimen/txt_s6" />
+
+                <!-- 代码 -->
+
+                <TextView
+                    android:id="@+id/page_setwarn_tv_stock_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/page_setwarn_tv_stock_name"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@id/page_setwarn_tv_stock_name"
+                    android:text="600600"
+                    android:textColor="@color/c4"
+                    android:textSize="@dimen/txt_s6" />
+
+                <!-- 价格 -->
+
+                <TextView
+                    android:id="@+id/page_setwarn_tv_stock_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/page_setwarn_tv_stock_name"
+                    android:layout_marginLeft="12dp"
+                    android:layout_toRightOf="@id/page_setwarn_tv_stock_code"
+                    android:text="12.27"
+                    android:textColor="@color/t1"
+                    android:textSize="@dimen/txt_s6"
+                    android:textStyle="bold" />
+
+                <!-- 涨跌幅 -->
+
+                <TextView
+                    android:id="@+id/page_setwarn_tv_stock_zdf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/page_setwarn_tv_stock_name"
+                    android:layout_marginLeft="12dp"
+                    android:layout_toRightOf="@id/page_setwarn_tv_stock_price"
+                    android:text="+2.18%"
+                    android:textColor="@color/t1"
+                    android:textSize="@dimen/txt_s6" />
+
+                <!-- 行情数据预警 -->
+
+                <TextView
+                    android:id="@+id/page_setwarn_tv_market_warn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/page_setwarn_tv_stock_name"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginLeft="23dp"
+                    android:text="行情数据预警"
+                    android:textColor="@color/t3"
+                    android:textSize="@dimen/txt_s3" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_below="@id/page_setwarn_tv_market_warn"
+                    android:background="@color/b5" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/page_setwarn_ll_stockwarn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/b4"
+                android:orientation="vertical" >
+
+                <!-- 预警最高价 -->
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp" >
+
+                    <TextView
+                        android:id="@+id/page_setwarn_tv_price"
+                        android:layout_width="128dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="8dp"
+                        android:gravity="right"
+                        android:text="最新达到"
+                        android:textSize="@dimen/txt_s6"
+                        android:textColor="@color/t1" />
+
+                    <EditText
+                        android:id="@+id/page_setwarn_et_price"
+                        android:layout_width="88dp"
+                        android:layout_height="36dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/page_setwarn_tv_price"
+                        android:background="@drawable/selector_et_bg_config_alert"
+                        android:gravity="center_vertical|left"
+                        android:inputType="numberDecimal"
+                        android:maxLength="9"
+                        android:textCursorDrawable="@drawable/cursor_black"
+                        android:paddingLeft="8dp"
+                        android:textSize="@dimen/txt_s6"
+                        android:textColor="@color/t1" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_alignParentBottom="true"
+                        android:background="@drawable/img_line_divider" />
+                </RelativeLayout>
+
+                <!-- 预警涨幅 -->
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp" >
+
+                    <TextView
+                        android:id="@+id/page_setwarn_tv_increse_level"
+                        android:layout_width="128dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="8dp"
+                        android:gravity="right"
+                        android:text="涨幅达到"
+                        android:textSize="@dimen/txt_s6"
+                        android:textColor="@color/t1" />
+
+                    <EditText
+                        android:id="@+id/page_setwarn_et_increse"
+                        android:layout_width="88dp"
+                        android:layout_height="36dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/page_setwarn_tv_increse_level"
+                        android:background="@drawable/selector_et_bg_config_alert"
+                        android:gravity="center_vertical|left"
+                        android:inputType="numberDecimal"
+                         android:textCursorDrawable="@drawable/cursor_black"
+                        android:maxLength="9"
+                        android:paddingLeft="6dp"
+                        android:textSize="@dimen/txt_s6"
+                        android:textColor="@color/t1" />
+
+                    <TextView
+                        android:id="@+id/page_setwarn_tv_percent_increase"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="6dp"
+                        android:layout_toRightOf="@id/page_setwarn_et_increse"
+                        android:text="%"
+                        android:textSize="@dimen/txt_s6"
+                        android:textColor="@color/t1" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_alignParentBottom="true"
+                        android:background="@drawable/img_line_divider" />
+                </RelativeLayout>
+
+                <!-- 预警跌幅 -->
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp" >
+
+                    <TextView
+                        android:id="@+id/page_setwarn_tv_decrease_level"
+                        android:layout_width="128dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="8dp"
+                        android:gravity="right"
+                        android:text="跌幅达到"
+                        android:textSize="@dimen/txt_s6"
+                        android:textColor="@color/t1" />
+
+                    <EditText
+                        android:id="@+id/page_setwarn_et_decrease"
+                        android:layout_width="88dp"
+                        android:layout_height="36dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/page_setwarn_tv_decrease_level"
+                        android:background="@drawable/selector_et_bg_config_alert"
+                        android:gravity="center_vertical|left"
+                        android:inputType="numberDecimal"
+                        android:maxLength="9"
+                        android:paddingLeft="6dp"
+                        android:textColor="@color/t1"
+                        android:textCursorDrawable="@drawable/cursor_black"
+                        android:textSize="@dimen/txt_s6" />
+
+                    <TextView
+                        android:id="@+id/page_setwarn_tv_percent_decrease"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="6dp"
+                        android:layout_toRightOf="@id/page_setwarn_et_decrease"
+                        android:text="%"
+                        android:textSize="@dimen/txt_s6"
+                        android:textColor="@color/t1" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_alignParentBottom="true"
+                        android:background="@drawable/img_line_divider" />
+                </RelativeLayout>
+
+                <!-- 预警换手率 -->
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp" >
+
+                    <TextView
+                        android:id="@+id/page_setwarn_tv_turnover_rate"
+                        android:layout_width="128dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="8dp"
+                        android:gravity="right"
+                        android:text="换手达到"
+                        android:textSize="@dimen/txt_s6"
+                        android:textColor="@color/t1" />
+
+                    <EditText
+                        android:id="@+id/page_setwarn_et_turnover"
+                        android:layout_width="88dp"
+                        android:layout_height="36dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/page_setwarn_tv_turnover_rate"
+                        android:background="@drawable/selector_et_bg_config_alert"
+                        android:gravity="center_vertical|left"
+                         android:textCursorDrawable="@drawable/cursor_black"
+                        android:inputType="numberDecimal"
+                        android:maxLength="9"
+                        android:paddingLeft="6dp"
+                        android:textSize="@dimen/txt_s6"
+                        android:textColor="@color/t1" />
+
+                    <TextView
+                        android:id="@+id/page_setwarn_tv_percent_turnover"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="6dp"
+                        android:layout_toRightOf="@id/page_setwarn_et_turnover"
+                        android:text="%"
+                        android:textSize="@dimen/txt_s6"
+                        android:textColor="@color/t1" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/b5" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!-- 操盘线预警 -->
+
+            <TextView
+                android:id="@+id/page_setwarn_cpx_warn"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="bottom|left"
+                android:paddingBottom="6dp"
+                android:paddingLeft="23dp"
+                android:text="操盘线预警"
+                android:textColor="@color/t3"
+                android:textSize="@dimen/txt_s3" />
+
+            <!-- 操盘线买入B点 -->
+
+            <LinearLayout
+                android:id="@+id/page_setwarn_ll_cpxwarn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/b4"
+                android:orientation="vertical" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/b5" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:orientation="horizontal" >
+
+                    <!-- 日线 -->
+
+                    <LinearLayout
+                        android:id="@+id/page_setwarn_layout_buy_day_cpx"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|right"
+                        android:orientation="horizontal"
+                        android:paddingRight="8dp" >
+
+                        <ImageView
+                            android:id="@+id/page_setwarn_img_cpx_buy_day"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/img_check_uncheck" />
+
+                        <TextView
+                            android:id="@+id/page_setwarn_tv_cpx_buy_day"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:text="日线出B点"
+                            android:textColor="@color/t1"
+                            android:textSize="@dimen/txt_s5" />
+                    </LinearLayout>
+
+                    <!-- 周线 -->
+
+                    <LinearLayout
+                        android:id="@+id/page_setwarn_layout_buy_week_cpx"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:id="@+id/page_setwarn_img_cpx_buy_week"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/img_check_uncheck" />
+
+                        <TextView
+                            android:id="@+id/page_setwarn_tv_cpx_buy_week"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:text="周线出B点"
+                            android:textColor="@color/t1"
+                            android:textSize="@dimen/txt_s5" />
+                    </LinearLayout>
+
+                    <!-- 60分钟 -->
+
+                    <LinearLayout
+                        android:id="@+id/page_setwarn_layout_buy_hour_cpx"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|left"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:id="@+id/page_setwarn_img_cpx_buy_hour"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/img_check_uncheck" />
+
+                        <TextView
+                            android:id="@+id/page_setwarn_tv_cpx_buy_hour"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:text="60分钟出B点"
+                            android:textColor="@color/t1"
+                            android:textSize="@dimen/txt_s5" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/page_set_warn_bgline_7"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@drawable/img_line_divider" />
+
+                <!-- 操盘线卖出S点 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:orientation="horizontal" >
+
+                    <!-- 日线 -->
+
+                    <LinearLayout
+                        android:id="@+id/page_setwarn_layout_sell_day_cpx"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|right"
+                        android:orientation="horizontal"
+                        android:paddingRight="8dp" >
+
+                        <ImageView
+                            android:id="@+id/page_setwarn_img_cpx_sell_day"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/img_check_uncheck" />
+
+                        <TextView
+                            android:id="@+id/page_setwarn_tv_cpx_sell_day"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:text="日线出S点"
+                            android:textColor="@color/t1"
+                            android:textSize="@dimen/txt_s5" />
+                    </LinearLayout>
+
+                    <!-- 周线 -->
+
+                    <LinearLayout
+                        android:id="@+id/page_setwarn_layout_sell_week_cpx"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:id="@+id/page_setwarn_img_cpx_sell_week"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/img_check_uncheck" />
+
+                        <TextView
+                            android:id="@+id/page_setwarn_tv_cpx_sell_week"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:text="周线出S点"
+                            android:textColor="@color/t1"
+                            android:textSize="@dimen/txt_s5" />
+                    </LinearLayout>
+
+                    <!-- 60分钟 -->
+
+                    <LinearLayout
+                        android:id="@+id/page_setwarn_layout_sell_hour_cpx"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|left"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:id="@+id/page_setwarn_img_cpx_sell_hour"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/img_check_uncheck" />
+
+                        <TextView
+                            android:id="@+id/page_setwarn_tv_cpx_sell_hour"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:text="60分钟出S点"
+                            android:textColor="@color/t1"
+                            android:textSize="@dimen/txt_s5" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/b5" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="96dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

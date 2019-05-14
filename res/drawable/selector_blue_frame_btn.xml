@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 蓝框的selector -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true" android:drawable="@drawable/shape_bg_blue_frame_press"></item>
+    <item android:drawable="@drawable/shape_bg_blue_frame_default"></item>
+</selector>

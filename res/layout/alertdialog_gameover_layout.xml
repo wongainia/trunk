@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lLayout_bg"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_round_dialog_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="17dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="本局收益120%"
+            android:textColor="@color/c1"
+            android:textSize="@dimen/txt_s7" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp" >
+
+            <TextView
+                android:id="@+id/txt_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="1.5dip"
+                android:text="太棒了"
+                android:textColor="@color/c1"
+                android:textSize="@dimen/txt_s5"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/loadingLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ProgressBar
+                    android:layout_width="@dimen/loading_w"
+                    android:layout_height="@dimen/loading_h"
+                    android:indeterminateDrawable="@drawable/loading_red" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/loading_msg"
+                    android:textColor="@color/t2"
+                    android:textSize="@dimen/txt_s5" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/line_h"
+        android:background="@color/b5" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_pos"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/custom_dialog_btn_heigt"
+            android:layout_weight="1"
+            android:background="@drawable/selector_alertdialog_left"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="@color/c4"
+            android:textSize="@dimen/txt_s4" />
+
+        <ImageView
+            android:id="@+id/img_line"
+            android:layout_width="0.5dp"
+            android:layout_height="@dimen/custom_dialog_btn_heigt"
+            android:background="@color/b5" />
+
+        <Button
+            android:id="@+id/btn_neg"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/custom_dialog_btn_heigt"
+            android:layout_weight="1"
+            android:background="@drawable/selector_alertdialog_right"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/c4"
+            android:textSize="@dimen/txt_s4" />
+    </LinearLayout>
+
+</LinearLayout>

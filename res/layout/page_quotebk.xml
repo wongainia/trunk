@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/b4" >
+
+    <RelativeLayout
+        android:id="@+id/page_quotebk_layout_footerbar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/b3" >
+
+        <ImageView
+            android:id="@+id/page_quotebk_img_optional"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"
+            android:src="@drawable/img_quote_option_add" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentTop="true"
+            android:background="@color/b7" />
+    </RelativeLayout>
+
+    <cn.emoney.sky.libs.widget.RefreshListView
+        android:id="@+id/page_quotebk_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/page_quotebk_layout_footerbar"
+        android:divider="@drawable/img_line_divider"
+        android:dividerHeight="1px"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:listSelector="@color/bg_transparent"
+        android:overScrollMode="never"
+        android:scrollbars="none" >
+    </cn.emoney.sky.libs.widget.RefreshListView>
+
+</RelativeLayout>

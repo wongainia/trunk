@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/len_H_listitem_stocklist"
+    android:background="@drawable/selector_list_item"
+    android:minHeight="@dimen/len_H_listitem_stocklist" >
+
+    <ImageView
+        android:id="@+id/item_iv_ischecked"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/len_H_listitem_stocklist"
+        android:paddingLeft="20dp"
+        android:paddingRight="17dp"
+        android:scaleType="center"
+        android:src="@drawable/selector_checkbox" >
+    </ImageView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/item_iv_ischecked"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_item_0_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="--"
+            android:textColor="@color/t1"
+            android:textSize="@dimen/txt_s6" />
+
+        <TextView
+            android:id="@+id/tv_item_0_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="--"
+            android:textColor="@color/t3"
+            android:textSize="@dimen/txt_s4" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_item1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="--"
+        android:textColor="@color/t1"
+        android:textSize="@dimen/txt_s6"
+        android:textStyle="bold" />
+
+    <FrameLayout
+        android:id="@+id/fr_item_click_area"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/len_H_listitem_stocklist"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:paddingRight="@dimen/len_M_horizontal" >
+
+        <TextView
+            android:id="@+id/tv_item_2"
+            android:layout_width="71dp"
+            android:layout_height="30dp"
+            android:layout_gravity="left|center_vertical"
+            android:background="@drawable/shape_bg_c1_radius"
+            android:ellipsize="none"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="--"
+            android:textColor="@color/t8"
+            android:textSize="@dimen/txt_s6" />
+    </FrameLayout>
+
+</RelativeLayout>

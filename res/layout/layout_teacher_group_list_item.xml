@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_list_item" >
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/buyclub_home_lvitem_niv_image"
+        android:layout_width="120dp"
+        android:layout_height="90dp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/img_event_lstdefault"
+        android:paddingBottom="12dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="18dp"
+        android:paddingTop="12dp"
+        android:scaleType="fitXY" />
+
+    <RelativeLayout
+        android:id="@+id/layout_middle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="17dp"
+        android:layout_marginTop="12dp"
+        android:layout_toRightOf="@id/buyclub_home_lvitem_niv_image" >
+
+        <TextView
+            android:id="@+id/buyclub_home_lvitem_tv_groupname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="高送转填权"
+            android:textColor="@color/t1"
+            android:textSize="@dimen/txt_s6" />
+
+        <TextView
+            android:id="@+id/buyclub_home_lvitem_tv_totalType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buyclub_home_lvitem_tv_groupname"
+            android:layout_marginTop="8dp"
+            android:text="总"
+            android:textColor="@color/t1"
+            android:textSize="@dimen/txt_s5" />
+
+        <TextView
+            android:id="@+id/buyclub_home_lvitem_tv_totalZDF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/buyclub_home_lvitem_tv_totalType"
+            android:layout_marginLeft="6dp"
+            android:layout_toRightOf="@id/buyclub_home_lvitem_tv_totalType"
+            android:text="+10.01%"
+            android:textColor="@color/c1"
+            android:textSize="@dimen/txt_s5" />
+
+        <View
+            android:id="@+id/line_vertical"
+            android:layout_width="1px"
+            android:layout_height="20dp"
+            android:layout_below="@id/buyclub_home_lvitem_tv_groupname"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@id/buyclub_home_lvitem_tv_totalZDF"
+            android:background="@color/b7" />
+
+        <TextView
+            android:id="@+id/buyclub_home_lvitem_tv_dayType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/buyclub_home_lvitem_tv_totalType"
+            android:layout_toRightOf="@id/line_vertical"
+            android:text="日"
+            android:textColor="@color/t1"
+            android:textSize="@dimen/txt_s5" />
+
+        <TextView
+            android:id="@+id/buyclub_home_lvitem_tv_dayZDF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/buyclub_home_lvitem_tv_totalType"
+            android:layout_marginLeft="6dp"
+            android:layout_toRightOf="@id/buyclub_home_lvitem_tv_dayType"
+            android:text="+110.01%"
+            android:textColor="@color/c1"
+            android:textSize="@dimen/txt_s5" />
+
+        <TextView
+            android:id="@+id/buyclub_home_lvitem_tv_createTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buyclub_home_lvitem_tv_totalType"
+            android:layout_marginTop="12dp"
+            android:text="创建于25天前"
+            android:textColor="@color/t5"
+            android:textSize="@dimen/txt_s1" />
+
+        <TextView
+            android:id="@+id/buyclub_home_lvitem_tv_focus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/buyclub_home_lvitem_tv_createTime"
+            android:layout_marginLeft="18dp"
+            android:layout_toRightOf="@id/buyclub_home_lvitem_tv_createTime"
+            android:text="已有760人关注"
+            android:textColor="@color/t5"
+            android:textSize="@dimen/txt_s1" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/buyclub_home_lvitem_iv_flag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="13dp"
+        android:background="@drawable/img_buyclub_recommend"
+        android:scaleType="center"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/buyclub_home_lvitem_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_h"
+        android:layout_below="@+id/layout_middle"
+        android:background="@drawable/img_light_divider_line" />
+
+</RelativeLayout>

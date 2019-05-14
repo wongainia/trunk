@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_mini_marketboard_expand"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c7" 
+    
+    >
+
+    <View
+        android:id="@+id/v_line_down"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="8dp"
+        android:background="@color/b5" />
+
+    <RadioGroup
+        android:id="@+id/radiogroup_mini_marketboard_btn_content"
+        android:layout_width="71dp"
+        android:layout_height="match_parent"
+        android:layout_above="@id/v_line_down"
+        android:orientation="vertical" >
+
+        <RadioButton
+            android:checked="true"
+            android:id="@+id/tv_mini_marketboard_btn_sh"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_color_minimarketboard_btn"
+            android:button="@null"
+            android:gravity="center"
+            android:text="上证" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/b5" />
+
+        <RadioButton
+            android:id="@+id/tv_mini_marketboard_btn_sz"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_color_minimarketboard_btn"
+            android:button="@null"
+            android:gravity="center"
+            android:text="深证" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/b5" />
+
+        <RadioButton
+            android:id="@+id/tv_mini_marketboard_btn_cy"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_color_minimarketboard_btn"
+            android:button="@null"
+            android:gravity="center"
+            android:text="创业板" />
+    </RadioGroup>
+
+    <View
+        android:id="@+id/v_line_left"
+        android:layout_width="1px"
+        android:layout_height="match_parent"
+        android:layout_above="@id/v_line_down"
+        android:layout_toRightOf="@id/radiogroup_mini_marketboard_btn_content"
+        android:background="@color/b5" />
+
+    <ImageView
+        android:id="@+id/iv_mini_marketboard_btn_unexpand"
+        android:layout_width="40dp"
+        android:layout_height="28dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="center"
+        android:src="@drawable/img_arrow_down_minimarketboard" />
+
+    <LinearLayout
+        android:id="@+id/ll_mini_marketboard_info_content"
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:layout_toLeftOf="@id/iv_mini_marketboard_btn_unexpand"
+        android:layout_toRightOf="@id/v_line_left"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_mini_marketboard_zxj"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="--.-"
+            android:textColor="@color/c1"
+            android:textSize="@dimen/txt_s8" />
+
+        <TextView
+            android:id="@+id/tv_mini_marketboard_zdf"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="--.-%"
+            android:textColor="@color/c1"
+            android:textSize="@dimen/txt_s3" />
+
+        <TextView
+            android:id="@+id/tv_mini_marketboard_amount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="--.-"
+            android:textColor="@color/t2"
+            android:textSize="@dimen/txt_s3" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/v_line_up"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/ll_mini_marketboard_info_content"
+        android:layout_toRightOf="@id/v_line_left"
+        android:background="@color/b5" />
+
+    <cn.emoney.sky.libs.chart.ChartView
+        android:id="@+id/cv_mini_marketboard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/v_line_down"
+        android:layout_below="@id/v_line_up"
+        android:layout_toRightOf="@id/v_line_left" />
+
+</RelativeLayout>

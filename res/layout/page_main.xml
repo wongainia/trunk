@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainpage_frame"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/b4" >
+
+    <cn.emoney.sky.libs.bar.ToolBar
+        android:id="@+id/mainpage_toolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/len_H_menubar"
+        android:layout_alignParentBottom="true"
+        android:background="@color/b3" >
+    </cn.emoney.sky.libs.bar.ToolBar>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_above="@id/mainpage_toolbar"
+        android:background="@color/b5" />
+
+    <cn.emoney.sky.libs.widget.PageSwitcher
+        android:id="@+id/mainpage_pageswitcher"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/mainpage_toolbar"
+        android:layout_marginBottom="1px" >
+    </cn.emoney.sky.libs.widget.PageSwitcher>
+
+    <ImageView
+        android:id="@+id/mainpage_iv_quiz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="9dp"
+        android:background="@drawable/selector_menuitem_quiz" />
+
+</RelativeLayout>

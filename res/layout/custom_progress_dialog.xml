@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    android:layout_width="136dp"
+    android:layout_height="122dp"
+
+    android:layout_width="121dp"
+    android:layout_height="107dp"
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="96dp"
+    android:layout_height="96dp"
+    android:layout_gravity="center"
+    android:background="@drawable/shape_round_progress_dialog_bg"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <!-- 进度条 -->
+
+    <ProgressBar
+        android:layout_width="@dimen/loading_w"
+        android:layout_height="@dimen/loading_h"
+        android:indeterminateDrawable="@drawable/loading_grey" />
+
+    <TextView
+        android:id="@+id/infoView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="请稍候..."
+        android:textColor="@color/t7"
+        android:textSize="@dimen/txt_s5" />
+</LinearLayout>

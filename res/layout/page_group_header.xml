@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:em="http://schemas.android.com/apk/res/cn.emoney.acg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/group_header_rl_info_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <View
+            android:id="@+id/headline"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+
+        <TextView
+            android:id="@+id/group_header_tv_maininfo_totalzdf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/headline"
+            android:layout_marginBottom="14dp"
+            android:layout_marginLeft="63dp"
+            android:layout_marginTop="24dp"
+            android:text="- -.- %"
+            android:textColor="@color/t8"
+            android:textSize="@dimen/txt_s11" />
+
+        <TextView
+            android:id="@+id/group_header_tv_maininfo_otherzdf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/group_header_tv_maininfo_totalzdf"
+            android:layout_marginBottom="14dp"
+            android:layout_marginLeft="34dp"
+            android:text="日 --.-%   |   周 --.-%   |   月 --.-%"
+            android:textColor="@color/t7"
+            android:textSize="@dimen/txt_s4" />
+
+        <View
+            android:id="@+id/bottomline"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_below="@id/group_header_tv_maininfo_otherzdf" />
+
+        <ImageView
+            android:id="@+id/group_header_iv_maininfo_total_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/group_header_tv_maininfo_otherzdf"
+            android:layout_marginBottom="22dp"
+            android:layout_marginLeft="34dp"
+            android:src="@drawable/img_buygroup_total_icon" />
+        
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="28dp"
+            android:layout_centerVertical="true">
+            
+            <ImageView
+	            android:id="@+id/group_header_iv_maininfo_addfocus"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content" />
+            
+            <TextView 
+                android:id="@+id/group_header_tv_focus"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="3dp"
+	            android:textSize="@dimen/txt_s1"
+	            android:textColor="@color/t6"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <cn.emoney.acg.widget.SegmentedGroup
+        android:id="@+id/page_group_header_infos"
+        android:layout_width="match_parent"
+        android:layout_height="26dp"
+        android:layout_marginLeft="@dimen/len_M_horizontal"
+        android:layout_marginRight="@dimen/len_M_horizontal"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        em:sc_border_color="@color/b5"
+        em:sc_border_radius="4dp"
+        em:sc_border_width="1px"
+        em:sc_checked_bg_color="@color/c3"
+        em:sc_checked_text_color="@color/t7"
+        em:sc_corner_radius="4dp"
+        em:sc_text_size="@dimen/txt_s4"
+        em:sc_tint_color="@color/c3"
+        em:sc_unchecked_bg_color="@color/b2"
+        em:sc_unchecked_text_color="@color/t1" >
+
+        <RadioButton
+            android:id="@+id/page_group_header_info_shouyi"
+            style="@style/RadioButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="净值收益"
+             />
+
+        <RadioButton
+            android:id="@+id/page_group_header_info_hangye"
+            style="@style/RadioButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="行业分布" />
+
+        <RadioButton
+            android:id="@+id/page_group_header_info_linian"
+            style="@style/RadioButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="组合理念" />
+    </cn.emoney.acg.widget.SegmentedGroup>
+
+    <FrameLayout
+        android:id="@+id/group_header_fr_info_content"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_marginTop="14dp" >
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        android:layout_marginTop="15dp" >
+
+        <cn.emoney.acg.widget.SegmentedGroup
+            android:id="@+id/page_group_header_items"
+            android:layout_width="match_parent"
+            android:layout_height="26dp"
+            android:orientation="horizontal"
+            em:sc_border_color="@color/b5"
+            em:sc_border_radius="4dp"
+            em:sc_border_width="1px"
+            em:sc_checked_bg_color="@color/c3"
+            em:sc_checked_text_color="@color/t7"
+            em:sc_corner_radius="4dp"
+            em:sc_text_size="@dimen/txt_s4"
+            em:sc_tint_color="@color/c3"
+            em:sc_unchecked_bg_color="@color/b2"
+            em:sc_unchecked_text_color="@color/t1" >
+
+            <RadioButton
+                android:id="@+id/page_group_header_item_relative_stocks"
+                style="@style/RadioButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="关联个股" />
+
+            <RadioButton
+                android:id="@+id/page_group_header_item_change_record"
+                style="@style/RadioButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="调仓记录" />
+        </cn.emoney.acg.widget.SegmentedGroup>
+
+        <ImageView
+            android:id="@+id/page_group_header_img_alert_change_record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="4dp"
+            android:src="@drawable/img_notice_point" />
+    </RelativeLayout>
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="14dp"/>
+
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/b7"/>
+    
+    <LinearLayout
+        android:id="@+id/group_header_ll_tableheader"
+        android:layout_width="match_parent"
+        android:layout_height="26dp"
+        android:background="@color/b2"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/item_tv_group_stock_1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="124"
+            android:gravity="bottom|center_horizontal"
+            android:paddingBottom="3dp"
+            android:text="仓位"
+            android:textColor="@color/t3"
+            android:textSize="@dimen/txt_s3"
+            android:background="@drawable/segment_radio_checked" />
+
+        <TextView
+            android:id="@+id/item_tv_group_stock_2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="211"
+            android:gravity="bottom|center_horizontal"
+            android:paddingBottom="3dp"
+            android:text="股票名称"
+            android:textColor="@color/t3"
+            android:textSize="@dimen/txt_s3" />
+
+        <TextView
+            android:id="@+id/item_tv_group_stock_3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="77"
+            android:gravity="bottom|center_horizontal"
+            android:paddingBottom="3dp"
+            android:text="最新价"
+            android:textColor="@color/t3"
+            android:textSize="@dimen/txt_s3" />
+
+        <LinearLayout
+            android:id="@+id/item_fl_group_stock_4_content"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="230"
+            android:gravity="bottom|center_horizontal"
+            android:paddingBottom="3dp" >
+
+            <TextView
+                android:id="@+id/item_tv_group_stock_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="4dp"
+                android:drawableRight="@drawable/img_groupstock_header_switch_icon"
+                android:text="涨跌幅"
+                android:textColor="@color/c3"
+                android:textSize="@dimen/txt_s3" />
+        </LinearLayout>
+    </LinearLayout>
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/b7"/>
+
+    <ListView
+        android:id="@+id/group_header_lv_groupstock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="@null"
+        android:divider="@drawable/img_light_divider_line"
+        android:dividerHeight="1px"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:listSelector="@android:color/transparent" >
+    </ListView>
+
+    <TextView
+        android:id="@+id/group_header_tv_listEmptyView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/len_H_listitem_stocklist"
+        android:gravity="center"
+        android:textColor="@color/t3"
+        android:textSize="@dimen/txt_s4" />
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@drawable/img_light_divider_line"/>
+
+    <LinearLayout
+        android:id="@+id/page_group_header_layout_totalgravity"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+        
+        <LinearLayout 
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center">
+            
+            <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="总仓位： "
+	            android:textColor="@color/t3"
+	            android:textSize="@dimen/txt_s6" />
+	
+	        <TextView
+	            android:id="@+id/group_header_groupstock_totalgravity"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="--%"
+	            android:textColor="@color/c1"
+	            android:textSize="@dimen/txt_s6" />
+        </LinearLayout>
+        
+        <RelativeLayout 
+            android:id="@+id/page_groupheader_layout_edit_position"
+            android:layout_width="106dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/selector_list_item">
+            
+            <View 
+	            android:layout_width="1px"
+	            android:layout_height="match_parent"
+	            android:background="@color/b5"/>
+            
+	        <ImageView 
+	            android:layout_width="106dp"
+	            android:layout_height="match_parent"
+	            android:src="@drawable/img_group_edit"
+	            android:scaleType="centerInside"/>
+        </RelativeLayout>
+    </LinearLayout>
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/b2">
+        
+        <View 
+	        android:layout_width="match_parent"
+	        android:layout_height="1px"
+	        android:layout_alignParentTop="true"
+	        android:background="@color/b7"/>
+        
+        <View 
+	        android:layout_width="match_parent"
+	        android:layout_height="1px"
+	        android:layout_alignParentBottom="true"
+	        android:background="@color/b7"/>
+        
+        <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:gravity="bottom"
+	        android:paddingBottom="9dp"
+	        android:paddingLeft="28dp"
+	        android:text="组合评论"
+	        android:textColor="@color/t3"
+	        android:textSize="@dimen/txt_s3" />
+        
+        <LinearLayout
+            android:id="@+id/page_groupheader_layout_creator_only"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp" >
+
+            <ImageView
+                android:id="@+id/page_groupheader_iv_creator_only"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/img_check_uncheck" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:text="只看创建人与我"
+                android:textColor="@color/t3"
+                android:textSize="@dimen/txt_s3" />
+        </LinearLayout>
+
+    </RelativeLayout>
+    
+</LinearLayout>

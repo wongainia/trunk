@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <cn.emoney.sky.libs.chart.ChartView
+        android:id="@+id/page_kline_cv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="1px" >
+    </cn.emoney.sky.libs.chart.ChartView>
+
+    <TextView
+        android:id="@+id/tv_hide_bs_btn"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:gravity="center_horizontal"
+        android:paddingBottom="15dp"
+        android:paddingTop="2dp"
+        android:text="隐藏 BS"
+        android:textColor="@color/c3"
+        android:textSize="@dimen/txt_s2"
+        android:visibility="invisible" />
+
+</RelativeLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/b4"
+    android:orientation="vertical" >
+
+    <cn.emoney.sky.libs.bar.TitleBar
+        android:id="@+id/page_edit_position_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/len_H_titlebar"
+        android:background="@color/c9" >
+    </cn.emoney.sky.libs.bar.TitleBar>
+
+    <LinearLayout
+        android:id="@+id/layout_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:background="@color/b2"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            android:paddingBottom="4dp" >
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="102" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="146"
+                android:gravity="left"
+                android:text="股票"
+                android:textColor="@color/t3"
+                android:textSize="@dimen/txt_s3" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="146"
+                android:gravity="center_horizontal"
+                android:text="持股数"
+                android:textColor="@color/t3"
+                android:textSize="@dimen/txt_s3" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="146"
+                android:gravity="center_horizontal"
+                android:text="成本价"
+                android:textColor="@color/t3"
+                android:textSize="@dimen/txt_s3" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="102" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/b5" />
+
+        <cn.emoney.sky.libs.widget.RefreshListView
+            android:id="@+id/page_edit_position_list"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:divider="@drawable/img_line_divider"
+            android:dividerHeight="1px"
+            android:listSelector="@color/bg_transparent"
+            android:overScrollMode="never"
+            android:scrollbars="none" >
+        </cn.emoney.sky.libs.widget.RefreshListView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/b5" />
+
+        <LinearLayout
+            android:id="@+id/page_edit_position_layout_footerbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/len_H_bottom_tool"
+            android:background="@color/b3"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/page_edit_position_item_iv_delzxg"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="center"
+                android:src="@drawable/selector_btn_optional_tool_delzxg" />
+
+            <ImageView
+                android:id="@+id/page_edit_position_item_iv_addtype"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="center"
+                android:src="@drawable/selector_btn_optional_tool_addtype" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/b4"
+    android:orientation="vertical" >
+
+    <cn.emoney.sky.libs.bar.TitleBar
+        android:id="@+id/zdlhTitleBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/len_H_titlebar"
+        android:background="@color/c9" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="27dp"
+        android:background="@color/b2"
+        android:gravity="bottom" >
+
+        <TextView
+            android:id="@+id/zdlhpage_tv_head_notice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/t3"
+            android:textSize="@dimen/txt_s3" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/zdlhpage_headbottom_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_h"
+        android:background="@color/b7"
+         />
+
+    <ListView
+        android:id="@+id/zdlhpage_lv_lstcontent"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@null"
+        android:cacheColorHint="@null"
+        android:divider="@color/bg_transparent"
+        android:dividerHeight="0.0dp"
+        android:fadingEdgeLength="0.0sp"
+        android:fastScrollEnabled="false"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="vertical" >
+    </ListView>
+
+    <include
+        android:id="@+id/zdlhpage_ll_lvempty"
+        layout="@layout/loading_layout_red" />
+
+</LinearLayout>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/questionContentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/questionTipView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="我们精选出了最常见的问题供你选择"
+        android:textColor="@color/t5"
+        android:textSize="@dimen/txt_s4" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal" >
+
+        <LinearLayout
+            android:id="@+id/quest1Layout"
+            android:layout_width="136dp"
+            android:layout_height="53dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_bg_blue_round"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/quest1StockNameView"
+                style="@style/quiz_qustion_text_style"
+                android:text="青岛啤酒" />
+
+            <TextView
+                android:id="@+id/quest1View"
+                style="@style/quiz_qustion_bold_text_style"
+                android:text="现在还能买吗" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/quest2Layout"
+            android:layout_width="136dp"
+            android:layout_height="53dp"
+            android:layout_marginLeft="27dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_bg_blue_round"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/quest2StockNameView"
+                style="@style/quiz_qustion_text_style"
+                android:text="青岛啤酒" />
+
+            <TextView
+                android:id="@+id/quest2View"
+                style="@style/quiz_qustion_bold_text_style"
+                android:text="现在卖合适吗" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="22dp"
+        android:gravity="center_horizontal" >
+
+        <LinearLayout
+            android:id="@+id/quest3Layout"
+            android:layout_width="136dp"
+            android:layout_height="53dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_bg_blue_round"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/quest3StockNameView"
+                style="@style/quiz_qustion_text_style"
+                android:text="青岛啤酒" />
+
+            <TextView
+                android:id="@+id/quest3View"
+                style="@style/quiz_qustion_bold_text_style"
+                android:text="怎么样" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/quest4Layout"
+            android:layout_width="136dp"
+            android:layout_height="53dp"
+            android:layout_marginLeft="27dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_bg_blue_round"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/quest4StockNameView"
+                style="@style/quiz_qustion_text_style"
+                android:text="青岛啤酒" />
+
+            <TextView
+                android:id="@+id/quest4View"
+                style="@style/quiz_qustion_bold_text_style"
+                android:text="还能继续持有吗" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="94dp"
+        android:text="以上不是我想咨询的问题"
+        android:textColor="@color/t5"
+        android:textSize="@dimen/txt_s4" />
+
+    <TextView
+        android:id="@+id/inputBtnView"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/selector_shape_gray_frame_bg"
+        android:gravity="center"
+        android:text="手动输入问题"
+        android:textColor="@color/t3"
+        android:textSize="@dimen/txt_s5" />
+
+</LinearLayout>

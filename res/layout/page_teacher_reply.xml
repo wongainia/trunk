@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/b4"
+    android:orientation="vertical" >
+
+    <cn.emoney.sky.libs.bar.TitleBar
+        android:id="@+id/pageTeacherReplyTitleBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/len_H_titlebar"
+        android:background="@color/c9" />
+
+    <TextView
+        android:id="@+id/stateView"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:layout_below="@+id/pageTeacherReplyTitleBar"
+        android:background="@color/b2"
+        android:ellipsize="end"
+        android:gravity="center_horizontal|bottom"
+        android:paddingBottom="5dp"
+        android:singleLine="true"
+        android:text="问题已锁定，请尽快解答(2:29)"
+        android:textColor="@color/c1"
+        android:textSize="@dimen/txt_s5" />
+
+    <View
+        android:id="@+id/topLineView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_h"
+        android:layout_below="@+id/stateView"
+        android:background="@color/b5" />
+
+    <RelativeLayout
+        android:id="@+id/contentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="272dp"
+        android:layout_below="@+id/topLineView" >
+
+        <cn.emoney.acg.widget.CircleImageView
+            android:id="@+id/headIV"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="@dimen/quiz_question_content_margin"
+            android:layout_marginTop="@dimen/quiz_teacher_reply_content_top"
+            android:src="@drawable/img_head_icon_default"
+            app:border_color="@color/bg_transparent"
+            app:border_width="0dp" />
+
+        <TextView
+            android:id="@+id/nameView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6.5dp"
+            android:layout_marginTop="@dimen/quiz_teacher_reply_content_top"
+            android:layout_toLeftOf="@+id/dateView"
+            android:layout_toRightOf="@+id/headIV"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="送大米的提问"
+            android:textColor="@color/t3"
+            android:textSize="@dimen/txt_s3" />
+
+        <TextView
+            android:id="@+id/dateView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="@dimen/quiz_question_content_margin"
+            android:layout_marginTop="32dp"
+            android:text="3小时前"
+            android:textColor="@color/t3"
+            android:textSize="@dimen/txt_s3" />
+
+        <TextView
+            android:id="@+id/contentView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nameView"
+            android:layout_marginLeft="6.5dp"
+            android:layout_marginRight="@dimen/quiz_question_content_margin"
+            android:layout_marginTop="25dp"
+            android:layout_toRightOf="@+id/headIV"
+            android:lineSpacingExtra="3dp"
+            android:text="我前天买的600600产品盈利水平下降致使净利润下滑公司在收入较快增长的情况。"
+            android:textColor="@color/t1"
+            android:textSize="@dimen/txt_s6" />
+    </RelativeLayout>
+
+    <!-- 输入法 -->
+
+    <RelativeLayout
+        android:id="@+id/inputLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <View
+            android:id="@+id/topLineViw"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_h"
+            android:background="@color/b5" />
+
+        <EditText
+            android:id="@+id/inputET"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/topLineViw"
+            android:layout_marginLeft="@dimen/quiz_teacher_reply_input_left_right"
+            android:layout_toLeftOf="@+id/editRightLayout"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="回复"
+            android:inputType="textMultiLine"
+            android:maxHeight="120dp"
+            android:maxLength="@integer/question_reply_max_len"
+            android:minHeight="39dp"
+            android:text=""
+            android:textColor="@color/t1"
+            android:textCursorDrawable="@drawable/cursor_black"
+            android:textSize="@dimen/txt_s5" />
+
+        <RelativeLayout
+            android:id="@+id/editRightLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="5dp"
+            android:paddingRight="@dimen/quiz_teacher_reply_input_left_right"
+            android:paddingTop="3dp" >
+
+            <ImageView
+                android:id="@+id/voicImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/selector_btn_quiz_voice" />
+
+            <TextView
+                android:id="@+id/sendImageView"
+                android:layout_width="44dp"
+                android:layout_height="26dp"
+                android:background="@drawable/selector_btn_quiz_send"
+                android:gravity="center"
+                android:text="发送"
+                android:textColor="@drawable/selector_btn_quiz_send_color"
+                android:textSize="@dimen/txt_s5"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/bottomLineViw"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_h"
+            android:layout_below="@+id/inputET"
+            android:background="@color/c3" />
+    </RelativeLayout>
+
+    <!-- 录音 -->
+
+    <RelativeLayout
+        android:id="@+id/voiceLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="238.5dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/b1"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <View
+            android:id="@+id/voicTopLineViw"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_h"
+            android:background="@color/b5" />
+
+        <ImageView
+            android:id="@+id/keyBoardImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/selector_btn_quiz_keyboard" />
+
+        <TextView
+            android:id="@+id/voiceTipView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/voicTopLineViw"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="43.5dp"
+            android:gravity="center"
+            android:text="@string/quiz_reply_start_rec"
+            android:textColor="@color/t3"
+            android:textSize="@dimen/txt_s6" />
+
+        <ImageView
+            android:id="@+id/recordBtn"
+            android:layout_width="@dimen/quiz_teacher_reply_record_btn_size"
+            android:layout_height="@dimen/quiz_teacher_reply_record_btn_size"
+            android:layout_below="@+id/voicTopLineViw"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="77dp"
+            android:src="@drawable/img_quiz_record_start" />
+
+        <TextView
+            android:id="@+id/voiceTimeTipView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/recordBtn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="录音时间最长为120秒"
+            android:textColor="@color/t3"
+            android:textSize="@dimen/txt_s2"
+            android:visibility="gone"/>
+
+        <cn.emoney.acg.view.RoundProgressBar
+            android:id="@+id/roundProgressBar"
+            android:layout_width="@dimen/quiz_teacher_reply_record_btn_size"
+            android:layout_height="@dimen/quiz_teacher_reply_record_btn_size"
+            android:layout_below="@+id/voicTopLineViw"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="77dp"
+            android:visibility="gone" />
+
+        <View
+            android:id="@+id/voicBottomLineViw"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_h"
+            android:layout_above="@+id/btnLayout"
+            android:background="@color/b5"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/btnLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/b3"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <Button
+                android:id="@+id/cancelVoiceBtn"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_alertdialog_left"
+                android:gravity="center"
+                android:text="取消重录"
+                android:textColor="@color/c4"
+                android:textSize="@dimen/txt_s5" />
+
+            <ImageView
+                android:layout_width="0.5dp"
+                android:layout_height="48dp"
+                android:background="@color/b5" />
+
+            <Button
+                android:id="@+id/sendVoiceBtn"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_alertdialog_right"
+                android:gravity="center"
+                android:text="发送"
+                android:textColor="@color/c4"
+                android:textSize="@dimen/txt_s5" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

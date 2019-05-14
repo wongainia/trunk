@@ -1,0 +1,21 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/quiz_teacher_viewpage_height"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/summaryTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="163dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="64dp"
+        android:gravity="center_vertical"
+        android:lineSpacingExtra="2dp"
+        android:text="申银证券大客户部经理申银证券大客户部经理申银证券大客户部经理申银证券大客户部经理申银证券大客户部经理,申银证券大客户部经理申银证券大客户部经理申银证券大客户部经理,申银证券大客户部经理申银证券大客户部经理"
+        android:textColor="@color/t5"
+        android:textSize="@dimen/txt_s4" />
+
+</LinearLayout>

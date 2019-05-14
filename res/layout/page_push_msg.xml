@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:em="http://schemas.android.com/apk/res/cn.emoney.acg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/b2"
+    android:orientation="vertical" >
+    
+    <cn.emoney.sky.libs.bar.TitleBar
+        android:id="@+id/page_push_msg_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/len_H_titlebar"
+        android:background="@color/c9" >
+    </cn.emoney.sky.libs.bar.TitleBar>
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="26dp"
+        android:layout_marginTop="16dp"
+	    android:layout_marginBottom="8dp"
+	    android:layout_marginLeft="20dp"
+	    android:layout_marginRight="20dp">
+        
+        <cn.emoney.acg.widget.SegmentedGroup
+	        android:id="@+id/page_push_segmentgroup"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:orientation="horizontal"
+	        em:sc_border_width="1px"
+	        em:sc_border_radius="4dp"
+	        em:sc_border_color="@color/b5"
+	        em:sc_text_size="@dimen/txt_s4"
+	        em:sc_checked_text_color="@color/t7"
+	        em:sc_unchecked_text_color="@color/t1"
+	        em:sc_checked_bg_color="@color/c3"
+	        em:sc_unchecked_bg_color="@color/b2"
+	        em:sc_corner_radius="4dp"
+	        em:sc_tint_color="@color/c3" >
+	
+	        <RadioButton
+	            android:id="@+id/page_push_segment_sysinfo"
+	            android:checked="true"
+	            style="@style/RadioButton"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:text="系统消息" />
+	
+	        <RadioButton
+	            android:id="@+id/page_push_segment_alert"
+	            style="@style/RadioButton"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:text="个股预警" />
+	
+	        <RadioButton
+	            android:id="@+id/page_push_segment_group"
+	            style="@style/RadioButton"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:text="买吧提示" />
+	    </cn.emoney.acg.widget.SegmentedGroup>
+	    
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <RelativeLayout 
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+            </RelativeLayout>
+            <RelativeLayout 
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <ImageView 
+                    android:id="@+id/page_push_img_notice_alert"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="4dp"/>
+            </RelativeLayout>
+            <RelativeLayout 
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <ImageView 
+                    android:id="@+id/page_push_img_notice_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="4dp"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ViewSwitcher
+        android:id="@+id/page_push_switcher"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <cn.emoney.acg.widget.pinnedheader.PinnedHeaderListView
+                android:id="@+id/push_msg_listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:cacheColorHint="@null"
+                android:divider="@null"
+                android:dividerHeight="0dp"
+                android:overScrollMode="never"
+                android:listSelector="@android:color/transparent" >
+            </cn.emoney.acg.widget.pinnedheader.PinnedHeaderListView>
+
+            <TextView
+                android:id="@+id/item_alert_syslist_emptyview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="暂无数据"
+                android:textColor="@color/t4"
+                android:textSize="@dimen/txt_s3" >
+            </TextView>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ListView
+                android:id="@+id/page_push_list_alert"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@null"
+		        android:footerDividersEnabled="false"
+		        android:headerDividersEnabled="false"
+		        android:overScrollMode="never"
+		        android:listSelector="@color/bg_transparent"
+		        android:scrollbars="none" >
+            </ListView>
+
+            <TextView
+                android:id="@+id/item_alert_listview_emptyview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="暂无数据"
+                android:textColor="@color/t4"
+                android:textSize="@dimen/txt_s3" >
+            </TextView>
+        </FrameLayout>
+    </ViewSwitcher>
+
+</LinearLayout>

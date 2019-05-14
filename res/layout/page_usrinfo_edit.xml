@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 我的 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/b2"
+    android:orientation="vertical" >
+
+    <cn.emoney.sky.libs.bar.TitleBar
+        android:id="@+id/titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/len_H_titlebar"
+        android:background="@color/c9" >
+    </cn.emoney.sky.libs.bar.TitleBar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/b4"
+            android:orientation="vertical" >
+
+            <!-- myInfo -->
+
+            <RelativeLayout
+                android:id="@+id/headViewLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="83dp"
+                android:background="@drawable/selector_list_item"
+                android:paddingLeft="@dimen/my_userinfo_edit_pading_left"
+                android:paddingRight="@dimen/my_userinfo_edit_pading_right" >
+
+                <TextView
+                    style="@style/userinfo_edit_listitem_text_style"
+                    android:text="头像" />
+
+                <ImageView
+                    android:id="@+id/headMoreView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/img_list_more" />
+
+                <cn.emoney.acg.widget.CircleImageView
+                    android:id="@+id/headIV"
+                    android:layout_width="@dimen/my_head_icon_size"
+                    android:layout_height="@dimen/my_head_icon_size"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/headMoreView"
+                    android:src="@drawable/img_head_icon_default"
+                    app:border_color="@color/bg_transparent"
+                    app:border_width="0dp" />
+            </RelativeLayout>
+
+            <!-- sp -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <include layout="@layout/page_my_sp_layout" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/nickNameLayout"
+                style="@style/userinfo_edit_liste_item_style" >
+
+                <TextView
+                    style="@style/userinfo_edit_listitem_text_style"
+                    android:text="昵称" />
+
+                <ImageView
+                    android:id="@+id/nickNameMoreView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/img_list_more" />
+
+                <TextView
+                    android:id="@+id/nickNameView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/nickNameMoreView"
+                    android:text="nickName"
+                    android:textColor="@color/t3"
+                    android:textSize="@dimen/txt_s5" />
+            </RelativeLayout>
+
+            <!-- sp -->
+
+            <View
+                style="@style/my_line_style"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp" />
+
+            <!-- problem -->
+
+            <RelativeLayout style="@style/userinfo_edit_liste_item_style" >
+
+                <TextView
+                    style="@style/userinfo_edit_listitem_text_style"
+                    android:text="用户名" />
+
+                <TextView
+                    android:id="@+id/userNameView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:text="userName"
+                    android:textColor="@color/t3"
+                    android:textSize="@dimen/txt_s5" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <include layout="@layout/page_my_sp_layout" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/pwdLayout"
+                style="@style/userinfo_edit_liste_item_style" >
+
+                <TextView
+                    style="@style/userinfo_edit_listitem_text_style"
+                    android:text="修改密码" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/img_list_more" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/pwdLineView"
+                style="@style/my_line_style"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp" />
+
+            <RelativeLayout
+                android:id="@+id/logOffLayout"
+                style="@style/userinfo_edit_liste_item_style" >
+
+                <TextView
+                    style="@style/userinfo_edit_listitem_text_style"
+                    android:text="注销" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/img_list_more" />
+            </RelativeLayout>
+
+            <!-- sp -->
+
+            <View style="@style/my_line_style" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

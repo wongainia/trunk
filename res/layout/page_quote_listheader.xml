@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:em="http://schemas.android.com/apk/res/cn.emoney.acg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:layout_marginTop="11dp"
+        android:orientation="horizontal" >
+
+        <cn.emoney.sky.libs.chart.ChartView
+            android:id="@+id/page_quote_listheader_cv_price"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3" >
+        </cn.emoney.sky.libs.chart.ChartView>
+
+        <cn.emoney.sky.libs.chart.ChartView
+            android:id="@+id/page_quote_listheader_cv_mmp_right"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4" >
+        </cn.emoney.sky.libs.chart.ChartView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:orientation="horizontal"
+        android:paddingTop="9dp" >
+
+        <cn.emoney.sky.libs.chart.ChartView
+            android:id="@+id/page_quote_listheader_cv_mmp_left"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:paddingLeft="16dp" >
+        </cn.emoney.sky.libs.chart.ChartView>
+
+        <cn.emoney.sky.libs.chart.ChartView
+            android:id="@+id/page_quote_listheader_cv_mmp_right_bottom"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4" >
+        </cn.emoney.sky.libs.chart.ChartView>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="7dp" />
+
+    <!-- 停牌信息，没有数据时隐藏 (GONE) -->
+    <TextView
+        android:id="@+id/page_quote_tv_suspension"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center_horizontal"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:singleLine="true"
+        android:textColor="@color/c1"
+        android:textSize="@dimen/txt_s3"
+        android:visibility="gone" />
+
+    <cn.emoney.acg.widget.SegmentedGroup
+        android:id="@+id/page_quote_segment_periods"
+        android:layout_width="match_parent"
+        android:layout_height="26dp"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        em:sc_border_color="@color/b5"
+        em:sc_border_radius="4dp"
+        em:sc_border_width="1px"
+        em:sc_checked_bg_color="@color/c3"
+        em:sc_checked_text_color="@color/t8"
+        em:sc_corner_radius="4dp"
+        em:sc_text_size="@dimen/txt_s4"
+        em:sc_tint_color="@color/c3"
+        em:sc_unchecked_bg_color="@color/b2"
+        em:sc_unchecked_text_color="@color/t1" >
+
+        <RadioButton
+            android:id="@+id/page_quote_period_minute"
+            style="@style/RadioButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="分时" />
+
+        <RadioButton
+            android:id="@+id/page_quote_period_day"
+            style="@style/RadioButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="日线" />
+
+        <RadioButton
+            android:id="@+id/page_quote_period_week"
+            style="@style/RadioButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="周线" />
+
+        <RadioButton
+            android:id="@+id/page_quote_period_month"
+            style="@style/RadioButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="月线" />
+
+        <RadioButton
+            android:id="@+id/page_quote_period_60m"
+            style="@style/RadioButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableRight="@drawable/img_quote_arrow_down"
+            android:text="60分钟" />
+    </cn.emoney.acg.widget.SegmentedGroup>
+
+    <ViewFlipper
+        android:id="@+id/page_quote_viewflipper_trend"
+        android:layout_width="match_parent"
+        android:layout_height="186dp"
+        android:layout_marginTop="11dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp" >
+    </ViewFlipper>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="12dp" />
+
+    <!-- 重大提示 -->
+    <LinearLayout
+        android:id="@+id/page_quote_layout_tips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="9dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_bg_blue_round_radius"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="提示"
+            android:textColor="@color/c4"
+            android:textSize="@dimen/txt_s1" />
+
+        <TextView
+            android:id="@+id/page_quote_tv_tips"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="4dp"
+            android:paddingStart="4dp"
+            android:singleLine="true"
+            android:textColor="@color/t1"
+            android:textSize="@dimen/txt_s3" />
+    </LinearLayout>
+
+    <!-- 个股信息头部tab -->
+    <cn.emoney.acg.widget.SegmentedGroup
+        android:id="@+id/page_quote_segment_group_infos"
+        android:layout_width="match_parent"
+        android:layout_height="26dp"
+        android:layout_marginBottom="11dp"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        em:sc_border_color="@color/b5"
+        em:sc_border_radius="4dp"
+        em:sc_border_width="1px"
+        em:sc_checked_bg_color="@color/c3"
+        em:sc_checked_text_color="@color/t8"
+        em:sc_corner_radius="4dp"
+        em:sc_text_size="@dimen/txt_s4"
+        em:sc_unchecked_bg_color="@color/b2"
+        em:sc_unchecked_text_color="@color/t1" >
+
+        <RadioButton
+            android:id="@+id/page_quote_info_item_news"
+            style="@style/RadioButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="新闻" />
+
+        <RadioButton
+            android:id="@+id/page_quote_info_item_question"
+            style="@style/RadioButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="问答" />
+
+        <RadioButton
+            android:id="@+id/page_quote_info_item_notice"
+            style="@style/RadioButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="公告" />
+
+        <RadioButton
+            android:id="@+id/page_quote_info_item_report"
+            style="@style/RadioButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="研报" />
+    </cn.emoney.acg.widget.SegmentedGroup>
+
+</LinearLayout>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/b4" >
+
+    <RadioGroup
+        android:id="@+id/klinepage_landscape_radiogroup_indexes"
+        android:layout_width="78dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/shape_border_b5_fill_b3"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <RadioButton
+            android:id="@+id/btn_indexes_CJL"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.15"
+            android:background="@color/bg_transparent"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:tag="1"
+            android:text="成交量"
+            android:textColor="@drawable/selector_color_klinelandscape_indexes_btn"
+            android:textSize="@dimen/txt_s3" />
+
+        <RadioButton
+            android:id="@+id/btn_indexes_MACD"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.15"
+            android:background="@color/bg_transparent"
+            android:button="@null"
+            android:gravity="center"
+            android:tag="2"
+            android:text="MACD"
+            android:textColor="@drawable/selector_color_klinelandscape_indexes_btn"
+            android:textSize="@dimen/txt_s3" />
+
+        <RadioButton
+            android:id="@+id/btn_indexes_KDJ"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.15"
+            android:background="@color/bg_transparent"
+            android:button="@null"
+            android:gravity="center"
+            android:tag="3"
+            android:text="KDJ"
+            android:textColor="@drawable/selector_color_klinelandscape_indexes_btn"
+            android:textSize="@dimen/txt_s3" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@color/b5"
+            android:paddingBottom="3dp" />
+
+        <RadioButton
+            android:id="@+id/btn_indexes_CJZJ"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.14"
+            android:background="@color/bg_transparent"
+            android:button="@null"
+            android:gravity="center"
+            android:tag="5"
+            android:text="超级资金"
+            android:textColor="@drawable/selector_color_klinelandscape_indexes_btn"
+            android:textSize="@dimen/txt_s3" />
+
+        <RadioButton
+            android:id="@+id/btn_indexes_ABJB"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.14"
+            android:background="@color/bg_transparent"
+            android:button="@null"
+            android:gravity="center"
+            android:tag="8"
+            android:text="按部就班"
+            android:textColor="@drawable/selector_color_klinelandscape_indexes_btn"
+            android:textSize="@dimen/txt_s3" />
+
+        <RadioButton
+            android:id="@+id/btn_indexes_DDBL"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.14"
+            android:background="@color/bg_transparent"
+            android:button="@null"
+            android:gravity="center"
+            android:tag="4"
+            android:text="大单比率"
+            android:textColor="@drawable/selector_color_klinelandscape_indexes_btn"
+            android:textSize="@dimen/txt_s3" />
+
+        <RadioButton
+            android:id="@+id/btn_indexes_LTSH"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.14"
+            android:background="@color/bg_transparent"
+            android:button="@null"
+            android:gravity="center"
+            android:tag="6"
+            android:text="龙腾四海"
+            android:textColor="@drawable/selector_color_klinelandscape_indexes_btn"
+            android:textSize="@dimen/txt_s3" />
+    </RadioGroup>
+
+    <View
+        android:id="@+id/v_line_divide"
+        android:layout_width="8dp"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@id/klinepage_landscape_radiogroup_indexes" />
+
+    <cn.emoney.sky.libs.chart.ChartView
+        android:id="@+id/klinepage_landscape_cv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@id/v_line_divide"
+        android:padding="1px" >
+    </cn.emoney.sky.libs.chart.ChartView>
+
+</RelativeLayout>

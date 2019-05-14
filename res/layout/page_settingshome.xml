@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/b2"
+    android:orientation="vertical" >
+
+    <cn.emoney.sky.libs.bar.TitleBar
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/len_H_titlebar"
+        android:background="@color/c9" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/b4"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:background="@color/b2" />
+
+            <View style="@style/my_line_style" />
+
+            <!-- 行情数据刷新 -->
+
+            <include
+                android:id="@+id/settinghome_ll_priceRefresh"
+                layout="@layout/include_setting_item" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_h"
+                android:layout_marginLeft="@dimen/my_setting_line_left_right_sp"
+                android:layout_marginRight="@dimen/my_setting_line_left_right_sp"
+                android:background="@color/b5" />
+
+            <!-- 推送开关 -->
+
+            <include
+                android:id="@+id/settinghome_ll_msgPush"
+                layout="@layout/include_setting_item" />
+
+            <View style="@style/my_line_style" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:background="@color/b2" />
+
+            <View style="@style/my_line_style" />
+            <!-- 检查更新 -->
+
+            <include
+                android:id="@+id/settinghome_ll_checkVersionUpdate"
+                layout="@layout/include_setting_item" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_h"
+                android:layout_marginLeft="@dimen/my_setting_line_left_right_sp"
+                android:layout_marginRight="@dimen/my_setting_line_left_right_sp"
+                android:background="@color/b5" />
+
+            <!-- 用户指南 -->
+
+            <include
+                android:id="@+id/settinghome_ll_userGuide"
+                layout="@layout/include_setting_item"
+                android:visibility="visible" />
+
+            <View style="@style/my_line_style" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:background="@color/b2" />
+
+            <View style="@style/my_line_style" />
+
+            <!-- 退出应用 -->
+
+            <include
+                android:id="@+id/settinghome_ll_exit"
+                layout="@layout/include_setting_item" />
+
+            <!-- 测试版本,加服务器内外网切换 -->
+
+            <LinearLayout
+                android:id="@+id/settinghome_ll_server_change"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line_h"
+                    android:layout_marginLeft="@dimen/my_setting_line_left_right_sp"
+                    android:layout_marginRight="@dimen/my_setting_line_left_right_sp"
+                    android:background="@color/b5" />
+
+                <include layout="@layout/include_setting_item" />
+            </LinearLayout>
+
+            <View style="@style/my_line_style" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

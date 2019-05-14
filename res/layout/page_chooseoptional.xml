@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <View
+        android:id="@+id/headLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/len_H_titlebar" />
+
+    <LinearLayout
+        android:id="@+id/scrollViewLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#99000000"
+        android:orientation="vertical" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/contentLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/b2"
+                    android:paddingLeft="24dp"
+                    android:paddingTop="17dp"
+                    android:text="请选择自选分类（长按可删除）"
+                    android:textColor="@color/t3"
+                    android:textSize="@dimen/txt_s4" />
+
+                <cn.emoney.acg.widget.GridViewEx
+                    android:id="@+id/chooseoptionalpage_gridview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/b2"
+                    android:listSelector="@drawable/selector_list_item"
+                    android:numColumns="3"
+                    android:paddingBottom="@dimen/choose_gridview_pading_top_bottom"
+                    android:paddingLeft="11dp"
+                    android:paddingRight="11sp"
+                    android:paddingTop="@dimen/choose_gridview_pading_top_bottom" />
+
+                <View
+                    android:id="@+id/blankView"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp" />
+            </LinearLayout>
+        </ScrollView>
+
+        <View
+            android:id="@+id/blankView2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</LinearLayout>

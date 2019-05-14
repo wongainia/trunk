@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:em="http://schemas.android.com/apk/res/cn.emoney.acg"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <cn.emoney.acg.widget.SegmentedGroup
+        android:id="@+id/page_quote_segment_more_periods"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        em:sc_border_color="@color/b5"
+        em:sc_border_radius="4dp"
+        em:sc_border_width="1px"
+        em:sc_checked_bg_color="@color/c3"
+        em:sc_checked_text_color="@color/t8"
+        em:sc_corner_radius="4dp"
+        em:sc_text_size="@dimen/txt_s4"
+        em:sc_tint_color="@color/c3"
+        em:sc_unchecked_bg_color="@color/b2"
+        em:sc_unchecked_text_color="@color/t1" >
+
+        <RadioButton
+            android:id="@+id/page_quote_period_more_60m"
+            style="@style/RadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:text="60分钟" />
+
+        <RadioButton
+            android:id="@+id/page_quote_period_more_30m"
+            style="@style/RadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:text="30分钟" />
+
+        <RadioButton
+            android:id="@+id/page_quote_period_more_15m"
+            style="@style/RadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:text="15分钟" />
+    </cn.emoney.acg.widget.SegmentedGroup>
+
+</RelativeLayout>

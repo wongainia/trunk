@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="170dp"
+    android:layout_height="170dp"
+    android:layout_gravity="center_horizontal" >
+
+    <cn.emoney.acg.view.PieChartView
+        android:id="@+id/groupbk_pie"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_gravity="center"
+         />
+
+    <LinearLayout
+        android:id="@+id/groupbk_ll_lable_content"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/groupbk_tv_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/shape_rect_groupbk1"
+            android:drawablePadding="4dp"
+            android:ellipsize="none"
+            android:gravity="left"
+            android:padding="2dp"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/t1"
+            android:textSize="@dimen/txt_s1"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/groupbk_tv_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/shape_rect_groupbk2"
+            android:drawablePadding="4dp"
+            android:ellipsize="none"
+            android:gravity="left"
+            android:padding="2dp"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/t1"
+            android:textSize="@dimen/txt_s1"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/groupbk_tv_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/shape_rect_groupbk3"
+            android:drawablePadding="4dp"
+            android:ellipsize="none"
+            android:gravity="left"
+            android:padding="2dp"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/t1"
+            android:textSize="@dimen/txt_s1"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/groupbk_tv_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/shape_rect_groupbk4"
+            android:drawablePadding="4dp"
+            android:ellipsize="none"
+            android:gravity="left"
+            android:padding="2dp"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/t1"
+            android:textSize="@dimen/txt_s1"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/groupbk_tv_gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/shape_rect_groupbk1"
+        android:drawablePadding="4dp"
+        android:ellipsize="none"
+        android:gravity="left"
+        android:padding="2dp"
+        android:singleLine="true"
+        android:text="　　　　　 000%"
+        android:textColor="@color/bg_transparent"
+        android:textSize="@dimen/txt_s2"
+        android:visibility="invisible" />
+
+</FrameLayout>

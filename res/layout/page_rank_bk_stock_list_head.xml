@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/len_H_listitem_stocklist"
+    android:background="@drawable/selector_list_item" >
+
+    <LinearLayout 
+        android:id="@+id/item_layout_unexpand"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/len_H_listitem_stocklist"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/len_M_horizontal"
+        android:paddingRight="8dp">
+        
+        <ImageView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/img_bk_unexpand" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/item_tv_bkname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/item_layout_unexpand"
+        android:text="--"
+        android:textColor="@color/t1"
+        android:textSize="@dimen/txt_s5" />
+
+    <TextView
+        android:id="@+id/item_tv_bk_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="--"
+        android:textColor="@color/t1"
+        android:textSize="@dimen/txt_s5" />
+
+    <TextView
+        android:id="@+id/item_tv_zdf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="22dp"
+        android:text="--"
+        android:textColor="@color/t4"
+        android:textSize="@dimen/txt_s5" />
+
+</RelativeLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_list_item"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/my_equipment_pading"
+    android:paddingTop="@dimen/my_equipment_pading" >
+
+    <ImageView
+        android:id="@+id/item_iv_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img_equipment_ico_1000000" />
+
+    <TextView
+        android:id="@+id/item_tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:maxEms="8"
+        android:singleLine="true"
+        android:text="K线英雄"
+        android:textColor="@color/t3"
+        android:textSize="@dimen/txt_s3" />
+
+</LinearLayout>

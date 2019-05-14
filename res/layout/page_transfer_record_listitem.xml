@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/len_H_listitem_stocklist"
+    android:background="@drawable/selector_list_item"
+    android:gravity="center_vertical"
+    android:minHeight="@dimen/len_H_listitem_stocklist"
+    android:orientation="horizontal" >
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="8dp"
+        android:layout_weight="30" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="150"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/page_transfer_listitem_tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/t1"
+            android:textSize="@dimen/txt_s5" />
+
+        <TextView
+            android:id="@+id/page_transfer_listitem_tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:textColor="@color/t3"
+            android:textSize="@dimen/txt_s3" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/img_cancel_motif_order"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="90"
+        android:scaleType="centerInside"
+        android:src="@drawable/img_cancel_motif_order"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="237"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/page_transfer_listitem_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/t1"
+            android:textSize="@dimen/txt_s5" />
+
+        <TextView
+            android:id="@+id/page_transfer_listitem_tv_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:textColor="@color/t3"
+            android:textSize="@dimen/txt_s3" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="250"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/page_transfer_listitem_tv_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/t1"
+            android:textSize="@dimen/txt_s5" />
+
+        <TextView
+            android:id="@+id/page_transfer_listitem_tv_transfer_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:drawableLeft="@drawable/img_alert_motif_order"
+            android:drawablePadding="4dp"
+            android:textColor="@color/c1"
+            android:textSize="@dimen/txt_s2"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/page_transfer_listitem_tv_transfer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="269"
+        android:gravity="center_horizontal"
+        android:singleLine="true"
+        android:textColor="@color/t3"
+        android:textSize="@dimen/txt_s4" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="8dp"
+        android:layout_weight="61" />
+
+</LinearLayout>

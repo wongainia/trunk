@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+    </declare-styleable>
+    <declare-styleable name="SegmentedGroup">
+        <attr name="sc_corner_radius" format="dimension" />
+        <attr name="sc_tint_color" format="color" />
+        <attr name="sc_border_radius" format="dimension" />
+        <attr name="sc_border_width" format="dimension" />
+        <attr name="sc_border_color" format="color" />
+        <attr name="sc_checked_bg_color" format="color" />
+        <attr name="sc_unchecked_bg_color" format="color" />
+        <attr name="sc_checked_text_color" format="color" />
+        <attr name="sc_unchecked_text_color" format="color" />
+        <attr name="sc_text_size" format="dimension" />
+    </declare-styleable>
+
+    <!-- 录音 -->
+    <declare-styleable name="RoundProgressBar">
+        <attr name="roundProgressColor" format="color" />
+        <attr name="roundProgressWidthOfBar" format="dimension" />
+        <attr name="max" format="integer"></attr>
+    </declare-styleable>
+
+</resources>

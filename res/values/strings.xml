@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">爱炒股</string>
+    <string name="shanghai">上证</string>
+    <string name="shenzheng">深证</string>
+    <string name="zhongxiao">中小</string>
+    <string name="chuangye">创业</string>
+    <string name="zhishu">指数</string>
+
+    <!-- 全角空格 -->
+    <string name="fullwidth_space">　</string>
+    <string name="text_holder">--</string>
+    <string name="net_error_try">网络异常，请稍后重试</string>
+    <string name="net_error_check">网络连接失败，请检查您的网络</string>
+    <string name="load_fail_click_try">加载失败，请点击重试</string>
+    <string name="no_data_msg">暂无数据</string>
+    <string name="loading_msg">正在加载...</string>
+    <string name="loading_fail">加载失败</string>
+    <string name="login_tip">请登录</string>
+
+    <!-- XListView -->
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+
+    <item name="tag_type" type="id"></item>
+
+    <string name="delete">删除</string>
+    <string name="more">更多</string>
+
+    <string-array name="array">
+        <item>东京</item>
+        <item>南京</item>
+        <item>西京</item>
+        <item>北京</item>
+        <item>中京</item>
+    </string-array>
+
+    <!-- K线英雄 -->
+    <string name="klinehero_buy">买 入</string>
+    <string name="klinehero_sell">卖 出</string>
+    <string name="klinehero_game_again">再来一局</string>
+    <string name="klinehero_holde">持 有</string>
+    <string name="klinehero_wait">观　望</string>
+
+    <!-- 问股 -->
+    <string name="quiz_question_relative">相关问答</string>
+    <string name="quiz_question_lastest">最近问答</string>
+    <string name="quiz_my_question">我的提问</string>
+    <string name="quiz_ta_group">TA打理的组合</string>
+    <string name="quiz_ta_answer">TA解答的问题</string>
+    <string name="quiz_status_wait">等待回复，离关闭还剩&#160;</string>
+    <string name="quiz_status_close">问题因超时关闭</string>
+    <string name="quiz_ask_count_str">今天还有%d次机会</string>
+    <string name="quiz_reply_start_rec">点击后开始说话</string>
+    <string name="quiz_reply_hold_time_str">问题已锁定，请尽快解答(%1$s)</string>
+
+</resources>

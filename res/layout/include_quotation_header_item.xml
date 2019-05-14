@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:background="@color/c1"
+    android:gravity="center_vertical"
+    android:minHeight="54dp" >
+
+    <TextView
+        android:id="@+id/item_tv_stockname"
+        android:layout_width="53dp"
+        android:layout_height="wrap_content"
+        android:paddingLeft="9dp"
+        android:text="--\n--"
+        android:textColor="@color/t8"
+        android:textSize="@dimen/txt_s4" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/item_tv_price_integer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="--"
+            android:textColor="@color/t8"
+            android:textSize="@dimen/txt_s10" />
+
+        <TextView
+            android:id="@+id/item_tv_price_decimal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/item_tv_price_integer"
+            android:layout_toRightOf="@id/item_tv_price_integer"
+            android:text="--"
+            android:textColor="@color/t8"
+            android:textSize="@dimen/txt_s5" />
+
+        <ImageView
+            android:id="@+id/item_img_zd_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_tv_price_integer"
+            android:layout_marginTop="3dp" />
+
+        <TextView
+            android:id="@+id/item_tv_zdf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_tv_price_integer"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@id/item_img_zd_arrow"
+            android:singleLine="true"
+            android:text="--"
+            android:textColor="@color/t8"
+            android:textSize="@dimen/txt_s4" />
+
+        <TextView
+            android:id="@+id/item_tv_zd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_tv_price_integer"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/item_tv_zdf"
+            android:ellipsize="none"
+            android:singleLine="true"
+            android:text="--"
+            android:textColor="@color/t8"
+            android:textSize="@dimen/txt_s4" />
+    </RelativeLayout>
+
+</LinearLayout>

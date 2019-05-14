@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/line_h"
+        android:background="@color/b7" />
+
+    <TextView
+        android:id="@+id/txt_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/b4"
+        android:gravity="center"
+        android:minHeight="@dimen/actionsheet_height"
+        android:text="tittle"
+        android:textColor="@color/t1"
+        android:textSize="@dimen/txt_s5"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:id="@+id/sLayout_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fadingEdge="none" >
+
+        <LinearLayout
+            android:id="@+id/lLayout_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/b4"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/line_h"
+        android:background="@color/b7" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/actionsheet_cancel_sp_height"
+        android:background="#ffe3e3e3" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/line_h"
+        android:background="@color/b7" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/b4" >
+
+        <TextView
+            android:id="@+id/txt_cancel"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/actionsheet_height"
+            android:background="@drawable/selector_list_item"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/c3"
+            android:textSize="@dimen/txt_s5" />
+    </LinearLayout>
+
+</LinearLayout>

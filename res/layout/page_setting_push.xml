@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/page_set_push_layout_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/b2"
+    android:orientation="vertical" >
+
+    <cn.emoney.sky.libs.bar.TitleBar
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/len_H_titlebar"
+        android:background="@color/c9" />
+
+    <RelativeLayout
+        android:id="@+id/page_set_push_layout_total"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/setting_list_item_h"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/b4" >
+
+        <View
+            android:id="@+id/page_set_push_line_total_top"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_h"
+            android:layout_alignParentTop="true"
+            android:background="@color/b7" />
+
+        <TextView
+            android:id="@+id/page_set_push_tv_push"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="31dp"
+            android:text="推送开关"
+            android:textColor="@color/t1"
+            android:textSize="@dimen/txt_s6" />
+
+        <ImageView
+            android:id="@+id/page_set_push_cb_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="24dp"
+            android:background="@drawable/selector_select_switcher" />
+
+        <View
+            android:id="@+id/page_set_push_line_total_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_h"
+            android:layout_alignParentBottom="true"
+            android:background="@color/b7" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/page_set_push_layout_sysinfo"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/setting_list_item_h"
+        android:background="@color/b4" >
+
+        <View
+            android:id="@+id/page_set_push_line_sysinfo_top"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_h"
+            android:layout_alignParentTop="true"
+            android:background="@color/b7" />
+
+        <TextView
+            android:id="@+id/page_set_push_tv_sysinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="31dp"
+            android:text="系统消息"
+            android:textColor="@color/t1"
+            android:textSize="@dimen/txt_s6" />
+
+        <ImageView
+            android:id="@+id/page_set_push_cb_sysinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="24dp"
+            android:background="@drawable/selector_select_switcher" />
+
+        <View
+            android:id="@+id/page_set_push_line_sysinfo_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_h"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/b5" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/page_set_push_layout_stockalert"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/setting_list_item_h"
+        android:background="@color/b4" >
+
+        <TextView
+            android:id="@+id/page_set_push_tv_stockalert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="31dp"
+            android:text="个股预警"
+            android:textColor="@color/t1"
+            android:textSize="@dimen/txt_s6" />
+
+        <ImageView
+            android:id="@+id/page_set_push_cb_stockalert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="24dp"
+            android:background="@drawable/selector_select_switcher" />
+
+        <View
+            android:id="@+id/page_set_push_line_stockalert_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_h"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/b5" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/page_set_push_layout_group"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/setting_list_item_h"
+        android:background="@color/b4" >
+
+        <TextView
+            android:id="@+id/page_set_push_tv_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="31dp"
+            android:text="买吧调仓"
+            android:textColor="@color/t1"
+            android:textSize="@dimen/txt_s6" />
+
+        <ImageView
+            android:id="@+id/page_set_push_cb_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="24dp"
+            android:background="@drawable/selector_select_switcher" />
+
+        <View
+            android:id="@+id/page_set_push_line_group_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_h"
+            android:layout_alignParentBottom="true"
+            android:background="@color/b7" />
+    </RelativeLayout>
+
+</LinearLayout>

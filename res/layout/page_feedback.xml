@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pagelogin_ll_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/b2"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <cn.emoney.sky.libs.bar.TitleBar
+        android:id="@+id/feedbackTitleBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/len_H_titlebar"
+        android:background="@color/c9" />
+
+    <EditText
+        android:id="@+id/feedbackView"
+        android:layout_width="fill_parent"
+        android:layout_height="207dp"
+        android:background="@color/b4"
+        android:gravity="left|top"
+        android:inputType="textMultiLine"
+        android:hint="请告诉我们您的建议或使用中发现的问题，我们将认真阅读每一条反馈。产品的进步，离不开您的参与。"
+        android:paddingBottom="25dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:maxLength="@integer/feedback_conten_max_len"
+        android:paddingTop="25dp"
+        android:text=""
+        android:textColor="@color/t1"
+        android:textCursorDrawable="@drawable/cursor_black"
+        android:textSize="@dimen/txt_s4" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/line_h"
+        android:background="@color/b7" />
+
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <cn.emoney.acg.widget.PinnedSectionListView
+        android:id="@+id/page_quotation_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:listSelector="@color/bg_transparent"
+        android:scrollbars="none" >
+    </cn.emoney.acg.widget.PinnedSectionListView>
+
+</RelativeLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/b4"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:orientation="horizontal"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp" >
+
+        <include
+            android:id="@+id/page_quotation_list_item_bk_item1"
+            layout="@layout/page_quotation_list_item_bk_item" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="12dp"
+            android:background="@color/b5" />
+
+        <include
+            android:id="@+id/page_quotation_list_item_bk_item2"
+            layout="@layout/page_quotation_list_item_bk_item" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="12dp"
+            android:background="@color/b5" />
+
+        <include
+            android:id="@+id/page_quotation_list_item_bk_item3"
+            layout="@layout/page_quotation_list_item_bk_item" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:background="@color/b5" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:orientation="horizontal"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp" >
+
+        <include
+            android:id="@+id/page_quotation_list_item_bk_item4"
+            layout="@layout/page_quotation_list_item_bk_item" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="12dp"
+            android:background="@color/b5" />
+
+        <include
+            android:id="@+id/page_quotation_list_item_bk_item5"
+            layout="@layout/page_quotation_list_item_bk_item" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="12dp"
+            android:background="@color/b5" />
+
+        <include
+            android:id="@+id/page_quotation_list_item_bk_item6"
+            layout="@layout/page_quotation_list_item_bk_item" />
+    </LinearLayout>
+
+</LinearLayout>

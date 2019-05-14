@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:emojicon="http://schemas.android.com/apk/cn.emoney.sky.fixemojtv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_list_item"
+    android:descendantFocusability="beforeDescendants" >
+    
+    <RelativeLayout 
+        android:id="@+id/layout_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="18dp"
+        android:paddingTop="18dp"
+        android:paddingRight="11dp"
+        android:paddingBottom="4dp">
+        
+        <cn.emoney.acg.widget.CircleImageView
+	        android:id="@+id/item_head_pic"
+	        android:layout_width="40dp"
+	        android:layout_height="40dp"
+	        android:src="@drawable/img_head_icon_default"
+	        app:border_color="@color/t4"
+	        app:border_width="0.5dp" />
+        
+        <TextView
+	        android:id="@+id/item_author"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_toRightOf="@id/item_head_pic"
+	        android:layout_marginLeft="6dp"
+	        android:text="- -"
+	        android:textColor="@color/t3"
+	        android:textSize="@dimen/txt_s3" />
+        
+        <TextView
+	        android:id="@+id/item_publish_time"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:text="- -"
+	        android:textColor="@color/t3"
+	        android:textSize="@dimen/txt_s3" />
+        
+        <cn.emoney.sky.fixcmojitv.EmojiconTextView
+	        android:id="@+id/item_emojtv_comment_content"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/item_author"
+	        android:layout_toRightOf="@id/item_head_pic"
+	        android:layout_marginTop="12dp"
+	        android:layout_marginLeft="6dp"
+	        android:textColor="@color/t1"
+	        android:textSize="@dimen/txt_s5"
+	        emojicon:emojiconSize="20dp" />
+        
+        <TextView
+	        android:id="@+id/item_tv_reply"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_below="@id/item_emojtv_comment_content"
+	        android:layout_marginTop="10dp"
+	        android:padding="8dp"
+	        android:text="回复 (0)"
+	        android:textColor="@drawable/selector_color_bluetext_btn"
+	        android:textSize="@dimen/txt_s3" />
+        
+        <TextView
+	        android:id="@+id/item_tv_delete"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_toLeftOf="@id/item_tv_reply"
+	        android:layout_below="@id/item_emojtv_comment_content"
+	        android:layout_marginRight="8dp"
+	        android:layout_marginTop="10dp"
+	        android:padding="8dp"
+	        android:text="删除"
+	        android:textColor="@drawable/selector_color_bluetext_btn"
+	        android:textSize="@dimen/txt_s3" />
+        
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/item_divide_line"
+        android:layout_width="match_parent"
+        android:layout_height="13dp"
+        android:layout_below="@id/layout_main"
+        android:background="@drawable/img_light_up_down_line_bar_bg" />
+
+</RelativeLayout>

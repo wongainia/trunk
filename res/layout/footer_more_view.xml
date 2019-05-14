@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/footerlayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/moreLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/footer_view_load_more"
+        android:gravity="center"
+        android:paddingBottom="5dip"
+        android:paddingTop="5dip"
+        android:visibility="visible" >
+
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:id="@+id/londingTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:text="@string/loading_msg"
+            android:textColor="@color/t3"
+            android:textSize="@dimen/txt_s4" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/moreTxt"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/footer_view_load_more"
+        android:layout_gravity="center"
+        android:background="@drawable/selector_list_item"
+        android:gravity="center"
+        android:text="@string/load_fail_click_try"
+        android:textColor="@color/t3"
+        android:textSize="@dimen/txt_s4"
+        android:visibility="gone" />
+
+</LinearLayout>

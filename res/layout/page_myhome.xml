@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 我的 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/b2"
+    android:orientation="vertical" >
+
+    <cn.emoney.sky.libs.bar.TitleBar
+        android:id="@+id/page_myhome_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/len_H_titlebar"
+        android:background="@color/c9" >
+    </cn.emoney.sky.libs.bar.TitleBar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/b4"
+            android:orientation="vertical" >
+
+            <!-- myInfo -->
+
+            <RelativeLayout
+                android:id="@+id/myInfoLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_list_item"
+                android:paddingBottom="17dp"
+                android:paddingLeft="@dimen/my_list_item_left_sp"
+                android:paddingRight="@dimen/my_list_item_right_sp"
+                android:paddingTop="17dp" >
+
+                <cn.emoney.acg.widget.CircleImageView
+                    android:id="@+id/headIV"
+                    android:layout_width="@dimen/my_head_icon_size"
+                    android:layout_height="@dimen/my_head_icon_size"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/img_head_icon_default"
+                    app:border_color="@color/bg_transparent"
+                    app:border_width="0dp" />
+
+                <TextView
+                    android:id="@+id/userNameTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/my_head_img_txt_sp"
+                    android:layout_marginRight="@dimen/my_head_img_txt_sp"
+                    android:layout_toRightOf="@+id/headIV"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="游客"
+                    android:textColor="@color/t1"
+                    android:textSize="@dimen/txt_s7" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        android:id="@+id/loginTipTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="6dp"
+                        android:text="去登录或注册"
+                        android:textColor="@color/t4"
+                        android:textSize="@dimen/txt_s3" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/img_list_more" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <!-- sp -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <include layout="@layout/page_my_sp_layout" />
+            </LinearLayout>
+
+            <!-- 我的相关功能 -->
+
+            <LinearLayout
+                android:id="@+id/myFunctionLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="11dp"
+                    android:paddingTop="16dp" >
+
+                    <TextView
+                        android:id="@+id/askIV"
+                        style="@style/my_funtion_text_style"
+                        android:drawableTop="@drawable/img_my_ask"
+                        android:text="我的问答" />
+
+                    <View
+                        android:layout_width="@dimen/line_h"
+                        android:layout_height="match_parent"
+                        android:background="@color/b7" />
+
+                    <TextView
+                        android:id="@+id/teacherIV"
+                        style="@style/my_funtion_text_style"
+                        android:drawableTop="@drawable/img_my_techer"
+                        android:text="我的大师" />
+
+                    <View
+                        android:layout_width="@dimen/line_h"
+                        android:layout_height="match_parent"
+                        android:background="@color/b7" />
+
+                    <TextView
+                        android:id="@+id/equipmentIV"
+                        style="@style/my_funtion_text_style"
+                        android:drawableTop="@drawable/img_my_equipment"
+                        android:text="我的装备" />
+                </LinearLayout>
+
+                <!-- sp -->
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <include layout="@layout/page_my_sp_layout" />
+                </LinearLayout>
+            </LinearLayout>
+            <!-- msg -->
+
+            <RelativeLayout
+                android:id="@+id/msgLayout"
+                style="@style/my_listitem_style" >
+
+                <ImageView
+                    android:id="@+id/msgIV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/img_my_msg" />
+
+                <RelativeLayout 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/my_listitem_img_txt_sp"
+                    android:layout_marginRight="@dimen/my_listitem_img_txt_sp"
+                    android:layout_toRightOf="@id/msgIV">
+                    
+                    <TextView
+                        android:id="@+id/tv_push"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="系统推送消息"
+                        android:textSize="@dimen/txt_s6"
+                        android:textColor="@color/t1"
+                        android:singleLine="true"
+                        android:ellipsize="end" />
+	                
+	                <ImageView 
+				        android:id="@+id/page_myhome_push_msg_img_alert"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:layout_alignParentTop="true"
+				        android:layout_marginLeft="2dp"
+				        android:src="@drawable/img_notice_point"
+				        android:layout_toRightOf="@id/tv_push"/>
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/img_list_more" />
+            </RelativeLayout>
+
+            <!-- sp -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <include layout="@layout/page_my_sp_layout" />
+            </LinearLayout>
+
+            <!-- set -->
+
+            <RelativeLayout
+                android:id="@+id/setLayout"
+                style="@style/my_listitem_style" >
+
+                <ImageView
+                    android:id="@+id/setIV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/img_my_set" />
+
+                <TextView
+                    style="@style/my_listitem_text_style"
+                    android:layout_toRightOf="@+id/setIV"
+                    android:text="系统设置" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/img_list_more" />
+            </RelativeLayout>
+
+            <!-- sp -->
+
+            <View
+                style="@style/my_line_style"
+                android:layout_marginLeft="@dimen/my_setting_line_left_right_sp"
+                android:layout_marginRight="@dimen/my_setting_line_left_right_sp" />
+
+            <!-- problem -->
+
+            <RelativeLayout
+                android:id="@+id/problemLayout"
+                style="@style/my_listitem_style" >
+
+                <ImageView
+                    android:id="@+id/problemIV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/img_my_problem" />
+
+                <TextView
+                    style="@style/my_listitem_text_style"
+                    android:layout_toRightOf="@+id/problemIV"
+                    android:text="问题反馈" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/img_list_more" />
+            </RelativeLayout>
+
+            <!-- sp -->
+
+            <View
+                style="@style/my_line_style"
+                android:layout_marginLeft="@dimen/my_setting_line_left_right_sp"
+                android:layout_marginRight="@dimen/my_setting_line_left_right_sp" />
+            <!-- recommend -->
+
+            <RelativeLayout
+                android:id="@+id/recmmandLayout"
+                style="@style/my_listitem_style" >
+
+                <ImageView
+                    android:id="@+id/recmmendIV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/img_my_recommend" />
+
+                <TextView
+                    style="@style/my_listitem_text_style"
+                    android:layout_toRightOf="@+id/recmmendIV"
+                    android:text="推荐好友" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/img_list_more" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <include layout="@layout/page_my_sp_layout" />
+            </LinearLayout>
+            <!-- about -->
+
+            <RelativeLayout
+                android:id="@+id/aboutLayout"
+                style="@style/my_listitem_style" >
+
+                <ImageView
+                    android:id="@+id/aboutIV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/img_my_about" />
+
+                <TextView
+                    style="@style/my_listitem_text_style"
+                    android:layout_toRightOf="@+id/aboutIV"
+                    android:text="关于我们" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/img_list_more" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <!-- sp -->
+
+            <View style="@style/my_line_style" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

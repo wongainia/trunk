@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/b4"
+    android:orientation="vertical" >
+    
+    <!-- 标题 -->
+    <cn.emoney.sky.libs.bar.TitleBar
+        android:id="@+id/page_rankstockhome_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/len_H_titlebar"
+        android:background="@color/c9" >
+    </cn.emoney.sky.libs.bar.TitleBar>
+    
+    <!-- 上证，深证、中小板、创业板 -->
+    <cn.emoney.sky.libs.bar.ToolBar
+        android:id="@+id/page_rankstockhome_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/len_H_listhead"
+        android:background="@color/b2" >
+    </cn.emoney.sky.libs.bar.ToolBar>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/c3" />
+    
+    <!-- 股票列表 -->
+    <cn.emoney.sky.libs.widget.PageSwitcher
+        android:id="@+id/page_rankstockhome_pageswitcher"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </cn.emoney.sky.libs.widget.PageSwitcher>
+
+</LinearLayout>

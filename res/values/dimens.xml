@@ -1,0 +1,133 @@
+<resources>
+
+    <!-- ***********************2.0************************ -->
+    <!-- txt size -->
+    <dimen name="txt_s1">10dp</dimen>
+    <dimen name="txt_s2">11dp</dimen>
+    <dimen name="txt_s3">12dp</dimen>
+    <dimen name="txt_s4">13dp</dimen>
+    <dimen name="txt_s5">14dp</dimen>
+    <dimen name="txt_s6">15.5dp</dimen>
+    <dimen name="txt_s7">17dp</dimen>
+    <dimen name="txt_s8">18dp</dimen>
+    <dimen name="txt_s9">20dp</dimen>
+    <dimen name="txt_s10">23dp</dimen>
+    <dimen name="txt_s11">34dp</dimen>
+    <dimen name="txt_s12">40dp</dimen>
+
+    <!-- shape -->
+    <!-- segment中使用 -->
+    <dimen name="radio_button_conner_radius">5dp</dimen>
+    <dimen name="radio_button_stroke_border">1dp</dimen>
+
+    <!-- listitem -->
+    <dimen name="len_H_listitem_singleline">38dp</dimen>
+    <dimen name="len_H_listsection">38dp</dimen>
+    <dimen name="len_H_listhead">40dp</dimen>
+    <dimen name="len_H_listitem_2">72dp</dimen>
+    <!-- 股票列表时使用 -->
+    <dimen name="len_H_listitem_stocklist">56dp</dimen>
+
+    <!-- dim -->
+    <dimen name="len_M_horizontal">21dp</dimen>
+    <dimen name="len_M_vertical">21dp</dimen>
+    <dimen name="len_M_vertical_half">8dp</dimen>
+    <dimen name="len_H_line_1_half">13dp</dimen>
+    <dimen name="len_M_horizontal_max_huge">35dp</dimen>
+    <dimen name="len_M_vertical_max_plus">50dp</dimen>
+    <dimen name="len_M_vertical_plus">26dp</dimen>
+    <dimen name="len_M_horizontal_max_plus">22dp</dimen>
+    <dimen name="len_M_vertical_max">40dp</dimen>
+    <dimen name="len_H_input">45dp</dimen>
+    <dimen name="len_H_settingitem">60dp</dimen>
+    <dimen name="txt_s_notice">15dp</dimen>
+
+    <!-- bar -->
+    <dimen name="len_H_titlebar">50dp</dimen>
+    <dimen name="len_H_menubar">50dp</dimen>
+    <dimen name="len_H_Key">48dip</dimen>
+    <dimen name="len_H_bottom_tool">48dip</dimen>
+    <dimen name="len_H_selectbar">42dp</dimen>
+
+    <!-- margin,pading -->
+    <dimen name="len_M_1">1dp</dimen>
+    <dimen name="len_M_2">2dp</dimen>
+    <dimen name="len_M_3">3dp</dimen>
+    <dimen name="len_M_4">4dp</dimen>
+    <dimen name="len_M_5">5dp</dimen>
+    <dimen name="len_M_6">6dp</dimen>
+    <dimen name="len_M_8">8dp</dimen>
+    <dimen name="len_M_10">10dp</dimen>
+    <dimen name="len_M_12">12dp</dimen>
+    <dimen name="len_M_14">14dp</dimen>
+    <dimen name="len_M_horizontal_max">20dp</dimen>
+
+    <!-- 涨跌幅红绿色背景宽高 -->
+    <dimen name="zdf_bg_width">72dp</dimen>
+    <dimen name="zdf_bg_height">32dp</dimen>
+
+    <!-- keyboard -->
+    <dimen name="key_item_h">52dp</dimen>
+    <dimen name="choose_item_h">66dp</dimen>
+    <dimen name="choose_item_pading_top_bottom">7.5dp</dimen>
+    <dimen name="choose_gridview_pading_top_bottom">13dp</dimen>
+
+    <!-- 我相关的页面 -->
+    <dimen name="my_head_icon_size">47dp</dimen>
+    <dimen name="my_head_img_txt_sp">11dp</dimen>
+    <dimen name="my_list_item_left_sp">34dp</dimen>
+    <dimen name="my_list_item_right_sp">20dp</dimen>
+    <dimen name="my_list_item_h">52dp</dimen>
+    <dimen name="my_listitem_img_txt_sp">14dp</dimen>
+    <dimen name="line_h">0.5dp</dimen>
+    <dimen name="my_equipment_pading">17dp</dimen>
+    <dimen name="my_setting_line_left_right_sp">16dp</dimen>
+    <dimen name="my_userinfo_edit_pading_left">33dp</dimen>
+    <dimen name="my_userinfo_edit_pading_right">20dp</dimen>
+    <dimen name="setting_list_item_h">49dp</dimen>
+
+    <!-- 登录注册 -->
+    <dimen name="login_item_margin">22dp</dimen>
+    <dimen name="login_item_drawable_padding">11dp</dimen>
+
+    <!-- IOS7 Dialog -->
+    <!-- 选项菜单的高度 -->
+    <dimen name="actionsheet_height">48dip</dimen>
+    <!-- 选项菜单里取消按钮和上方菜单的间距的高度 -->
+    <dimen name="actionsheet_cancel_sp_height">13dip</dimen>
+    <!-- item里图片和内容的间隔 -->
+    <dimen name="actionsheet_icon_text_sp">12dip</dimen>
+    <dimen name="custom_dialog_btn_heigt">49dip</dimen>
+
+    <!-- loading -->
+    <dimen name="loading_w">37dp</dimen>
+    <dimen name="loading_h">20dp</dimen>
+    <dimen name="corners_degree">14dp</dimen>
+    <dimen name="len_H_btnbar">55dp</dimen>
+    <dimen name="len_H_line_2_half">15dip</dimen>
+
+    <!-- 重大利好 -->
+    <dimen name="zdlh_icon_width">76dp</dimen>
+    <dimen name="zdlh_icon_height">65dp</dimen>
+    <dimen name="zdlh_icon_margin_top">17dp</dimen>
+    <dimen name="zdlh_icon_margin_bottom">18dp</dimen>
+
+    <!-- 问股 -->
+    <dimen name="quiz_icon_size">39dp</dimen>
+    <dimen name="quiz_item_reply_margin_left_right">28dp</dimen>
+    <dimen name="quiz_search_height">43dp</dimen>
+    <dimen name="quiz_search_tip_margin_left">23dp</dimen>
+    <dimen name="quiz_teacher_header_height">339dp</dimen>
+    <dimen name="quiz_teacher_viewpage_height">257dp</dimen>
+    <dimen name="quiz_set_bg_width">220dp</dimen>
+    <dimen name="quiz_question_content_margin">15dp</dimen>
+    <dimen name="quiz_teacher_question_content_top">50dp</dimen>
+    <dimen name="quiz_teacher_reply_content_top">32dp</dimen>
+    <dimen name="quiz_teacher_reply_input_left_right">12dp</dimen>
+    <dimen name="quiz_teacher_replay_progress_width">2.5dp</dimen>
+    <dimen name="quiz_teacher_reply_record_btn_size">94.5dp</dimen>
+
+    <!-- 加载更多 -->
+    <dimen name="footer_view_load_more">50dp</dimen>
+
+</resources>

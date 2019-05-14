@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/ll_lv_sortbar"
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:background="@color/b2"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_optional_sortfield0"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="股票名称"
+            android:textColor="@color/t3"
+            android:textSize="@dimen/txt_s4" />
+
+        <TextView
+            android:id="@+id/tv_optional_sortfield1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="最新价"
+            android:textColor="@color/t3"
+            android:textSize="@dimen/txt_s4" />
+
+        <TextView
+            android:id="@+id/tv_optional_sortfield2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="涨跌幅"
+            android:textColor="@color/t3"
+            android:textSize="@dimen/txt_s4" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/v_line_sortbar"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/ll_lv_sortbar"
+        android:background="@color/b5" />
+
+    <RelativeLayout
+        android:id="@+id/rl_optional_bottom_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <LinearLayout
+            android:id="@+id/ll_mini_marketboard"
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:background="@color/c7"
+            android:gravity="center_vertical"
+            android:minHeight="33dp"
+            android:orientation="horizontal"
+            android:visibility="visible" >
+
+            <TextView
+                android:id="@+id/tv_marketboard_sh"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="上证 -.--%"
+                android:textSize="@dimen/txt_s4" />
+
+            <TextView
+                android:id="@+id/tv_marketboard_sz"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="深证  -.--%"
+                android:textSize="@dimen/txt_s4" />
+
+            <TextView
+                android:id="@+id/tv_marketboard_cy"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="创业板  -.--%"
+                android:textSize="@dimen/txt_s4" />
+
+            <ImageView
+                android:id="@+id/iv_marketboard_expand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/len_M_horizontal"
+                android:background="@drawable/img_arrow_up_minimarketboard" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_login_notice"
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="立即登录,同步PC版自选股"
+            android:textColor="@color/c3"
+            android:textSize="@dimen/txt_s6" />
+
+        <LinearLayout
+            android:id="@+id/optionalhome_ll_positon_statistics"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:background="@color/c7"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/tv_total_profitAndLoss_content"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.3"
+                android:gravity="center"
+                android:maxLines="2"
+                android:text="总盈亏\n--"
+                android:textColor="@color/t2"
+                android:textSize="@dimen/txt_s4" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="12dp"
+                android:background="@color/b5" />
+
+            <TextView
+                android:id="@+id/tv_total_profitAndLoss_percent_content"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:maxLines="2"
+                android:text="盈亏比\n--"
+                android:textColor="@color/t2"
+                android:textSize="@dimen/txt_s4" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="12dp"
+                android:background="@color/b5" />
+
+            <TextView
+                android:id="@+id/tv_total_marketValue_content"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.3"
+                android:gravity="center"
+                android:maxLines="2"
+                android:text="总市值\n--"
+                android:textColor="@color/t2"
+                android:textSize="@dimen/txt_s4" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <cn.emoney.sky.libs.widget.RefreshListView
+        android:id="@+id/lv_optional_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/rl_optional_bottom_area"
+        android:layout_below="@id/v_line_sortbar"
+        android:divider="@drawable/img_light_divider_line"
+        android:dividerHeight="1px"
+        android:listSelector="@color/bg_transparent" >
+    </cn.emoney.sky.libs.widget.RefreshListView>
+
+    <ImageView
+        android:id="@+id/optionalhome_iv_listempty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:scaleType="center"
+        android:src="@drawable/img_optionalhome_empty_addzxg" />
+
+    <FrameLayout
+        android:id="@+id/fr_mimiboardexpand_content"
+        android:layout_width="match_parent"
+        android:layout_height="165dp"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone" >
+    </FrameLayout>
+
+</RelativeLayout>

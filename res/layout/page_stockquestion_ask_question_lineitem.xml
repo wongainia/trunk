@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/len_H_listitem_stocklist"
+    android:minHeight="@dimen/len_H_listitem_stocklist"
+    android:ellipsize="none"
+    android:gravity="center_vertical|left"
+    android:paddingLeft="@dimen/len_M_horizontal"
+    android:paddingRight="@dimen/len_M_horizontal"
+    android:singleLine="true"
+    android:textColor="@color/b4"
+    android:textSize="@dimen/txt_s4" />

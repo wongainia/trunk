@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- 头部一栏 -->
+
+    <LinearLayout
+        android:id="@+id/pagekhero_rl_infocontent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="11dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/pagekhero_iv_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16dp"
+            android:src="@drawable/img_klinehero_logo" />
+
+        <ImageView
+            android:id="@+id/pagekhero_tv_heroranklist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="32dp"
+            android:src="@drawable/img_klinehero_bang_list" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_weight="1"
+            android:gravity="left|center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/pagekhero_tv_totalprofit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="累计收益: --%"
+                android:textColor="@color/t3"
+                android:textSize="@dimen/txt_s3" />
+
+            <TextView
+                android:id="@+id/pagekhero_tv_maxprofit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="最大收益: --%"
+                android:textColor="@color/t3"
+                android:textSize="@dimen/txt_s3" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left|center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/pagekhero_tv_totalassets"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="总资产: --"
+                android:textColor="@color/t3"
+                android:textSize="@dimen/txt_s3" />
+
+            <TextView
+                android:id="@+id/pagekhero_tv_winprofit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="胜利率: --%"
+                android:textColor="@color/t3"
+                android:textSize="@dimen/txt_s3" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/pagekhero_btn_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:paddingBottom="6dp"
+            android:paddingLeft="6dp"
+            android:paddingRight="16dp"
+            android:paddingTop="5dp"
+            android:src="@drawable/selector_btn_landscape_closebtn" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pagekhero_ll_control_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/pagekhero_rl_control1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="2dp" >
+
+            <TextView
+                android:id="@+id/pagekhero_tv_control1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_btn_khero_left"
+                android:gravity="center"
+                android:text="@string/klinehero_buy"
+                android:textColor="@color/t8"
+                android:textSize="@dimen/txt_s6" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/pagekhero_tv_curprofit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="点击买入或观望开始操盘"
+            android:textColor="@color/t3"
+            android:textSize="@dimen/txt_s4" />
+
+        <RelativeLayout
+            android:id="@+id/pagekhero_rl_control2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="2dp" >
+
+            <TextView
+                android:id="@+id/pagekhero_tv_control2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_btn_khero_right"
+                android:gravity="center"
+                android:text="@string/klinehero_sell"
+                android:textColor="@color/t8"
+                android:textSize="@dimen/txt_s6" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <cn.emoney.sky.libs.chart.ChartView
+        android:id="@+id/pagekhero_cv_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/pagekhero_ll_control_content"
+        android:layout_below="@id/pagekhero_rl_infocontent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:padding="1px" >
+    </cn.emoney.sky.libs.chart.ChartView>
+
+    <LinearLayout
+        android:id="@+id/pagekhero_ll_cvtopinfo"
+        android:layout_width="match_parent"
+        android:layout_height="18dp"
+        android:layout_below="@id/pagekhero_rl_infocontent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/pagekhero_tv_stockname"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/len_M_10"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text=""
+            android:textColor="@color/c3"
+            android:textSize="@dimen/txt_s2" />
+
+        <TextView
+            android:id="@+id/pagekhero_tv_gameinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:text="2005/09/12始"
+            android:textColor="@color/t3"
+            android:textSize="@dimen/txt_s2" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/zdlhpage_ll_lvempty"
+        layout="@layout/loading_layout_red"
+        android:visibility="gone" />
+
+</RelativeLayout>

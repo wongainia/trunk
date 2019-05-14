@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_list_item"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/zdlhitem_ll_stockinfo"
+        android:layout_width="@dimen/zdlh_icon_width"
+        android:layout_height="@dimen/zdlh_icon_height"
+        android:layout_marginBottom="@dimen/zdlh_icon_margin_bottom"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="@dimen/zdlh_icon_margin_top"
+        android:background="@drawable/shape_bg_c1_radius"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="3.5dp" >
+
+        <TextView
+            android:id="@+id/zdlhitem_tv_stockname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="name"
+            android:textColor="@color/t8"
+            android:textSize="@dimen/txt_s5" />
+
+        <TextView
+            android:id="@+id/zdlhitem_tv_stockcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="code"
+            android:textColor="@color/t8"
+            android:textSize="@dimen/txt_s3" />
+
+        <TextView
+            android:id="@+id/zdlhitem_tv_zdf"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center|bottom"
+            android:text="--%"
+            android:textColor="@color/t8"
+            android:textSize="@dimen/txt_s6" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/zdlhitem_v_stockmask"
+        android:layout_width="@dimen/zdlh_icon_width"
+        android:layout_height="@dimen/zdlh_icon_height"
+        android:layout_marginBottom="@dimen/zdlh_icon_margin_bottom"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="@dimen/zdlh_icon_margin_top"
+        android:background="@drawable/selector_zdlh_stock_mask"
+        android:visibility="visible" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/zdlh_icon_height"
+        android:layout_marginBottom="@dimen/zdlh_icon_margin_bottom"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="@dimen/zdlh_icon_margin_top"
+        android:layout_toRightOf="@id/zdlhitem_ll_stockinfo"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/titleView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="left"
+            android:maxLines="2"
+            android:minLines="2"
+            android:text="content"
+            android:textColor="@color/t1"
+            android:textSize="@dimen/txt_s6" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="2dp" >
+
+            <ImageView
+                android:id="@+id/levView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/selector_star_lev" />
+
+            <ImageView
+                android:id="@+id/levView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:src="@drawable/selector_star_lev" />
+
+            <ImageView
+                android:id="@+id/levView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:src="@drawable/selector_star_lev" />
+
+            <ImageView
+                android:id="@+id/levView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:src="@drawable/selector_star_lev" />
+
+            <ImageView
+                android:id="@+id/levView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:src="@drawable/selector_star_lev" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/playingTagView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="2dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/img_news_horn_playing"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/dividerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/zdlhitem_ll_stockinfo" >
+
+        <include layout="@layout/page_my_sp_layout" />
+    </LinearLayout>
+
+</RelativeLayout>

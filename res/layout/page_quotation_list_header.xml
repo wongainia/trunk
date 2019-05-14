@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal" >
+
+        <include
+            android:id="@+id/page_quotation_header_shindex"
+            layout="@layout/include_quotation_header_item" />
+
+        <View
+            android:layout_width="4dp"
+            android:layout_height="match_parent" />
+
+        <include
+            android:id="@+id/page_quotation_header_szindex"
+            layout="@layout/include_quotation_header_item" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="17dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginTop="4dp"
+        android:orientation="horizontal" >
+
+        <include
+            android:id="@+id/page_quotation_header_zxbindex"
+            layout="@layout/include_quotation_header_item" />
+
+        <View
+            android:layout_width="4dp"
+            android:layout_height="match_parent" />
+
+        <include
+            android:id="@+id/page_quotation_header_cybindex"
+            layout="@layout/include_quotation_header_item" />
+    </LinearLayout>
+    
+    <!-- 看涨看跌 -->
+    <RelativeLayout 
+        android:id="@+id/page_quotation_layout_viewpoint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="11dp"
+        android:paddingBottom="18dp">
+        
+        <TextView 
+            android:id="@+id/page_quotation_tv_viewpoint_rise_notice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="21dp"
+            android:layout_marginStart="21dp"
+            android:text="最近看涨"
+            android:textSize="@dimen/txt_s3"
+            android:textColor="@color/c1"
+            android:gravity="center"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:paddingBottom="2dp"
+            android:background="@drawable/shape_stroke_c1"/>
+        
+        <TextView 
+            android:id="@+id/page_quotation_tv_viewpoint_rise_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/page_quotation_tv_viewpoint_rise_notice"
+            android:layout_marginLeft="8dp"
+            android:layout_alignBaseline="@id/page_quotation_tv_viewpoint_rise_notice"
+            android:text="51"
+            android:textSize="@dimen/txt_s6"
+            android:textColor="@color/c1"/>
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/page_quotation_tv_viewpoint_rise_num"
+            android:layout_alignBaseline="@id/page_quotation_tv_viewpoint_rise_num"
+            android:text="%"
+            android:textSize="@dimen/txt_s3"
+            android:textColor="@color/c1"/>
+        
+        <TextView 
+            android:id="@+id/page_quotation_tv_viewpoint_fall_notice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="21dp"
+            android:layout_marginEnd="21dp"
+            android:layout_alignBaseline="@id/page_quotation_tv_viewpoint_rise_num"
+            android:text="最近看跌"
+            android:textSize="@dimen/txt_s3"
+            android:textColor="@color/c2"
+            android:gravity="center"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:paddingBottom="2dp"
+            android:background="@drawable/shape_stroke_c2"/>
+        
+        <TextView 
+            android:id="@+id/page_quotation_tv_viewpoint_fall_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/page_quotation_tv_viewpoint_fall_notice"
+            android:layout_marginRight="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_alignBaseline="@id/page_quotation_tv_viewpoint_rise_num"
+            android:text="%"
+            android:textSize="@dimen/txt_s3"
+            android:textColor="@color/c2"/>
+        
+        <TextView 
+            android:id="@+id/page_quotation_tv_viewpoint_fall_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/page_quotation_tv_viewpoint_fall_unit"
+            android:layout_alignBaseline="@id/page_quotation_tv_viewpoint_rise_num"
+            android:text="42"
+            android:textSize="@dimen/txt_s6"
+            android:textColor="@color/c2"/>
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_below="@id/page_quotation_tv_viewpoint_rise_num"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="13dp"
+            android:background="@drawable/shape_bg_viewpoint_c7"
+            android:orientation="horizontal">
+            
+            <View 
+                android:id="@+id/page_quotation_viewpoint_bg_rise"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="51"
+                android:background="@drawable/shape_bg_viewpoint_c1"/>
+            
+            <View 
+                android:id="@+id/page_quotation_viewpoint_bg_equal"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="7"/>
+            
+            <View 
+                android:id="@+id/page_quotation_viewpoint_bg_fall"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="42"
+                android:background="@drawable/shape_bg_viewpoint_c2"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

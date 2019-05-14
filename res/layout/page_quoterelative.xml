@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/b4" >
+    
+    <!-- 空白提示， 默认显示，有数据显示时隐藏 -->
+    <TextView 
+        android:id="@+id/page_quoterelative_tv_empty"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:gravity="center"
+        android:enabled="false"
+        android:text="暂无数据"
+        android:textSize="@dimen/txt_s4"
+        android:textColor="@color/t3"/>
+    
+    <!-- 加载数据进度条，默认隐藏，开始加载且无数据时显示，有数据或加载结束或加载超时时隐藏 -->
+    <LinearLayout
+        android:id="@+id/page_quoterelative_layout_loading"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:background="@color/b4"
+        android:gravity="center_horizontal|top"
+        android:paddingTop="96dp"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+        
+        <ProgressBar
+            android:layout_width="@dimen/loading_w"
+            android:layout_height="@dimen/loading_h"
+            android:indeterminateDrawable="@drawable/loading_red" />
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="正在加载..."
+            android:textColor="@color/t2"
+            android:textSize="@dimen/txt_s5" />
+    </LinearLayout>
+    
+    <!-- 有数据时显示数据的ListView，始终显示 -->
+    <ListView 
+        android:id="@+id/page_quoterelative_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:headerDividersEnabled="false"
+        android:footerDividersEnabled="false"
+        android:listSelector="@color/bg_transparent"
+        android:divider="@drawable/img_light_divider_line"
+        android:dividerHeight="1px"
+        android:overScrollMode="never"
+        android:scrollbars="none"/>
+    
+</RelativeLayout>

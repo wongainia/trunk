@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<resources>  
+    <integer name = "feedback_conten_max_len">200</integer>  
+    <integer name = "question_ask_max_len">36</integer>  
+    <integer name = "question_reply_max_len">250</integer>  
+</resources> 

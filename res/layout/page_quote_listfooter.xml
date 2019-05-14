@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:em="http://schemas.android.com/apk/res/cn.emoney.acg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/b4" >
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <!-- 暂无数据提示，默认显示，当显示数据大于0时隐藏 -->
+	    <TextView 
+	        android:id="@+id/page_quote_listfooter_tv_empty"
+	        android:layout_width="match_parent"
+	        android:layout_height="190dp"
+	        android:gravity="center"
+	        android:text="暂无数据，请点击重试"
+	        android:textSize="@dimen/txt_s4"
+	        android:textColor="@color/t3"/>
+	    
+	    <LinearLayout
+	        android:id="@+id/page_quote_listfooter_layout_loading"
+	        android:layout_width="match_parent"
+	        android:layout_height="190dp"
+	        android:gravity="center"
+	        android:orientation="horizontal"
+	        android:visibility="gone" >
+	        
+	        <ProgressBar
+	            android:layout_width="@dimen/loading_w"
+	            android:layout_height="@dimen/loading_h"
+	            android:indeterminateDrawable="@drawable/loading_red" />
+	        
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="8dp"
+	            android:text="正在加载..."
+	            android:textColor="@color/t2"
+	            android:textSize="@dimen/txt_s3" />
+	    </LinearLayout>
+    </RelativeLayout>
+    
+    <!-- 查看更多，默认隐藏，可显示数据数量大于限制数量时显示 -->
+    <RelativeLayout 
+        android:id="@+id/page_quote_listfooter_layout_loadmore"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:visibility="gone">
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="查看更多"
+            android:textSize="@dimen/txt_s4"
+            android:textColor="@color/t2"/>
+        
+        <View 
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/b5"
+            android:layout_alignParentTop="true"/>
+        
+        <View 
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/b5"
+            android:layout_alignParentBottom="true"/>
+        
+    </RelativeLayout>
+    
+    <!-- 空白间隔，默认不显示，无新闻时不显示，有新闻时显示 -->
+    <View 
+        android:id="@+id/page_quote_listfooter_divider"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:visibility="gone"/>
+    
+    <!-- 空白间隔，只有当个股问答只有一条时显示 -->
+    <View 
+        android:id="@+id/page_quote_listfooter_quizblank"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:visibility="gone"/>
+    
+    <!-- tab标题: 资金，关联，财务，诊股 -->
+    <cn.emoney.acg.widget.SegmentedGroup
+        android:id="@+id/page_quote_listfooter_segment_datas"
+        android:layout_width="match_parent"
+        android:layout_height="26dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:orientation="horizontal"
+        em:sc_border_color="@color/b5"
+        em:sc_border_radius="4dp"
+        em:sc_border_width="1px"
+        em:sc_checked_bg_color="@color/c3"
+        em:sc_checked_text_color="@color/t8"
+        em:sc_text_size="@dimen/txt_s4"
+        em:sc_unchecked_bg_color="@color/b2"
+        em:sc_unchecked_text_color="@color/t1" >
+
+        <RadioButton
+            android:id="@+id/page_quote_listfooter_data_funds"
+            style="@style/RadioButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="资金" />
+
+        <RadioButton
+            android:id="@+id/page_quote_listfooter_data_relatives"
+            style="@style/RadioButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="关联" />
+
+        <RadioButton
+            android:id="@+id/page_quote_listfooter_data_financial"
+            style="@style/RadioButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="基本面" />
+
+        <RadioButton
+            android:id="@+id/page_quote_listfooter_data_diagnose"
+            style="@style/RadioButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="诊股" />
+    </cn.emoney.acg.widget.SegmentedGroup>
+    
+    <!-- tab页详细内容 -->
+    <ViewFlipper 
+        android:id="@+id/page_quote_listfooter_viewflipper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:measureAllChildren="false"></ViewFlipper>
+
+</LinearLayout>

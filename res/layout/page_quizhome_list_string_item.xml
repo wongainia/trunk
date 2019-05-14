@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/b2"
+    android:orientation="vertical" >
+
+    <View style="@style/my_line_style" />
+
+    <TextView
+        android:id="@+id/tipView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="10dp"
+        android:text="最近回答"
+        android:textColor="@color/t3"
+        android:textSize="@dimen/txt_s3" />
+
+    <View style="@style/my_line_style" />
+
+</LinearLayout>

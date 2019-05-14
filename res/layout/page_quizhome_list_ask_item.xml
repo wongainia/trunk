@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/askLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="18dp"
+    android:layout_marginRight="18dp"
+    android:layout_marginTop="15dp"
+    android:background="@drawable/img_quiz_txt_other_bg"
+    android:orientation="horizontal"
+    android:paddingBottom="17dp"
+    android:paddingLeft="13dp"
+    android:paddingRight="6dp"
+    android:paddingTop="7dp" >
+
+    <TextView
+        android:id="@+id/askNameView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="name"
+        android:textColor="@color/t3"
+        android:textSize="@dimen/txt_s3" />
+
+    <TextView
+        android:id="@+id/askDateView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="8dp"
+        android:text="3小时前"
+        android:textColor="@color/t3"
+        android:textSize="@dimen/txt_s3" />
+
+    <TextView
+        android:id="@+id/askcontentView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/askNameView"
+        android:layout_marginTop="4dp"
+        android:text="600600 青岛啤酒可不可以卖了？"
+        android:lineSpacingExtra="3dp"
+        android:textColor="@color/t1"
+        android:textSize="@dimen/txt_s4" />
+
+</RelativeLayout>

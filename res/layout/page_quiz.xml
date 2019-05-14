@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/b2"
+    android:orientation="vertical" >
+
+    <!-- title -->
+
+    <LinearLayout
+        android:id="@+id/titleLayout"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:background="@drawable/img_quize_title_bg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <cn.emoney.sky.libs.bar.TitleBar
+            android:id="@+id/pageQuizTitleBar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/len_H_titlebar" />
+
+        <ImageView
+            android:id="@+id/askGoodIV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="76dp"
+            android:layout_marginRight="76dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/selector_btn_quiz_good"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/stateIV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/img_quiz_ask_comment"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/numTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/quiz_ask_count_str"
+            android:textColor="@color/t5"
+            android:textSize="@dimen/txt_s4"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <cn.emoney.sky.libs.widget.RefreshListView
+        android:id="@+id/quizeListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/titleLayout"
+        android:divider="@null"
+        android:dividerHeight="0px"
+        android:listSelector="@color/bg_transparent" >
+    </cn.emoney.sky.libs.widget.RefreshListView>
+
+    <include
+        android:id="@+id/quizLoading"
+        layout="@layout/loading_layout_red"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/quizNodataLayout"
+        layout="@layout/include_layout_quiz_no_data"
+        android:visibility="gone" />
+
+</RelativeLayout>

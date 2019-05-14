@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ListView的头部 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/head_rootLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical" >
+
+    <!-- 内容 -->
+
+    <RelativeLayout
+        android:id="@+id/head_contentLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="12dip"
+        android:paddingTop="12dip" >
+
+        <!-- 箭头图像、进度条 -->
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:layout_toLeftOf="@+id/titleLayout"
+            android:visibility="gone" >
+
+            <!-- 箭头 -->
+
+            <ImageView
+                android:id="@+id/refreshlistview_header_handle_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/img_refresh_arrowdown" />
+            <!-- 进度条 -->
+
+            <ProgressBar
+                android:id="@+id/refreshlistview_header_progress"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/titleLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true" >
+
+            <!-- 进度条 -->
+
+            <ProgressBar
+                android:layout_width="@dimen/loading_w"
+                android:layout_height="@dimen/loading_h"
+                android:layout_marginRight="10dp"
+                android:indeterminateDrawable="@drawable/loading_grey" />
+
+            <!-- 提示、最近更新 -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <!-- 提示 -->
+
+                <TextView
+                    android:id="@+id/refreshlistview_header_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="松开刷新"
+                    android:textColor="@color/t2"
+                    android:textSize="@dimen/txt_s4" />
+            </LinearLayout>
+        </LinearLayout>
+        <!-- 更新时间不用 -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <!-- 最近更新 -->
+
+            <TextView
+                android:id="@+id/refreshlistview_header_subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="最近更新"
+                android:textColor="#cc6600"
+                android:textSize="@dimen/txt_s3" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+      android:background="@color/b4"
+    android:orientation="vertical" >
+
+    <!-- 免费装备 -->
+
+    <LinearLayout
+        android:id="@+id/freeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/b2"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="20dp"
+            android:text="免费装备"
+            android:textColor="@color/t3"
+            android:textSize="@dimen/txt_s3" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_h"
+            android:background="@color/b7" />
+
+        <RelativeLayout
+            android:id="@+id/equipmenthome_header_khero_content"
+            android:layout_width="match_parent"
+            android:layout_height="71dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/selector_set_list_item" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="23dp"
+                android:src="@drawable/img_arrow_expandmore" />
+
+            <ImageView
+                android:id="@+id/item_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="38dp"
+                android:src="@drawable/img_equipment_ico_1000000" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="18dp"
+                android:layout_toRightOf="@id/item_icon" >
+
+                <TextView
+                    android:id="@+id/item_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="3dp"
+                    android:text="K线英雄"
+                    android:textColor="@color/t1"
+                    android:textSize="@dimen/txt_s6"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/item_subtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/item_title"
+                    android:layout_marginTop="5dp"
+                    android:text="通过K线虚拟买卖，提升操盘实力"
+                    android:textColor="@color/t3"
+                    android:textSize="@dimen/txt_s3" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!-- 收费装备 -->
+
+    <LinearLayout
+        android:id="@+id/feeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+         >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="11dp"
+            android:background="@color/b2"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_h"
+                android:background="@color/b7" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="20dp"
+                android:text="付费装备"
+                android:textColor="@color/t3"
+                android:textSize="@dimen/txt_s3" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_h"
+                android:layout_alignParentTop="true"
+                android:background="@color/b7" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

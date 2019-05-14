@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/b2"
+    android:orientation="vertical" >
+
+    <cn.emoney.sky.libs.bar.TitleBar
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/len_H_titlebar"
+        android:background="@color/c9" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/b4"
+        android:orientation="vertical"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/setting_refresh_ll_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/b4"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="39dp"
+                android:background="@color/b2" >
+
+                <TextView
+                    android:id="@+id/setting_refresh_tv_moblie_network_header"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="24dp"
+                    android:text="2G/3G/4G 网络"
+                    android:textColor="@color/t3"
+                    android:textSize="@dimen/txt_s4" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/setting_refresh_moblie_network_header_downline"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_h"
+                android:background="@color/b7" />
+
+            <View
+                android:id="@+id/setting_refresh_wifi_network_header_upline"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_h"
+                android:background="@color/b7" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="39dp"
+                android:background="@color/b2" >
+
+                <TextView
+                    android:id="@+id/setting_refresh_tv_wifi_network_header"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="24dp"
+                    android:text="Wifi 网络"
+                    android:textColor="@color/t3"
+                    android:textSize="@dimen/txt_s4" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/setting_refresh_wifi_network_header_downline"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_h"
+                android:background="@color/b7" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
